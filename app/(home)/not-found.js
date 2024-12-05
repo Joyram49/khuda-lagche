@@ -1,5 +1,7 @@
 "use client";
+import RippleButton from "@/components/ripple-effect";
 import { DotLottieReact } from "@lottiefiles/dotlottie-react";
+import { Home } from "lucide-react";
 import Link from "next/link";
 
 export default function NotFound() {

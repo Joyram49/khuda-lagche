@@ -6,4 +6,6 @@ const FilteredOrdersComponent = React.memo(({ filteredOrders }) => {
   return <FoodOrderTable filteredOrders={filteredOrders} />;
 });
 
+FilteredOrdersComponent.displayName = "FilteredOrdersComponent";
+
 export default FilteredOrdersComponent;

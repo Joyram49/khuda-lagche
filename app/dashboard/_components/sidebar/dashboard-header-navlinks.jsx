@@ -22,12 +22,11 @@ function DashboardHeaderNavlinks({ activeOrder }) {
       </Link>
       <Link
         href='/dashboard'
-        className=''
         className={`${
           pathName === "/dashboard"
             ? "bg-muted text-primary"
             : "hover:text-primary hover:bg-muted"
-        }  transition-all  mx-[-0.65rem] flex items-center gap-4 rounded-xl px-3 py-2 `}
+        } transition-all mx-[-0.65rem] flex items-center gap-4 rounded-xl px-3 py-2`}
       >
         <Home className='h-5 w-5' />
         Dashboard

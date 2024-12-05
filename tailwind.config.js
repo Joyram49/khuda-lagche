@@ -1,5 +1,8 @@
 /** @type {import('tailwindcss').Config} */
+import tailwindScrollbar from "tailwind-scrollbar";
+import tailwindcssAnimate from "tailwindcss-animate";
 import plugin from "tailwindcss/plugin";
+
 module.exports = {
   darkMode: ["class"],
   content: [
@@ -98,8 +101,8 @@ module.exports = {
     },
   },
   plugins: [
-    require("tailwindcss-animate"),
-    require("tailwind-scrollbar"),
+    tailwindcssAnimate,
+    tailwindScrollbar,
     plugin(function ({ matchUtilities, theme }) {
       matchUtilities(
         {

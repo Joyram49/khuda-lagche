@@ -23,7 +23,7 @@ export function MobileNav({ items, children, handleClick, loginSession }) {
     if (pathName) {
       handleClick();
     }
-  }, [pathName]);
+  }, [pathName, handleClick]);
 
   return (
     <div

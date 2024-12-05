@@ -21,7 +21,7 @@ export default function AccessDenied() {
     } else {
       setMessage("You don't have permission to view this page.");
     }
-  }, []);
+  }, [searchParams]);
 
   return (
     <div className='min-h-screen flex flex-col items-center justify-center bg-gray-100 p-4'>

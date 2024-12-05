@@ -15,6 +15,7 @@ import { Textarea } from "@/components/ui/textarea";
 import categories from "@/database/local-categories.json";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { Camera } from "lucide-react";
+import Image from "next/image";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
@@ -239,10 +240,12 @@ const RestaurantAddForm = () => {
                 <div className='relative w-full h-64 bg-gray-200 rounded-lg overflow-hidden border border-gray-300'>
                   {imagePreview ? (
                     // Show the preview of the uploaded image
-                    <img
+                    <Image
+                      fill
                       src={imagePreview}
                       alt='Thumbnail Preview'
-                      className='object-cover w-full h-full'
+                      className='absolute object-cover object-center'
+                      sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw'
                     />
                   ) : (
                     // Placeholder for when no image is uploaded

@@ -52,7 +52,7 @@ function FoodsSearchBar() {
       clearTimeout(handler);
       setSearchOverlay(true);
     };
-  }, [debouncedValue, setSearchTerm]);
+  }, [debouncedValue, setSearchTerm, setSearchOverlay]);
 
   // handle search text
   const handleInputChange = (e) => {

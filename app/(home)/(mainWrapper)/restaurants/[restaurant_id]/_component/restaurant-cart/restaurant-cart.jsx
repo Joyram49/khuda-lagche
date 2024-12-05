@@ -60,7 +60,7 @@ function RestaurantCart({ small, delivery_time }) {
     return () => {
       ignore = true;
     };
-  }, [isInRestaurantIdPage]);
+  }, [isInRestaurantIdPage, params.restaurant_id, setCartData]);
 
   return (
     <div className='w-full h-[calc(100vh-200px)] flex flex-col  justify-between items-center gap-y-6 my-4  relative p-4 lg:p-0'>

@@ -50,7 +50,7 @@ function CartButton() {
     return () => {
       ignore = true;
     };
-  }, [isInRestaurantIdPage]);
+  }, [isInRestaurantIdPage, params.restaurant_id, setCartData]);
 
   const cartBtnClick = () => {
     if (

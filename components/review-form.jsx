@@ -91,7 +91,7 @@ function ReviewForm({ itemId, fromRestaurant = false }) {
     if (data?.user && isLoginModalOpen) {
       setIsLoginModalOpen(false);
     }
-  }, [data]);
+  }, [data, isLoginModalOpen]);
 
   const { isSubmitting } = form.formState;
 

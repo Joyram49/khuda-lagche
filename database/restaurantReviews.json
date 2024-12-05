@@ -1,0 +1,46 @@
+[
+  {
+    "_id": {
+      "$oid": "66b9a2d5c4d33d0750c63e49"
+    },
+    "user_id": "66b99edfc4d33d0750c63e27",
+
+    "rating": 5,
+    "comment": "Excellent food and great service!",
+    "created_at": "2024-08-04T10:00:00Z",
+    "updated_at": "2024-08-04T10:00:00Z"
+  },
+  {
+    "_id": {
+      "$oid": "66b9a2d5c4d33d0750c63e4a"
+    },
+    "user_id": "66b99edfc4d33d0750c63e27",
+
+    "rating": 5,
+    "comment": "Excellent terrence view with beautiful sunset and ofcourse food is superb!",
+    "created_at": "2024-08-04T10:00:00Z",
+    "updated_at": "2024-08-04T10:00:00Z"
+  },
+  {
+    "_id": {
+      "$oid": "66b9a2d5c4d33d0750c63e4b"
+    },
+    "user_id": "66b99edfc4d33d0750c63e26",
+
+    "rating": 4,
+    "comment": "Tasty dishes but the service could be quicker.",
+    "created_at": "2024-08-05T10:00:00Z",
+    "updated_at": "2024-08-05T10:00:00Z"
+  },
+  {
+    "_id": {
+      "$oid": "66b9a2d5c4d33d0750c63e4c"
+    },
+    "user_id": "66b99edfc4d33d0750c63e26",
+
+    "rating": 4,
+    "comment": "very tasty food but the service could be quicker.",
+    "created_at": "2024-08-05T10:00:00Z",
+    "updated_at": "2024-08-05T10:00:00Z"
+  }
+]

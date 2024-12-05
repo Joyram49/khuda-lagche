@@ -1,0 +1,1322 @@
+[
+  {
+    "_id": {
+      "$oid": "66b9a384c4d33d0750c63e5b"
+    },
+    "category": {
+      "$oid": "66b99f60c4d33d0750c63e36"
+    },
+    "restaurant": {
+      "$oid": "66b9a68bc4d33d0750c63e74"
+    },
+    "name": "Grilled Chicken",
+    "description": "Juicy grilled chicken served with a side of vegetables.",
+    "price": 12.99,
+    "quantity": 50,
+    "delivery_time": "30 minutes",
+    "image_url": "/dish/grilled-chicken.jpg",
+    "availability": true,
+    "preparation_time": "20 minutes",
+    "created_at": "2024-08-01T10:00:00Z",
+    "updated_at": "2024-08-01T10:00:00Z",
+    "tags": ["chicken", "fastfood", "american"]
+  },
+  {
+    "_id": {
+      "$oid": "66b9a384c4d33d0750c63e5c"
+    },
+    "category": {
+      "$oid": "66b99f60c4d33d0750c63e2f"
+    },
+    "restaurant": {
+      "$oid": "66b9a68bc4d33d0750c63e75"
+    },
+    "name": "Cheesecake",
+    "description": "Creamy cheesecake with a graham cracker crust.",
+    "price": 6.99,
+    "quantity": 20,
+    "delivery_time": "15 minutes",
+    "image_url": "/dish/cheesecake.jpg",
+    "availability": true,
+    "preparation_time": "20 minutes",
+    "created_at": "2024-08-02T10:00:00Z",
+    "updated_at": "2024-08-02T10:00:00Z",
+    "tags": ["western", "cake", "cheese", "italian"]
+  },
+  {
+    "_id": {
+      "$oid": "6712746c178dbbc66ffbcc8e"
+    },
+    "category": {
+      "$oid": "66b99f60c4d33d0750c63e2d"
+    },
+    "restaurant": {
+      "$oid": "6713d9ff1d14e0d08cea6ec8"
+    },
+    "name": "Spicy Crispy Fried Chicken",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor harum aperiam quisquam? Esse ab dolor velit quam tempora. Tenetur nisi quaerat asperiores ad, dolor vero velit doloremque non provident exercitationem.",
+    "price": 280,
+    "quantity": 100,
+    "delivery_time": "30 minutes",
+    "image_url": "/dish/bfc/regular-crispy-leg.jpeg",
+    "availability": true,
+    "preparation_time": "20 minutes",
+    "created_at": "2024-08-01T10:00:00Z",
+    "updated_at": "2024-08-01T10:00:00Z",
+    "tags": ["chicken", "fastfood", "american"]
+  },
+  {
+    "_id": {
+      "$oid": "6713db7b1d14e0d08cea6ed0"
+    },
+    "category": {
+      "$oid": "66b99f60c4d33d0750c63e2d"
+    },
+    "restaurant": {
+      "$oid": "6713d9ff1d14e0d08cea6ec8"
+    },
+    "name": "Spicy Crispy Fried Chicken",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor harum aperiam quisquam? Esse ab dolor velit quam tempora. Tenetur nisi quaerat asperiores ad, dolor vero velit doloremque non provident exercitationem.",
+    "price": 250,
+    "quantity": 100,
+    "delivery_time": "30 minutes",
+    "image_url": "/dish/bfc/regular-crispy.jpeg",
+    "availability": true,
+    "preparation_time": "20 minutes",
+    "created_at": "2024-08-01T10:00:00Z",
+    "updated_at": "2024-08-01T10:00:00Z",
+    "tags": ["chicken", "fastfood", "american"]
+  },
+  {
+    "_id": {
+      "$oid": "6713dc041d14e0d08cea6ed1"
+    },
+    "category": {
+      "$oid": "66b99f60c4d33d0750c63e2d"
+    },
+    "restaurant": {
+      "$oid": "6713d9ff1d14e0d08cea6ec8"
+    },
+    "name": "Regular Crispy Fried Chicken Bucket",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor harum aperiam quisquam? Esse ab dolor velit quam tempora. Tenetur nisi quaerat asperiores ad, dolor vero velit doloremque non provident exercitationem.",
+    "price": 1050,
+    "quantity": 50,
+    "delivery_time": "20 minutes",
+    "image_url": "/dish/bfc/regular-crispy-bucket.png",
+    "availability": true,
+    "preparation_time": "15 minutes",
+    "created_at": "2024-08-01T10:00:00Z",
+    "updated_at": "2024-08-01T10:00:00Z",
+    "tags": ["chicken", "fastfood", "american"]
+  },
+  {
+    "_id": {
+      "$oid": "67145d80ab6ec789aaf3d7bb"
+    },
+    "category": {
+      "$oid": "6713d6601d14e0d08cea6ebe"
+    },
+    "restaurant": {
+      "$oid": "6713d9ff1d14e0d08cea6ec8"
+    },
+    "name": "Garlic Burger",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor harum aperiam quisquam? Esse ab dolor velit quam tempora. Tenetur nisi quaerat asperiores ad, dolor vero velit doloremque non provident exercitationem.",
+    "price": 280,
+    "quantity": 150,
+    "delivery_time": "20 minutes",
+    "image_url": "/dish/bfc/garlic-burger.jpeg",
+    "availability": true,
+    "preparation_time": "5 minutes",
+    "created_at": "2024-08-01T10:00:00Z",
+    "updated_at": "2024-08-01T10:00:00Z",
+    "tags": ["burger", "fastfood", "american"]
+  },
+  {
+    "_id": {
+      "$oid": "67145dd8ab6ec789aaf3d7bc"
+    },
+    "category": {
+      "$oid": "6713d6601d14e0d08cea6ebe"
+    },
+    "restaurant": {
+      "$oid": "6713d9ff1d14e0d08cea6ec8"
+    },
+    "name": "Garlic Burger With Cheese",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor harum aperiam quisquam? Esse ab dolor velit quam tempora. Tenetur nisi quaerat asperiores ad, dolor vero velit doloremque non provident exercitationem.",
+    "price": 320,
+    "quantity": 100,
+    "delivery_time": "5 minutes",
+    "image_url": "/dish/bfc/garlic-burger-cheese.jpeg",
+    "availability": true,
+    "preparation_time": "5 minutes",
+    "created_at": "2024-08-01T10:00:00Z",
+    "updated_at": "2024-08-01T10:00:00Z",
+    "tags": ["burger", "fastfood", "american"]
+  },
+  {
+    "_id": {
+      "$oid": "67148557ab6ec789aaf3d7bd"
+    },
+    "category": {
+      "$oid": "6713d6601d14e0d08cea6ebe"
+    },
+    "restaurant": {
+      "$oid": "6713d9ff1d14e0d08cea6ec8"
+    },
+    "name": "Supreme Burger",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor harum aperiam quisquam? Esse ab dolor velit quam tempora. Tenetur nisi quaerat asperiores ad, dolor vero velit doloremque non provident exercitationem.",
+    "price": 320,
+    "quantity": 100,
+    "delivery_time": "5 minutes",
+    "image_url": "/dish/bfc/supreme-burger.jpeg",
+    "availability": true,
+    "preparation_time": "5 minutes",
+    "created_at": "2024-08-01T10:00:00Z",
+    "updated_at": "2024-08-01T10:00:00Z",
+    "tags": ["burger", "fastfood", "american"]
+  },
+  {
+    "_id": {
+      "$oid": "67148585ab6ec789aaf3d7be"
+    },
+    "category": {
+      "$oid": "6713d6601d14e0d08cea6ebe"
+    },
+    "restaurant": {
+      "$oid": "6713d9ff1d14e0d08cea6ec8"
+    },
+    "name": "Mustard Burger",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor harum aperiam quisquam? Esse ab dolor velit quam tempora. Tenetur nisi quaerat asperiores ad, dolor vero velit doloremque non provident exercitationem.",
+    "price": 270,
+    "quantity": 100,
+    "delivery_time": "5 minutes",
+    "image_url": "/dish/bfc/mustard-burger.jpeg",
+    "availability": true,
+    "preparation_time": "5 minutes",
+    "created_at": "2024-08-01T10:00:00Z",
+    "updated_at": "2024-08-01T10:00:00Z",
+    "tags": ["burger", "fastfood", "american"]
+  },
+  {
+    "_id": {
+      "$oid": "671485d1ab6ec789aaf3d7c1"
+    },
+    "category": {
+      "$oid": "6713d6961d14e0d08cea6ebf"
+    },
+    "restaurant": {
+      "$oid": "6713d9ff1d14e0d08cea6ec8"
+    },
+    "name": "Garlic Shawarma with Cheese",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor harum aperiam quisquam? Esse ab dolor velit quam tempora. Tenetur nisi quaerat asperiores ad, dolor vero velit doloremque non provident exercitationem.",
+    "price": 220,
+    "quantity": 100,
+    "delivery_time": "5 minutes",
+    "image_url": "dish/bfc/garlic-wrap-cheese.png",
+    "availability": true,
+    "preparation_time": "5 minutes",
+    "created_at": "2024-08-01T10:00:00Z",
+    "updated_at": "2024-08-01T10:00:00Z",
+    "tags": ["shwarma", "fastfood", "western"]
+  },
+  {
+    "_id": {
+      "$oid": "6714860bab6ec789aaf3d7c2"
+    },
+    "category": {
+      "$oid": "6713d6961d14e0d08cea6ebf"
+    },
+    "restaurant": {
+      "$oid": "6713d9ff1d14e0d08cea6ec8"
+    },
+    "name": "Spicy Cheese Shawarma",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor harum aperiam quisquam? Esse ab dolor velit quam tempora. Tenetur nisi quaerat asperiores ad, dolor vero velit doloremque non provident exercitationem.",
+    "price": 220,
+    "quantity": 100,
+    "delivery_time": "5 minutes",
+    "image_url": "dish/bfc/spicy-cheese-wrap.png",
+    "availability": true,
+    "preparation_time": "5 minutes",
+    "created_at": "2024-08-01T10:00:00Z",
+    "updated_at": "2024-08-01T10:00:00Z",
+    "tags": ["shwarma", "fastfood", "western"]
+  },
+  {
+    "_id": {
+      "$oid": "67148634ab6ec789aaf3d7c3"
+    },
+    "category": {
+      "$oid": "6713d6961d14e0d08cea6ebf"
+    },
+    "restaurant": {
+      "$oid": "6713d9ff1d14e0d08cea6ec8"
+    },
+    "name": "Juicy Shawarma",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor harum aperiam quisquam? Esse ab dolor velit quam tempora. Tenetur nisi quaerat asperiores ad, dolor vero velit doloremque non provident exercitationem.",
+    "price": 220,
+    "quantity": 100,
+    "delivery_time": "5 minutes",
+    "image_url": "dish/bfc/juicy-wrap.png",
+    "availability": true,
+    "preparation_time": "5 minutes",
+    "created_at": "2024-08-01T10:00:00Z",
+    "updated_at": "2024-08-01T10:00:00Z",
+    "tags": ["shwarma", "fastfood", "western"]
+  },
+  {
+    "_id": {
+      "$oid": "67148688ab6ec789aaf3d7c6"
+    },
+    "category": {
+      "$oid": "66b99f60c4d33d0750c63e2d"
+    },
+    "restaurant": {
+      "$oid": "6713d9ff1d14e0d08cea6ec8"
+    },
+    "name": "Hot Wings",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor harum aperiam quisquam? Esse ab dolor velit quam tempora. Tenetur nisi quaerat asperiores ad, dolor vero velit doloremque non provident exercitationem.",
+    "price": 220,
+    "quantity": 100,
+    "delivery_time": "5 minutes",
+    "image_url": "dish/bfc/hot-wings.jpeg",
+    "availability": true,
+    "preparation_time": "5 minutes",
+    "created_at": "2024-08-01T10:00:00Z",
+    "updated_at": "2024-08-01T10:00:00Z",
+    "tags": ["chicken", "fastfood", "western"]
+  },
+  {
+    "_id": {
+      "$oid": "671486aaab6ec789aaf3d7c7"
+    },
+    "category": {
+      "$oid": "66b99f60c4d33d0750c63e2d"
+    },
+    "restaurant": {
+      "$oid": "6713d9ff1d14e0d08cea6ec8"
+    },
+    "name": "BBQ Hot Wings",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor harum aperiam quisquam? Esse ab dolor velit quam tempora. Tenetur nisi quaerat asperiores ad, dolor vero velit doloremque non provident exercitationem.",
+    "price": 140,
+    "quantity": 100,
+    "delivery_time": "5 minutes",
+    "image_url": "dish/bfc/bbq-wings.jpeg",
+    "availability": true,
+    "preparation_time": "5 minutes",
+    "created_at": "2024-08-01T10:00:00Z",
+    "updated_at": "2024-08-01T10:00:00Z",
+    "tags": ["chicken", "fastfood", "western"]
+  },
+  {
+    "_id": {
+      "$oid": "67148717ab6ec789aaf3d7c8"
+    },
+    "category": {
+      "$oid": "6713d6b91d14e0d08cea6ec0"
+    },
+    "restaurant": {
+      "$oid": "6713d9ff1d14e0d08cea6ec8"
+    },
+    "name": "Burger Combo - 1",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor harum aperiam quisquam? Esse ab dolor velit quam tempora. Tenetur nisi quaerat asperiores ad, dolor vero velit doloremque non provident exercitationem.",
+    "price": 430,
+    "quantity": 100,
+    "delivery_time": "5 minutes",
+    "image_url": "dish/bfc/burger-combo-1.jpeg",
+    "availability": true,
+    "preparation_time": "15 minutes",
+    "created_at": "2024-08-01T10:00:00Z",
+    "updated_at": "2024-08-01T10:00:00Z",
+    "tags": ["chicken", "fastfood", "western", "launch", "burger"]
+  },
+  {
+    "_id": {
+      "$oid": "67148763ab6ec789aaf3d7c9"
+    },
+    "category": {
+      "$oid": "6713d6b91d14e0d08cea6ec0"
+    },
+    "restaurant": {
+      "$oid": "6713d9ff1d14e0d08cea6ec8"
+    },
+    "name": "Burger Combo - 2",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor harum aperiam quisquam? Esse ab dolor velit quam tempora. Tenetur nisi quaerat asperiores ad, dolor vero velit doloremque non provident exercitationem.",
+    "price": 340,
+    "quantity": 100,
+    "delivery_time": "5 minutes",
+    "image_url": "dish/bfc/burger-combo-2.jpeg",
+    "availability": true,
+    "preparation_time": "15 minutes",
+    "created_at": "2024-08-01T10:00:00Z",
+    "updated_at": "2024-08-01T10:00:00Z",
+    "tags": ["chicken", "fastfood", "western", "launch", "burger"]
+  },
+  {
+    "_id": {
+      "$oid": "671487e2ab6ec789aaf3d7ca"
+    },
+    "category": {
+      "$oid": "66b99f60c4d33d0750c63e2e"
+    },
+    "restaurant": {
+      "$oid": "6713d9ff1d14e0d08cea6ec8"
+    },
+    "name": "Vegetable Polao",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor harum aperiam quisquam? Esse ab dolor velit quam tempora. Tenetur nisi quaerat asperiores ad, dolor vero velit doloremque non provident exercitationem.",
+    "price": 120,
+    "quantity": 100,
+    "delivery_time": "5 minutes",
+    "image_url": "dish/bfc/veg-polao.jpeg",
+    "availability": true,
+    "preparation_time": "15 minutes",
+    "created_at": "2024-08-01T10:00:00Z",
+    "updated_at": "2024-08-01T10:00:00Z",
+    "tags": ["veg", "launch", "rice", "thailand", "asian"]
+  },
+  {
+    "_id": {
+      "$oid": "6714882cab6ec789aaf3d7cb"
+    },
+    "category": {
+      "$oid": "66b99f60c4d33d0750c63e2e"
+    },
+    "restaurant": {
+      "$oid": "6713d9ff1d14e0d08cea6ec8"
+    },
+    "name": "Rice Bowl - 1",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor harum aperiam quisquam? Esse ab dolor velit quam tempora. Tenetur nisi quaerat asperiores ad, dolor vero velit doloremque non provident exercitationem.",
+    "price": 220,
+    "quantity": 100,
+    "delivery_time": "15 minutes",
+    "image_url": "dish/bfc/rice-bowl-1.jpeg",
+    "availability": true,
+    "preparation_time": "15 minutes",
+    "created_at": "2024-08-01T10:00:00Z",
+    "updated_at": "2024-08-01T10:00:00Z",
+    "tags": ["chicken", "launch", "rice", "thailand", "asian"]
+  },
+  {
+    "_id": {
+      "$oid": "6714884cab6ec789aaf3d7cc"
+    },
+    "category": {
+      "$oid": "66b99f60c4d33d0750c63e2e"
+    },
+    "restaurant": {
+      "$oid": "6713d9ff1d14e0d08cea6ec8"
+    },
+    "name": "Rice Bowl - 2",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor harum aperiam quisquam? Esse ab dolor velit quam tempora. Tenetur nisi quaerat asperiores ad, dolor vero velit doloremque non provident exercitationem.",
+    "price": 240,
+    "quantity": 100,
+    "delivery_time": "15 minutes",
+    "image_url": "dish/bfc/rice-bowl-2.jpeg",
+    "availability": true,
+    "preparation_time": "15 minutes",
+    "created_at": "2024-08-01T10:00:00Z",
+    "updated_at": "2024-08-01T10:00:00Z",
+    "tags": ["chicken", "launch", "rice", "thailand", "asian"]
+  },
+  {
+    "_id": {
+      "$oid": "6714889cab6ec789aaf3d7cd"
+    },
+    "category": {
+      "$oid": "6713d6341d14e0d08cea6ebd"
+    },
+    "restaurant": {
+      "$oid": "6713d9ff1d14e0d08cea6ec8"
+    },
+    "name": "Special Meal - 1",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor harum aperiam quisquam? Esse ab dolor velit quam tempora. Tenetur nisi quaerat asperiores ad, dolor vero velit doloremque non provident exercitationem.",
+    "price": 255,
+    "quantity": 100,
+    "delivery_time": "15 minutes",
+    "image_url": "dish/bfc/special-meal-1.jpeg",
+    "availability": true,
+    "preparation_time": "15 minutes",
+    "created_at": "2024-08-01T10:00:00Z",
+    "updated_at": "2024-08-01T10:00:00Z",
+    "tags": ["chicken", "launch", "fast food", "american"]
+  },
+  {
+    "_id": {
+      "$oid": "671488bfab6ec789aaf3d7ce"
+    },
+    "category": {
+      "$oid": "6713d6341d14e0d08cea6ebd"
+    },
+    "restaurant": {
+      "$oid": "6713d9ff1d14e0d08cea6ec8"
+    },
+    "name": "Special Meal - 2",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor harum aperiam quisquam? Esse ab dolor velit quam tempora. Tenetur nisi quaerat asperiores ad, dolor vero velit doloremque non provident exercitationem.",
+    "price": 275,
+    "quantity": 100,
+    "delivery_time": "15 minutes",
+    "image_url": "dish/bfc/special-meal-2.jpeg",
+    "availability": true,
+    "preparation_time": "15 minutes",
+    "created_at": "2024-08-01T10:00:00Z",
+    "updated_at": "2024-08-01T10:00:00Z",
+    "tags": ["chicken", "launch", "fast food", "american"]
+  },
+  {
+    "_id": {
+      "$oid": "67148916ab6ec789aaf3d7cf"
+    },
+    "category": {
+      "$oid": "6713d6f61d14e0d08cea6ec2"
+    },
+    "restaurant": {
+      "$oid": "6713d9ff1d14e0d08cea6ec8"
+    },
+    "name": "Crispy Chicken Rips",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor harum aperiam quisquam? Esse ab dolor velit quam tempora. Tenetur nisi quaerat asperiores ad, dolor vero velit doloremque non provident exercitationem.",
+    "price": 235,
+    "quantity": 100,
+    "delivery_time": "15 minutes",
+    "image_url": "dish/bfc/crispy-chicken-strips.jpeg",
+    "availability": true,
+    "preparation_time": "15 minutes",
+    "created_at": "2024-08-01T10:00:00Z",
+    "updated_at": "2024-08-01T10:00:00Z",
+    "tags": ["chicken", "fast food", "western"]
+  },
+  {
+    "_id": {
+      "$oid": "6714893aab6ec789aaf3d7d0"
+    },
+    "category": {
+      "$oid": "6713d6f61d14e0d08cea6ec2"
+    },
+    "restaurant": {
+      "$oid": "6713d9ff1d14e0d08cea6ec8"
+    },
+    "name": "Chicken Lolipop",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor harum aperiam quisquam? Esse ab dolor velit quam tempora. Tenetur nisi quaerat asperiores ad, dolor vero velit doloremque non provident exercitationem.",
+    "price": 150,
+    "quantity": 100,
+    "delivery_time": "15 minutes",
+    "image_url": "dish/bfc/chicken-lolipop.png",
+    "availability": true,
+    "preparation_time": "15 minutes",
+    "created_at": "2024-08-01T10:00:00Z",
+    "updated_at": "2024-08-01T10:00:00Z",
+    "tags": ["chicken", "fast food", "western"]
+  },
+  {
+    "_id": {
+      "$oid": "671489fdab6ec789aaf3d7d1"
+    },
+    "category": {
+      "$oid": "6713d6f61d14e0d08cea6ec2"
+    },
+    "restaurant": {
+      "$oid": "6713d9ff1d14e0d08cea6ec8"
+    },
+    "name": "French Fries",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor harum aperiam quisquam? Esse ab dolor velit quam tempora. Tenetur nisi quaerat asperiores ad, dolor vero velit doloremque non provident exercitationem.",
+    "price": 110,
+    "quantity": 100,
+    "delivery_time": "15 minutes",
+    "image_url": "dish/bfc/french-fries.png",
+    "availability": true,
+    "preparation_time": "15 minutes",
+    "created_at": "2024-08-01T10:00:00Z",
+    "updated_at": "2024-08-01T10:00:00Z",
+    "tags": ["fries", "fast food", "french", "western"]
+  },
+  {
+    "_id": {
+      "$oid": "67148a2cab6ec789aaf3d7d2"
+    },
+    "category": {
+      "$oid": "6713d6f61d14e0d08cea6ec2"
+    },
+    "restaurant": {
+      "$oid": "6713d9ff1d14e0d08cea6ec8"
+    },
+    "name": "Garlic Sauce",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor harum aperiam quisquam? Esse ab dolor velit quam tempora. Tenetur nisi quaerat asperiores ad, dolor vero velit doloremque non provident exercitationem.",
+    "price": 20,
+    "quantity": 100,
+    "delivery_time": "5 minutes",
+    "image_url": "dish/bfc/garlic-sauce.jpeg",
+    "availability": true,
+    "preparation_time": "15 minutes",
+    "created_at": "2024-08-01T10:00:00Z",
+    "updated_at": "2024-08-01T10:00:00Z",
+    "tags": ["dips", "fast food", "american", "western"]
+  },
+  {
+    "_id": {
+      "$oid": "67148a58ab6ec789aaf3d7d3"
+    },
+    "category": {
+      "$oid": "6713d6f61d14e0d08cea6ec2"
+    },
+    "restaurant": {
+      "$oid": "6713d9ff1d14e0d08cea6ec8"
+    },
+    "name": "BBQ Sauce",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor harum aperiam quisquam? Esse ab dolor velit quam tempora. Tenetur nisi quaerat asperiores ad, dolor vero velit doloremque non provident exercitationem.",
+    "price": 30,
+    "quantity": 100,
+    "delivery_time": "5 minutes",
+    "image_url": "dish/bfc/bbq-sauce.jpeg",
+    "availability": true,
+    "preparation_time": "15 minutes",
+    "created_at": "2024-08-01T10:00:00Z",
+    "updated_at": "2024-08-01T10:00:00Z",
+    "tags": ["dips", "fast food", "american", "western"]
+  },
+  {
+    "_id": {
+      "$oid": "67148a9cab6ec789aaf3d7d4"
+    },
+    "category": {
+      "$oid": "6713d6f61d14e0d08cea6ec2"
+    },
+    "restaurant": {
+      "$oid": "6713d9ff1d14e0d08cea6ec8"
+    },
+    "name": "Mustard Sauce",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor harum aperiam quisquam? Esse ab dolor velit quam tempora. Tenetur nisi quaerat asperiores ad, dolor vero velit doloremque non provident exercitationem.",
+    "price": 20,
+    "quantity": 100,
+    "delivery_time": "5 minutes",
+    "image_url": "dish/bfc/mustard-sauce.jpeg",
+    "availability": true,
+    "preparation_time": "15 minutes",
+    "created_at": "2024-08-01T10:00:00Z",
+    "updated_at": "2024-08-01T10:00:00Z",
+    "tags": ["dips", "fast food", "indian", "asian"]
+  },
+  {
+    "_id": {
+      "$oid": "67148b60ab6ec789aaf3d7d6"
+    },
+    "category": {
+      "$oid": "6713d6601d14e0d08cea6ebe"
+    },
+    "restaurant": {
+      "$oid": "66b9a68bc4d33d0750c63e74"
+    },
+    "name": "Chicken Cheese Burger",
+    "description": "A solitary chicken patty, cheddar, secret sauce, onion, tomato and lettuce, creating a simple yet savory sensation.",
+    "price": 220,
+    "quantity": 100,
+    "delivery_time": "10 minutes",
+    "image_url": "dish/burger-xpress/chicken-cheese-burger.webp",
+    "availability": true,
+    "preparation_time": "15 minutes",
+    "created_at": "2024-08-01T10:00:00Z",
+    "updated_at": "2024-08-01T10:00:00Z",
+    "tags": ["american", "chicken", "burger", "western"]
+  },
+  {
+    "_id": {
+      "$oid": "67148cd3ab6ec789aaf3d7d7"
+    },
+    "category": {
+      "$oid": "6713d6601d14e0d08cea6ebe"
+    },
+    "restaurant": {
+      "$oid": "66b9a68bc4d33d0750c63e74"
+    },
+    "name": "Chicken Burger",
+    "description": "Featuring a single chicken patty, two savory sausages, BBQ and secret sauces, cheddar cheese, onion, tomato, and lettuce-a flavor-packed delight.",
+    "price": 180,
+    "quantity": 100,
+    "delivery_time": "10 minutes",
+    "image_url": "dish/burger-xpress/chicken-burger.png",
+    "availability": true,
+    "preparation_time": "15 minutes",
+    "created_at": "2024-08-01T10:00:00Z",
+    "updated_at": "2024-08-01T10:00:00Z",
+    "tags": ["american", "chicken", "burger", "western"]
+  },
+  {
+    "_id": {
+      "$oid": "67148d3cab6ec789aaf3d7d8"
+    },
+    "category": {
+      "$oid": "6713d6601d14e0d08cea6ebe"
+    },
+    "restaurant": {
+      "$oid": "66b9a68bc4d33d0750c63e74"
+    },
+    "name": "Smokey BBQ Chicken Burger",
+    "description": "A savory delight with one chicken patty, BBQ & secret sauces, lettuce, onion and tomato for exquisite flavor.",
+    "price": 250,
+    "quantity": 100,
+    "delivery_time": "10 minutes",
+    "image_url": "dish/burger-xpress/bbq-chicken-burger.webp",
+    "availability": true,
+    "preparation_time": "15 minutes",
+    "created_at": "2024-08-01T10:00:00Z",
+    "updated_at": "2024-08-01T10:00:00Z",
+    "tags": ["american", "chicken", "burger", "western"]
+  },
+  {
+    "_id": {
+      "$oid": "67148d68ab6ec789aaf3d7d9"
+    },
+    "category": {
+      "$oid": "6713d6601d14e0d08cea6ebe"
+    },
+    "restaurant": {
+      "$oid": "66b9a68bc4d33d0750c63e74"
+    },
+    "name": "Mushroom Chicken Burger",
+    "description": "Crafted with a tender chicken patty, caramelized mushrooms, BBQ sauce, cheddar, secret sauce, onion, tomato and fresh lettuce.",
+    "price": 250,
+    "quantity": 100,
+    "delivery_time": "10 minutes",
+    "image_url": "dish/burger-xpress/mushroom-chicken-burger.png",
+    "availability": true,
+    "preparation_time": "15 minutes",
+    "created_at": "2024-08-01T10:00:00Z",
+    "updated_at": "2024-08-01T10:00:00Z",
+    "tags": ["american", "chicken", "burger", "western"]
+  },
+  {
+    "_id": {
+      "$oid": "67148d94ab6ec789aaf3d7da"
+    },
+    "category": {
+      "$oid": "6713d6601d14e0d08cea6ebe"
+    },
+    "restaurant": {
+      "$oid": "66b9a68bc4d33d0750c63e74"
+    },
+    "name": "Beef Burger",
+    "description": "Indulge in a gourmet experience with a single beef patty, tantalizing secret sauce, crisp lettuce, ripe tomato, and savory sliced onions - a symphony of flavors in every bite.",
+    "price": 230,
+    "quantity": 100,
+    "delivery_time": "10 minutes",
+    "image_url": "dish/burger-xpress/beef-burger.webp",
+    "availability": true,
+    "preparation_time": "15 minutes",
+    "created_at": "2024-08-01T10:00:00Z",
+    "updated_at": "2024-08-01T10:00:00Z",
+    "tags": ["american", "beef", "burger", "western"]
+  },
+  {
+    "_id": {
+      "$oid": "67148e56ab6ec789aaf3d7db"
+    },
+    "category": {
+      "$oid": "6713d6601d14e0d08cea6ebe"
+    },
+    "restaurant": {
+      "$oid": "66b9a68bc4d33d0750c63e74"
+    },
+    "name": "Beef Cheese Burger",
+    "description": "Classic beef burger with cheddar, secret sauce, onion, tomato, and lettuce for a timeless taste sensation.",
+    "price": 260,
+    "quantity": 100,
+    "delivery_time": "10 minutes",
+    "image_url": "dish/burger-xpress/beef-cheese-burger.webp",
+    "availability": true,
+    "preparation_time": "15 minutes",
+    "created_at": "2024-08-01T10:00:00Z",
+    "updated_at": "2024-08-01T10:00:00Z",
+    "tags": ["american", "beef", "burger", "western"]
+  },
+  {
+    "_id": {
+      "$oid": "67148e78ab6ec789aaf3d7dc"
+    },
+    "category": {
+      "$oid": "6713d6601d14e0d08cea6ebe"
+    },
+    "restaurant": {
+      "$oid": "66b9a68bc4d33d0750c63e74"
+    },
+    "name": "Smokey BBQ Beef Burger",
+    "description": "Savory beef patty topped with tangy BBQ sauce, crisp lettuce, fresh tomato, and sliced onions, creating a harmonious blend of smooky flavors in every bite.",
+    "price": 280,
+    "quantity": 100,
+    "delivery_time": "10 minutes",
+    "image_url": "dish/burger-xpress/bbq-beef-burger.webp",
+    "availability": true,
+    "preparation_time": "15 minutes",
+    "created_at": "2024-08-01T10:00:00Z",
+    "updated_at": "2024-08-01T10:00:00Z",
+    "tags": ["american", "beef", "burger", "western"]
+  },
+  {
+    "_id": {
+      "$oid": "67148ef9ab6ec789aaf3d7dd"
+    },
+    "category": {
+      "$oid": "6713d6c91d14e0d08cea6ec1"
+    },
+    "restaurant": {
+      "$oid": "66b9a68bc4d33d0750c63e74"
+    },
+    "name": "Double Decker Chicken Burger",
+    "description": "Featuring a dynamic duo of 2x single chicken patties, paired with 2x sliced cheddar, secret sauce, onion, tomato, and lettuce.\",     \"name\": \"Double Decker Chicken Burger",
+    "price": 350,
+    "quantity": 100,
+    "delivery_time": "10 minutes",
+    "image_url": "dish/burger-xpress/double-decker-chicken-burger.webp",
+    "availability": true,
+    "preparation_time": "15 minutes",
+    "created_at": "2024-08-01T10:00:00Z",
+    "updated_at": "2024-08-01T10:00:00Z",
+    "tags": ["american", "chicken", "burger", "western"]
+  },
+  {
+    "_id": {
+      "$oid": "6714901fab6ec789aaf3d7de"
+    },
+    "category": {
+      "$oid": "6713d6c91d14e0d08cea6ec1"
+    },
+    "restaurant": {
+      "$oid": "66b9a68bc4d33d0750c63e74"
+    },
+    "name": "Double Decker Beef Burger",
+    "description": "Savor two juicy beef patties, double cheddar, secret sauce, onion, tomato, and lettuce for an elevated, uniquely delicious burger experience.",
+    "price": 380,
+    "quantity": 100,
+    "delivery_time": "10 minutes",
+    "image_url": "dish/burger-xpress/double-decker-beef-burger.webp",
+    "availability": true,
+    "preparation_time": "15 minutes",
+    "created_at": "2024-08-01T10:00:00Z",
+    "updated_at": "2024-08-01T10:00:00Z",
+    "tags": ["american", "beef", "burger", "western"]
+  },
+  {
+    "_id": {
+      "$oid": "671490a2ab6ec789aaf3d7df"
+    },
+    "category": {
+      "$oid": "6713d6c91d14e0d08cea6ec1"
+    },
+    "restaurant": {
+      "$oid": "66b9a68bc4d33d0750c63e74"
+    },
+    "name": "Chicken Cheese Blast Burger",
+    "description": "Double Chicken Patty Burger - Crispy fried chicken patties topped with melted cheddar, juicy sausages, gooey cheddar, secret sauce, fresh veggies, all sandwiched between buns.",
+    "price": 350,
+    "quantity": 100,
+    "delivery_time": "10 minutes",
+    "image_url": "dish/burger-xpress/chicken-cheese-blast-burger.png",
+    "availability": true,
+    "preparation_time": "15 minutes",
+    "created_at": "2024-08-01T10:00:00Z",
+    "updated_at": "2024-08-01T10:00:00Z",
+    "tags": ["american", "chicken", "burger", "western"]
+  },
+  {
+    "_id": {
+      "$oid": "671490edab6ec789aaf3d7e0"
+    },
+    "category": {
+      "$oid": "6713d6c91d14e0d08cea6ec1"
+    },
+    "restaurant": {
+      "$oid": "66b9a68bc4d33d0750c63e74"
+    },
+    "name": "Beef Cheese Blast Burger",
+    "description": "Savor two juicy beef patties, double cheddar, secret sauce, onion, tomato, and lettuce for an elevated, uniquely delicious burger experience.",
+    "price": 430,
+    "quantity": 100,
+    "delivery_time": "10 minutes",
+    "image_url": "dish/burger-xpress/beef-cheese-blast-burger.png",
+    "availability": true,
+    "preparation_time": "15 minutes",
+    "created_at": "2024-08-01T10:00:00Z",
+    "updated_at": "2024-08-01T10:00:00Z",
+    "tags": ["american", "beef", "burger", "western"]
+  },
+  {
+    "_id": {
+      "$oid": "67149198ab6ec789aaf3d7e1"
+    },
+    "category": {
+      "$oid": "66b99f60c4d33d0750c63e2c"
+    },
+    "restaurant": {
+      "$oid": "66b9a68bc4d33d0750c63e74"
+    },
+    "name": "Peri Peri French Fry",
+    "description": "Crispy deep-fried potato goodness, lightly sweetened for a uniquely simple and delightful culinary experience.",
+    "price": 130,
+    "quantity": 100,
+    "delivery_time": "10 minutes",
+    "image_url": "dish/burger-xpress/french-fries.png",
+    "availability": true,
+    "preparation_time": "15 minutes",
+    "created_at": "2024-08-01T10:00:00Z",
+    "updated_at": "2024-08-01T10:00:00Z",
+    "tags": ["french", "fries", "sides", "western"]
+  },
+  {
+    "_id": {
+      "$oid": "671491ebab6ec789aaf3d7e2"
+    },
+    "category": {
+      "$oid": "66b99f60c4d33d0750c63e2c"
+    },
+    "restaurant": {
+      "$oid": "66b9a68bc4d33d0750c63e74"
+    },
+    "name": "Potato Wedges",
+    "description": "Roasted russet potatoes seasoned with parmesan, olive oil, and garlic powder for a uniquely flavorful and simple culinary delight.",
+    "price": 100,
+    "quantity": 100,
+    "delivery_time": "10 minutes",
+    "image_url": "dish/burger-xpress/potato-widges.webp",
+    "availability": true,
+    "preparation_time": "15 minutes",
+    "created_at": "2024-08-01T10:00:00Z",
+    "updated_at": "2024-08-01T10:00:00Z",
+    "tags": ["french", "potato", "sides", "western"]
+  },
+  {
+    "_id": {
+      "$oid": "67149237ab6ec789aaf3d7e3"
+    },
+    "category": {
+      "$oid": "66b99f60c4d33d0750c63e2c"
+    },
+    "restaurant": {
+      "$oid": "66b9a68bc4d33d0750c63e74"
+    },
+    "name": "Garlic Mushroom",
+    "description": "Sauteed with olive oil, garlic, button mushrooms, and fresh thyme for a uniquely simple and flavorful culinary experience.",
+    "price": 200,
+    "quantity": 100,
+    "delivery_time": "10 minutes",
+    "image_url": "dish/burger-xpress/garlic-mushrooms.webp",
+    "availability": true,
+    "preparation_time": "15 minutes",
+    "created_at": "2024-08-01T10:00:00Z",
+    "updated_at": "2024-08-01T10:00:00Z",
+    "tags": ["thailand", "potato", "sides", "asian"]
+  },
+  {
+    "_id": {
+      "$oid": "671492e1ab6ec789aaf3d7e4"
+    },
+    "category": {
+      "$oid": "66b99f60c4d33d0750c63e2e"
+    },
+    "restaurant": {
+      "$oid": "66b9a68bc4d33d0750c63e74"
+    },
+    "name": "Rice Bowl with Chicken Black Pepper",
+    "description": "A savory bowl of fluffy rice gurnished with juicy chicken chunks cooked in black pepper, garlic, ginger, and soy sauce, accompanied by tomato and lettuce.",
+    "price": 220,
+    "quantity": 100,
+    "delivery_time": "10 minutes",
+    "image_url": "dish/burger-xpress/rice-bowl-chicken-black-pepper.webp",
+    "availability": true,
+    "preparation_time": "15 minutes",
+    "created_at": "2024-08-01T10:00:00Z",
+    "updated_at": "2024-08-01T10:00:00Z",
+    "tags": ["indian", "launch", "chicken", "asian"]
+  },
+  {
+    "_id": {
+      "$oid": "67149330ab6ec789aaf3d7e5"
+    },
+    "category": {
+      "$oid": "66b99f60c4d33d0750c63e2e"
+    },
+    "restaurant": {
+      "$oid": "66b9a68bc4d33d0750c63e74"
+    },
+    "name": "Rice Bowl with Crispy Chicken",
+    "description": "A delicious bowl of fluffy rice topped with crispy fried chicken, seasoned with savory herbs and spices, accompanied by fresh vegetables and a zesty dressing.",
+    "price": 240,
+    "quantity": 100,
+    "delivery_time": "15 minutes",
+    "image_url": "dish/burger-xpress/rice-bowl-crispy-chicken.webp",
+    "availability": true,
+    "preparation_time": "15 minutes",
+    "created_at": "2024-08-01T10:00:00Z",
+    "updated_at": "2024-08-01T10:00:00Z",
+    "tags": ["indian", "launch", "chicken", "asian"]
+  },
+  {
+    "_id": {
+      "$oid": "6714938cab6ec789aaf3d7e6"
+    },
+    "category": {
+      "$oid": "66b99f60c4d33d0750c63e2e"
+    },
+    "restaurant": {
+      "$oid": "66b9a68bc4d33d0750c63e74"
+    },
+    "name": "BBQ Rice Bowl",
+    "description": "A BBQ Rice Bowl features grilled meat, seasoned rice, fresh veggies, and a savory sauce for a flavorful meal.",
+    "price": 270,
+    "quantity": 100,
+    "delivery_time": "15 minutes",
+    "image_url": "dish/burger-xpress/bbq-rice-bowl.webp",
+    "availability": true,
+    "preparation_time": "15 minutes",
+    "created_at": "2024-08-01T10:00:00Z",
+    "updated_at": "2024-08-01T10:00:00Z",
+    "tags": ["american", "launch", "chicken", "western"]
+  },
+  {
+    "_id": {
+      "$oid": "671493e0ab6ec789aaf3d7e7"
+    },
+    "category": {
+      "$oid": "66b99f60c4d33d0750c63e34"
+    },
+    "restaurant": {
+      "$oid": "66b9a68bc4d33d0750c63e74"
+    },
+    "name": "Chicken Sub Sandwich",
+    "description": "Savor simplicity with a unique touch of Grilled chicken breast harmoniously glazed in BBQ sauce for a delightful, flavorful experience.",
+    "quantity": 100,
+    "delivery_time": "15 minutes",
+    "image_url": "dish/burger-xpress/chicken-sub-sandwich.png",
+    "availability": true,
+    "preparation_time": "15 minutes",
+    "created_at": "2024-08-01T10:00:00Z",
+    "updated_at": "2024-08-01T10:00:00Z",
+    "tags": ["american", "sandwich", "chicken", "fast food"],
+    "price": 210
+  },
+  {
+    "_id": {
+      "$oid": "6714943cab6ec789aaf3d7e8"
+    },
+    "category": {
+      "$oid": "66b99f60c4d33d0750c63e34"
+    },
+    "restaurant": {
+      "$oid": "66b9a68bc4d33d0750c63e74"
+    },
+    "name": "Smokey BBQ Sub Sandwich",
+    "description": "Savor a unique delight with chicken fillet, caramelized onions, and smoky BBQ sauce for a deliciously simple experience.",
+    "price": 230,
+    "quantity": 100,
+    "delivery_time": "15 minutes",
+    "image_url": "dish/burger-xpress/beef-sub-sandwich.png",
+    "availability": true,
+    "preparation_time": "15 minutes",
+    "created_at": "2024-08-01T10:00:00Z",
+    "updated_at": "2024-08-01T10:00:00Z",
+    "tags": ["american", "sandwich", "beef", "fast food"]
+  },
+  {
+    "_id": {
+      "$oid": "671494efab6ec789aaf3d7e9"
+    },
+    "category": {
+      "$oid": "66b99f60c4d33d0750c63e32"
+    },
+    "restaurant": {
+      "$oid": "66b9a68bc4d33d0750c63e74"
+    },
+    "name": "Chicken Chowmin",
+    "description": "Savor a unique dish of chow mein with tender chicken, oyster sauce, soy sauce, and bean sprouts for a delightful experience.",
+    "price": 200,
+    "quantity": 100,
+    "delivery_time": "15 minutes",
+    "image_url": "dish/burger-xpress/chicken-chowmin.jpeg",
+    "availability": true,
+    "preparation_time": "15 minutes",
+    "created_at": "2024-08-01T10:00:00Z",
+    "updated_at": "2024-08-01T10:00:00Z",
+    "tags": ["japanese", "chowmin", "chicken", "asian"]
+  },
+  {
+    "_id": {
+      "$oid": "67149526ab6ec789aaf3d7ea"
+    },
+    "category": {
+      "$oid": "66b99f60c4d33d0750c63e32"
+    },
+    "restaurant": {
+      "$oid": "66b9a68bc4d33d0750c63e74"
+    },
+    "name": "Beef Chowmin",
+    "description": "Savor the uniqueness of chicken sausage, mushrooms, veggies, chowmein noodles, oyster & soy sauce, chicken breast, and sesame oil blend.",
+    "price": 350,
+    "quantity": 100,
+    "delivery_time": "15 minutes",
+    "image_url": "dish/burger-xpress/beef-chowmin.png",
+    "availability": true,
+    "preparation_time": "15 minutes",
+    "created_at": "2024-08-01T10:00:00Z",
+    "updated_at": "2024-08-01T10:00:00Z",
+    "tags": ["japanese", "chowmin", "beef", "asian"]
+  },
+  {
+    "_id": {
+      "$oid": "67149556ab6ec789aaf3d7eb"
+    },
+    "category": {
+      "$oid": "66b99f60c4d33d0750c63e32"
+    },
+    "restaurant": {
+      "$oid": "66b9a68bc4d33d0750c63e74"
+    },
+    "name": "Chef Choice Chowmein",
+    "description": "Savor the uniqueness of chicken sausage, mushrooms, veggies, chowmein noodles, oyster & soy sauce, chicken breast, and sesame oil blend.",
+    "price": 350,
+    "quantity": 100,
+    "delivery_time": "15 minutes",
+    "image_url": "dish/burger-xpress/chef-choice-chowmin.png",
+    "availability": true,
+    "preparation_time": "15 minutes",
+    "created_at": "2024-08-01T10:00:00Z",
+    "updated_at": "2024-08-01T10:00:00Z",
+    "tags": ["japanese", "chowmin", "fast food", "asian"]
+  },
+  {
+    "_id": {
+      "$oid": "671495ffab6ec789aaf3d7ed"
+    },
+    "category": {
+      "$oid": "6713d7451d14e0d08cea6ec3"
+    },
+    "restaurant": {
+      "$oid": "6713c3881d14e0d08cea6e87"
+    },
+    "name": "Basmati Kacchi Half with Borhani",
+    "description": "Exquisite Basmati layered with marinated meat, flavored with warm spices, served alongside with tangy yogurt-mint borhani and creamy firni or jorda.",
+    "price": 420,
+    "quantity": 100,
+    "delivery_time": "15 minutes",
+    "image_url": "dish/sultan-dines/bashmati-kacchi-borhani.jpeg",
+    "availability": true,
+    "preparation_time": "15 minutes",
+    "created_at": "2024-08-01T10:00:00Z",
+    "updated_at": "2024-08-01T10:00:00Z",
+    "tags": ["bangladeshi", "biriyani", "launch", "asian", "chicken"]
+  },
+  {
+    "_id": {
+      "$oid": "67149655ab6ec789aaf3d7ee"
+    },
+    "category": {
+      "$oid": "6713d7451d14e0d08cea6ec3"
+    },
+    "restaurant": {
+      "$oid": "6713c3881d14e0d08cea6e87"
+    },
+    "name": "Basmati Kacchi Half with Chicken Roast - Borhani & Jali Kebab",
+    "description": "Exquisite Basmati layered with marinated meat, flavored with warm spices, served alongside with tangy yogurt-mint borhani and creamy firni or jorda.",
+    "price": 550,
+    "quantity": 100,
+    "delivery_time": "15 minutes",
+    "image_url": "dish/sultan-dines/bashmati-kacchi-chicken.jpeg",
+    "availability": true,
+    "preparation_time": "15 minutes",
+    "created_at": "2024-08-01T10:00:00Z",
+    "updated_at": "2024-08-01T10:00:00Z",
+    "tags": ["bangladeshi", "biriyani", "launch", "asian", "chicken"]
+  },
+  {
+    "_id": {
+      "$oid": "671496aeab6ec789aaf3d7ef"
+    },
+    "category": {
+      "$oid": "6713d7451d14e0d08cea6ec3"
+    },
+    "restaurant": {
+      "$oid": "6713c3881d14e0d08cea6e87"
+    },
+    "name": "Special Basmati Kacchi 1:2",
+    "description": "Slow-cooked basmati rice with marinated mutton, potatoes, and aromatic spices for a flavorful and comforting dish.",
+    "price": 750,
+    "quantity": 100,
+    "delivery_time": "15 minutes",
+    "image_url": "dish/sultan-dines/bashmati-kacchi-half.jpeg",
+    "availability": true,
+    "preparation_time": "15 minutes",
+    "created_at": "2024-08-01T10:00:00Z",
+    "updated_at": "2024-08-01T10:00:00Z",
+    "tags": ["bangladeshi", "biriyani", "launch", "asian", "mutton"]
+  },
+  {
+    "_id": {
+      "$oid": "671496ffab6ec789aaf3d7f0"
+    },
+    "category": {
+      "$oid": "6713d7451d14e0d08cea6ec3"
+    },
+    "restaurant": {
+      "$oid": "6713c3881d14e0d08cea6e87"
+    },
+    "name": " Basmati Kacchi Full",
+    "description": "Slow-cooked basmati rice with marinated mutton, potatoes, and aromatic spices for a flavorful and comforting dish.",
+    "price": 500,
+    "quantity": 100,
+    "delivery_time": "15 minutes",
+    "image_url": "dish/sultan-dines/bashmati-kacchi-full.jpeg",
+    "availability": true,
+    "preparation_time": "15 minutes",
+    "created_at": "2024-08-01T10:00:00Z",
+    "updated_at": "2024-08-01T10:00:00Z",
+    "tags": ["bangladeshi", "biriyani", "launch", "asian", "mutton"]
+  },
+  {
+    "_id": {
+      "$oid": "671497b2ab6ec789aaf3d7f2"
+    },
+    "category": {
+      "$oid": "66b99f60c4d33d0750c63e2e"
+    },
+    "restaurant": {
+      "$oid": "6713c3881d14e0d08cea6e87"
+    },
+    "name": "Plain Polao Platter",
+    "description": "Served with plain polao, chicken roast, beef rezala, jali kebab, borhani, chutney, salad, jorda or firni",
+    "price": 600,
+    "quantity": 100,
+    "delivery_time": "15 minutes",
+    "image_url": "dish/sultan-dines/plain-polao-platter.png",
+    "availability": true,
+    "preparation_time": "15 minutes",
+    "created_at": "2024-08-01T10:00:00Z",
+    "updated_at": "2024-08-01T10:00:00Z",
+    "tags": ["bangladeshi", "rice", "launch", "asian", "mutton"]
+  },
+  {
+    "_id": {
+      "$oid": "6714982fab6ec789aaf3d7f3"
+    },
+    "category": {
+      "$oid": "66b99f60c4d33d0750c63e2e"
+    },
+    "restaurant": {
+      "$oid": "6713c3881d14e0d08cea6e87"
+    },
+    "name": "Plain Polao",
+    "description": "Traditional Plain Polao to meet your hunger crafted with fragrant rice and subtle spices.",
+    "price": 120,
+    "quantity": 100,
+    "delivery_time": "15 minutes",
+    "image_url": "dish/sultan-dines/plain-polao.png",
+    "availability": true,
+    "preparation_time": "15 minutes",
+    "created_at": "2024-08-01T10:00:00Z",
+    "updated_at": "2024-08-01T10:00:00Z",
+    "tags": ["bangladeshi", "rice", "launch", "asian"]
+  },
+  {
+    "_id": {
+      "$oid": "67149860ab6ec789aaf3d7f4"
+    },
+    "category": {
+      "$oid": "66b99f60c4d33d0750c63e2e"
+    },
+    "restaurant": {
+      "$oid": "6713c3881d14e0d08cea6e87"
+    },
+    "name": "Chicken Roast",
+    "description": "Traditional Chicken Roast marinated with aromatic spices, roasted to perfection for a flavorful and juicy dining experience.",
+    "price": 150,
+    "quantity": 100,
+    "delivery_time": "15 minutes",
+    "image_url": "dish/sultan-dines/chicken-roast.jpeg",
+    "availability": true,
+    "preparation_time": "15 minutes",
+    "created_at": "2024-08-01T10:00:00Z",
+    "updated_at": "2024-08-01T10:00:00Z",
+    "tags": ["bangladeshi", "curry", "launch", "asian", "chicken"]
+  },
+  {
+    "_id": {
+      "$oid": "671498b2ab6ec789aaf3d7f5"
+    },
+    "category": {
+      "$oid": "66b99f60c4d33d0750c63e2c"
+    },
+    "restaurant": {
+      "$oid": "6713c3881d14e0d08cea6e87"
+    },
+    "name": "Jali Kebab",
+    "description": "Enjoy Jali Kebab-premium minced meat, expertly marinated in aromatic spices and grilled to perfection. A side dish that promises irresistible flavor simplicity.",
+    "price": 150,
+    "quantity": 100,
+    "delivery_time": "15 minutes",
+    "image_url": "dish/sultan-dines/jali-kabab.jpeg",
+    "availability": true,
+    "preparation_time": "15 minutes",
+    "created_at": "2024-08-01T10:00:00Z",
+    "updated_at": "2024-08-01T10:00:00Z",
+    "tags": ["bangladeshi", "kabab", "sides", "asian", "mutton"]
+  },
+  {
+    "_id": {
+      "$oid": "671498eaab6ec789aaf3d7f6"
+    },
+    "category": {
+      "$oid": "66b99f60c4d33d0750c63e2c"
+    },
+    "restaurant": {
+      "$oid": "6713c3881d14e0d08cea6e87"
+    },
+    "name": "Firni",
+    "description": "Satisfy your sweet tooth with Firni-creamy delights crafted from milk, rice and warming cardamom. An indulgent end to any meal!",
+    "price": 70,
+    "quantity": 100,
+    "delivery_time": "15 minutes",
+    "image_url": "dish/sultan-dines/firni.jpeg",
+    "availability": true,
+    "preparation_time": "15 minutes",
+    "created_at": "2024-08-01T10:00:00Z",
+    "updated_at": "2024-08-01T10:00:00Z",
+    "tags": ["bangladeshi", "dessert", "firni", "asian", "sides"]
+  },
+  {
+    "_id": {
+      "$oid": "67149929ab6ec789aaf3d7f7"
+    },
+    "category": {
+      "$oid": "6713d6f61d14e0d08cea6ec2"
+    },
+    "restaurant": {
+      "$oid": "6713c3881d14e0d08cea6e87"
+    },
+    "name": "Chutney",
+    "description": "Enjoy the perfect balance of tangy and sweet with our exquisite chutney, crafted with vibrant spices, aromatic herbs and succulent fruits for a flavor explosion-an irresistible side dish experience.",
+    "price": 25,
+    "quantity": 100,
+    "delivery_time": "15 minutes",
+    "image_url": "dish/sultan-dines/chutney.jpeg",
+    "availability": true,
+    "preparation_time": "15 minutes",
+    "created_at": "2024-08-01T10:00:00Z",
+    "updated_at": "2024-08-01T10:00:00Z",
+    "tags": ["bangladeshi", "dessert", "sauce", "asian", "sides"]
+  },
+  {
+    "_id": {
+      "$oid": "6714995fab6ec789aaf3d7f8"
+    },
+    "category": {
+      "$oid": "6713d6f61d14e0d08cea6ec2"
+    },
+    "restaurant": {
+      "$oid": "6713c3881d14e0d08cea6e87"
+    },
+    "name": "Borhani - 250ml",
+    "description": "Indulge in the rich blend of yogurt, mint and spices in Borhani - a simple yet advanced thirst-quencher.",
+    "price": 70,
+    "quantity": 100,
+    "delivery_time": "15 minutes",
+    "image_url": "dish/sultan-dines/borhani.jpeg",
+    "availability": true,
+    "preparation_time": "15 minutes",
+    "created_at": "2024-08-01T10:00:00Z",
+    "updated_at": "2024-08-01T10:00:00Z",
+    "tags": ["bangladeshi", "bevarage", "sauce", "asian", "sides"]
+  }
+]

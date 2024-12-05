@@ -1,0 +1,237 @@
+[
+  {
+    "_id": {
+      "$oid": "66b99f60c4d33d0750c63e2c"
+    },
+    "name": "Appetizers",
+    "description": "Start your meal with our delightful appetizers, designed to awaken your taste buds. From crispy spring rolls to creamy dips, these starters are perfect for sharing or enjoying on your own.",
+    "created_at": "2024-08-10T12:00:00Z",
+    "updated_at": "2024-08-10T12:00:00Z",
+    "imageUrl": "/category/appetizers.jpg"
+  },
+  {
+    "_id": {
+      "$oid": "66b99f60c4d33d0750c63e2d"
+    },
+    "name": "Chicken",
+    "description": "Soup is a primarily liquid food, generally served warm or hot, that is made by combining ingredients of meat or vegetables with stock, milk, or water. Hot soups are additionally characterized by boiling solid ingredients in liquids in a pot until the flavors are extracted, forming a broth.",
+    "created_at": "2024-08-10T12:00:00Z",
+    "updated_at": "2024-08-10T12:00:00Z",
+    "imageUrl": "/category/chicken.jpg"
+  },
+  {
+    "_id": {
+      "$oid": "66b99f60c4d33d0750c63e2e"
+    },
+    "name": "Main Course",
+    "description": "Our main course selections offer a hearty and satisfying experience. Whether you crave succulent steaks, comforting pasta, or vibrant vegetarian dishes, you'll find something to love in this diverse array of options.",
+    "created_at": "2024-08-10T12:00:00Z",
+    "updated_at": "2024-08-10T12:00:00Z",
+    "imageUrl": "/category/main-course.jpg"
+  },
+  {
+    "_id": {
+      "$oid": "66b99f60c4d33d0750c63e2f"
+    },
+    "name": "Desserts",
+    "description": "Indulge in our sweet and decadent desserts, crafted to provide the perfect ending to your meal. From rich chocolate cakes to light and fluffy pastries, our dessert menu has something to satisfy every sweet tooth.",
+    "created_at": "2024-08-10T12:00:00Z",
+    "updated_at": "2024-08-10T12:00:00Z",
+    "imageUrl": "/category/desseerts.jpg"
+  },
+  {
+    "_id": {
+      "$oid": "66b99f60c4d33d0750c63e30"
+    },
+    "name": "Beverages",
+    "description": "Quench your thirst with our selection of beverages, ranging from refreshing soft drinks and juices to fine wines and craft beers. Pair your meal with the perfect drink to elevate your dining experience.",
+    "created_at": "2024-08-10T12:00:00Z",
+    "updated_at": "2024-08-10T12:00:00Z",
+    "imageUrl": "/category/beverages.jpg"
+  },
+  {
+    "_id": {
+      "$oid": "66b99f60c4d33d0750c63e31"
+    },
+    "name": "Salads",
+    "description": "Enjoy our fresh and nutritious salads, made with the finest ingredients. Whether you're looking for a light meal or a healthy side, our salads are packed with flavor and designed to delight.",
+    "created_at": "2024-08-10T12:00:00Z",
+    "updated_at": "2024-08-10T12:00:00Z",
+    "imageUrl": "/category/salads.jpg"
+  },
+  {
+    "_id": {
+      "$oid": "66b99f60c4d33d0750c63e32"
+    },
+    "name": "Pasta",
+    "description": "Savor the taste of Italy with our classic pasta dishes. From creamy Alfredo to zesty marinara, our pasta menu offers a variety of options that are sure to please any pasta lover.",
+    "created_at": "2024-08-10T12:00:00Z",
+    "updated_at": "2024-08-10T12:00:00Z",
+    "imageUrl": "/category/pasta.jpg"
+  },
+  {
+    "_id": {
+      "$oid": "66b99f60c4d33d0750c63e33"
+    },
+    "name": "Pizza",
+    "description": "Delight in our delicious pizzas, made with hand-tossed dough and topped with a variety of fresh ingredients. Whether you prefer classic Margherita or something more adventurous, our pizzas are baked to perfection.",
+    "created_at": "2024-08-10T12:00:00Z",
+    "updated_at": "2024-08-10T12:00:00Z",
+    "imageUrl": "/category/pizza.jpg"
+  },
+  {
+    "_id": {
+      "$oid": "66b99f60c4d33d0750c63e34"
+    },
+    "name": "Sandwiches",
+    "description": "Our sandwiches are packed with flavor and perfect for any time of day. From hearty club sandwiches to light and fresh wraps, we offer a variety of options that cater to every taste.",
+    "created_at": "2024-08-10T12:00:00Z",
+    "updated_at": "2024-08-10T12:00:00Z",
+    "imageUrl": "/category/sandwiches.jpg"
+  },
+  {
+    "_id": {
+      "$oid": "66b99f60c4d33d0750c63e35"
+    },
+    "name": "Seafood",
+    "description": "Experience the fresh and vibrant flavors of the ocean with our seafood dishes. From grilled salmon to buttery lobster, our seafood offerings are a treat for the senses.",
+    "created_at": "2024-08-10T12:00:00Z",
+    "updated_at": "2024-08-10T12:00:00Z",
+    "imageUrl": "/category/seafood.jpg"
+  },
+  {
+    "_id": {
+      "$oid": "66b99f60c4d33d0750c63e36"
+    },
+    "name": "Grill",
+    "description": "Enjoy the smoky and savory flavors of our grill section, featuring a selection of meats and vegetables cooked to perfection. Whether you're in the mood for a juicy steak or a flavorful grilled veggie platter, our grill menu has you covered.",
+    "created_at": "2024-08-10T12:00:00Z",
+    "updated_at": "2024-08-10T12:00:00Z",
+    "imageUrl": "/category/grill.jpg"
+  },
+  {
+    "_id": {
+      "$oid": "6713d6341d14e0d08cea6ebd"
+    },
+    "name": "Special Meal",
+    "description": "Enjoy the smoky and savory flavors of our grill section, featuring a selection of meats and vegetables cooked to perfection. Whether you're in the mood for a juicy steak or a flavorful grilled veggie platter, our grill menu has you covered.",
+    "created_at": "2024-08-10T12:00:00Z",
+    "updated_at": "2024-08-10T12:00:00Z",
+    "imageUrl": "/category/special-meal.jpg"
+  },
+  {
+    "_id": {
+      "$oid": "6713d6601d14e0d08cea6ebe"
+    },
+    "name": "Burger",
+    "description": "Enjoy the smoky and savory flavors of our grill section, featuring a selection of meats and vegetables cooked to perfection. Whether you're in the mood for a juicy steak or a flavorful grilled veggie platter, our grill menu has you covered.",
+    "created_at": "2024-08-10T12:00:00Z",
+    "updated_at": "2024-08-10T12:00:00Z",
+    "imageUrl": "/category/burger.jpg"
+  },
+  {
+    "_id": {
+      "$oid": "6713d6961d14e0d08cea6ebf"
+    },
+    "name": "Shawarma",
+    "description": "Enjoy our fresh and nutritious salads, made with the finest ingredients. Whether you're looking for a light meal or a healthy side, our salads are packed with flavor and designed to delight.",
+    "created_at": "2024-08-10T12:00:00Z",
+    "updated_at": "2024-08-10T12:00:00Z",
+    "imageUrl": "/category/shawarma.jpg"
+  },
+  {
+    "_id": {
+      "$oid": "6713d6b91d14e0d08cea6ec0"
+    },
+    "name": "Combo Meal",
+    "description": "Enjoy the smoky and savory flavors of our grill section, featuring a selection of meats and vegetables cooked to perfection. Whether you're in the mood for a juicy steak or a flavorful grilled veggie platter, our grill menu has you covered.",
+    "created_at": "2024-08-10T12:00:00Z",
+    "updated_at": "2024-08-10T12:00:00Z",
+    "imageUrl": "/category/combo-meal.jpg"
+  },
+  {
+    "_id": {
+      "$oid": "6713d6c91d14e0d08cea6ec1"
+    },
+    "name": "Chef's choice",
+    "description": "Enjoy our fresh and nutritious salads, made with the finest ingredients. Whether you're looking for a light meal or a healthy side, our salads are packed with flavor and designed to delight.",
+    "created_at": "2024-08-10T12:00:00Z",
+    "updated_at": "2024-08-10T12:00:00Z",
+    "imageUrl": "/category/chefs-choice.jpg"
+  },
+  {
+    "_id": {
+      "$oid": "6713d6f61d14e0d08cea6ec2"
+    },
+    "name": "Sides",
+    "description": "Soup is a primarily liquid food, generally served warm or hot, that is made by combining ingredients of meat or vegetables with stock, milk, or water. Hot soups are additionally characterized by boiling solid ingredients in liquids in a pot until the flavors are extracted, forming a broth.",
+    "created_at": "2024-08-10T12:00:00Z",
+    "updated_at": "2024-08-10T12:00:00Z",
+    "imageUrl": "/category/sides.jpg"
+  },
+  {
+    "_id": {
+      "$oid": "6713d7451d14e0d08cea6ec3"
+    },
+    "name": "Kacchi",
+    "description": "Soup is a primarily liquid food, generally served warm or hot, that is made by combining ingredients of meat or vegetables with stock, milk, or water. Hot soups are additionally characterized by boiling solid ingredients in liquids in a pot until the flavors are extracted, forming a broth.",
+    "created_at": "2024-08-10T12:00:00Z",
+    "updated_at": "2024-08-10T12:00:00Z",
+    "imageUrl": "/category/kacchi.jpg"
+  },
+  {
+    "_id": {
+      "$oid": "6713d7571d14e0d08cea6ec4"
+    },
+    "name": "Platter",
+    "description": "Start your meal with our delightful appetizers, designed to awaken your taste buds. From crispy spring rolls to creamy dips, these starters are perfect for sharing or enjoying on your own.",
+    "created_at": "2024-08-10T12:00:00Z",
+    "updated_at": "2024-08-10T12:00:00Z",
+    "imageUrl": "/category/platter.jpg"
+  },
+  {
+    "_id": {
+      "$oid": "672208e8e79dd2e7d11b5f5c"
+    },
+    "name": "breakfast",
+    "description": "lorem ipsum dolor site amet.lorem ipsum dolor site amet.lorem ipsum dolor site amet.lorem ipsum dolor site amet.lorem ipsum dolor site amet.lorem ipsum dolor site amet.lorem ipsum dolor site amet.lorem ipsum dolor site amet.lorem ipsum dolor site amet.lorem ipsum dolor site amet.lorem ipsum dolor site amet.lorem ipsum dolor site amet.lorem ipsum dolor site amet.",
+    "created_at": {
+      "$date": "2024-10-30T10:22:32.838Z"
+    },
+    "updated_at": {
+      "$date": "2024-10-30T10:22:32.838Z"
+    },
+    "__v": 0,
+    "imageUrl": "/category/breakfast.jpg"
+  },
+  {
+    "_id": {
+      "$oid": "67225a6fe79dd2e7d11b6257"
+    },
+    "name": "dinner",
+    "description": "",
+    "created_at": {
+      "$date": "2024-10-30T16:10:23.533Z"
+    },
+    "updated_at": {
+      "$date": "2024-10-30T16:10:23.533Z"
+    },
+    "__v": 0,
+    "imageUrl": "/category/dinner.jpg"
+  },
+  {
+    "_id": {
+      "$oid": "6736ccdeae209692a3fbf709"
+    },
+    "name": "CupCake",
+    "description": "lorem ipusm dolor site amet.....some text.",
+    "created_at": {
+      "$date": "2024-11-15T04:23:58.939Z"
+    },
+    "updated_at": {
+      "$date": "2024-11-15T04:23:58.940Z"
+    },
+    "__v": 0,
+    "imageUrl": "/category/cupcake.jpg"
+  }
+]

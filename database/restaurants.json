@@ -1,0 +1,152 @@
+[
+  {
+    "_id": {
+      "$oid": "66b9a68bc4d33d0750c63e74"
+    },
+    "owner": "670e8ae0d9722722a9f85800",
+    "name": "Burger Xpress - Banani",
+    "image_url": "restaurants/burger-xpress.jpeg",
+    "thumbnail": "restaurants/thumbnail/burger-thumbnail.jpeg",
+    "address": "House-33,(4th floor) Road-17, Block-E, Banani, Dhaka-1213.",
+    "phone": "+1-555-555-1122",
+    "email": "info@burgerxpress.com",
+    "opening_time": "09:00 AM",
+    "closing_time": "11:00 PM",
+    "delivery_time": "30 min",
+    "delivery_charge": "50 tk",
+    "category_ids": [
+      "66b99f60c4d33d0750c63e2e",
+      "66b99f60c4d33d0750c63e2f",
+      "66b99f60c4d33d0750c63e35",
+      "66b99f60c4d33d0750c63e35"
+    ],
+    "reviews": ["66b9a2d5c4d33d0750c63e49", "66b9a2d5c4d33d0750c63e4a"],
+    "created_at": "2024-08-01T10:00:00Z",
+    "updated_at": "2024-08-01T10:00:00Z"
+  },
+  {
+    "_id": {
+      "$oid": "66b9a68bc4d33d0750c63e75"
+    },
+    "owner": "6710a6f3ba2a1b210838787c",
+    "name": "Kachhi Bhai - Gulshan",
+    "image_url": "restaurants/kacchi-bhai.jpeg",
+    "thumbnail": "restaurants/thumbnail/kacchi-thumbnail.jpeg",
+    "address": "Road 45, Plot 33, 1st floor, Gulshan-2 (Beside Westin) 1212 Dhaka",
+    "phone": "+1-555-555-1122",
+    "email": "info@kacchibhai.com",
+    "opening_time": "09:00 AM",
+    "closing_time": "11:00 PM",
+    "delivery_time": "30 min",
+    "delivery_charge": "50 tk",
+    "category_ids": [
+      "66b99f60c4d33d0750c63e2e",
+      "66b99f60c4d33d0750c63e2f",
+      "66b99f60c4d33d0750c63e35",
+      "66b99f60c4d33d0750c63e35"
+    ],
+    "reviews": ["66b9a2d5c4d33d0750c63e49", "66b9a2d5c4d33d0750c63e4a"],
+    "created_at": "2024-08-01T10:00:00Z",
+    "updated_at": "2024-08-01T10:00:00Z"
+  },
+  {
+    "_id": {
+      "$oid": "6713c3881d14e0d08cea6e87"
+    },
+    "owner": "6713cb5ccf45d34ead3967e0",
+    "name": "Sultan's Dine - Gulshan 2",
+    "imageUrl": "restaurants/sultan-dines.jpeg",
+    "thumbnail": "restaurants/thumbnail/sultan-thumbnail.jpeg",
+    "address": "Samsuddin Mansion (1st floor), House: 41,Road: 52, Gulshan-2, Dhaka",
+    "phone": "+1-555-555-1122",
+    "email": "info@sultandines.com",
+    "opening_time": "09:00 AM",
+    "closing_time": "11:00 PM",
+    "delivery_time": "30 min",
+    "delivery_charge": "50 tk",
+    "category_ids": [
+      "66b99f60c4d33d0750c63e2e",
+      "66b99f60c4d33d0750c63e2f",
+      "66b99f60c4d33d0750c63e35",
+      "66b99f60c4d33d0750c63e35"
+    ],
+    "reviews": ["66b9a2d5c4d33d0750c63e49", "66b9a2d5c4d33d0750c63e4a"],
+    "created_at": "2024-08-01T10:00:00Z",
+    "updated_at": "2024-08-01T10:00:00Z"
+  },
+  {
+    "_id": {
+      "$oid": "6713cc961d14e0d08cea6e93"
+    },
+    "owner": "6713cb7fcf45d34ead3967e3",
+    "name": "Chatime - Banani",
+    "imageUrl": "restaurants/cha-time.jpeg",
+    "thumbnail": "restaurants/thumbnail/cha-thumbnail.jpeg",
+    "address": "40 Kamal Ataturk Avenue, Bulu Ocean Tower (KFC Building) in Banani on the first floor",
+    "phone": "+1-555-555-1122",
+    "email": "info@chatime.com",
+    "opening_time": "09:00 AM",
+    "closing_time": "11:00 PM",
+    "delivery_time": "30 min",
+    "delivery_charge": "50 tk",
+    "category_ids": [
+      "66b99f60c4d33d0750c63e2e",
+      "66b99f60c4d33d0750c63e2f",
+      "66b99f60c4d33d0750c63e35",
+      "66b99f60c4d33d0750c63e35"
+    ],
+    "reviews": ["66b9a2d5c4d33d0750c63e49", "66b9a2d5c4d33d0750c63e4a"],
+    "created_at": "2024-08-01T10:00:00Z",
+    "updated_at": "2024-08-01T10:00:00Z"
+  },
+  {
+    "_id": {
+      "$oid": "6713cda11d14e0d08cea6e96"
+    },
+    "owner": "6713cbadcf45d34ead3967e6",
+    "name": "Soi 71",
+    "imageUrl": "restaurants/soi71.jpeg",
+    "thumbnail": "restaurants/thumbnail/soi-thumbnail.jpeg",
+    "address": "Soi 71, Road 101, House 08, Gulshan-2, Dhaka-1212",
+    "phone": "+1-555-555-1122",
+    "email": "info@soi71.com",
+    "opening_time": "09:00 AM",
+    "closing_time": "11:00 PM",
+    "delivery_time": "30 min",
+    "delivery_charge": "50 tk",
+    "category_ids": [
+      "66b99f60c4d33d0750c63e2e",
+      "66b99f60c4d33d0750c63e2f",
+      "66b99f60c4d33d0750c63e35",
+      "66b99f60c4d33d0750c63e35"
+    ],
+    "reviews": ["66b9a2d5c4d33d0750c63e49", "66b9a2d5c4d33d0750c63e4a"],
+    "created_at": "2024-08-01T10:00:00Z",
+    "updated_at": "2024-08-01T10:00:00Z"
+  },
+  {
+    "_id": {
+      "$oid": "6713cda11d14e0d08cea6e96"
+    },
+    "owner": "6713d93fcf45d34ead3967e9",
+    "name": "Best Fried Chicken (BFC)",
+    "imageUrl": "restaurants/bfc.jpeg",
+    "thumbnail": "restaurants/thumbnail/bfc-thumbnail.jpeg",
+    "address": "Soi 71, Road 101, House 08, Gulshan-2, Dhaka-1212",
+    "phone": "+1-555-555-1122",
+    "email": "info@bfc.com",
+    "opening_time": "09:00 AM",
+    "closing_time": "11:00 PM",
+    "delivery_time": "30 min",
+    "delivery_charge": "50 tk",
+    "category_ids": [
+      "66b99f60c4d33d0750c63e2e",
+      "66b99f60c4d33d0750c63e2f",
+      "66b99f60c4d33d0750c63e35",
+      "66b99f60c4d33d0750c63e35"
+    ],
+    "reviews": ["66b9a2d5c4d33d0750c63e49", "66b9a2d5c4d33d0750c63e4a"],
+    "created_at": "2024-08-01T10:00:00Z",
+    "updated_at": "2024-08-01T10:00:00Z"
+  }
+]

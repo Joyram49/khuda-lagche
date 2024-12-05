@@ -1,0 +1,120 @@
+[{
+  "_id": {
+    "$oid": "6719c42c6233e8294f5b89b9"
+  },
+  "user_id": {
+    "$oid": "6710a688ba2a1b2108387879"
+  },
+  "restaurant_id": {
+    "$oid": "6713c3881d14e0d08cea6e87"
+  },
+  "items": [
+    {
+      "food_item_id": "671496aeab6ec789aaf3d7ef",
+      "quantity": 2,
+      "price": 750
+    },
+    {
+      "food_item_id": "67149860ab6ec789aaf3d7f4",
+      "quantity": 1,
+      "price": 150
+    }
+  ],
+  "total_price": 1700,
+  "order_status": "delivered",
+  "delivery_address": "123 Main St, Springfield, USA",
+  "payment_method": "Credit Card",
+  "placed_at": "2024-08-03T12:00:00Z",
+  "updated_at": "2024-08-03T12:00:00Z",
+  "billing_address": "123 Main St, Springfield, USA"
+},
+{
+  "_id": {
+    "$oid": "66b9c8a9a558cef6247463bb"
+  },
+  "user_id": {
+    "$oid": "66b99edfc4d33d0750c63e27"
+  },
+  "restaurant_id": {
+    "$oid": "66b9a68bc4d33d0750c63e74"
+  },
+  "items": [
+    {
+      "food_item_id": "66b9a384c4d33d0750c63e5b",
+      "quantity": 2,
+      "price": 12.99
+    }
+  ],
+  "total_price": 25.98,
+  "order_status": "delivered",
+  "delivery_address": "123 Main St, Springfield, USA",
+  "payment_method": "Credit Card",
+  "placed_at": "2024-08-03T12:00:00Z",
+  "updated_at": "2024-08-03T12:00:00Z",
+  "billing_address": "123 Main St, Springfield, USA"
+},
+{
+  "_id": {
+    "$oid": "6719c4426233e8294f5b89ba"
+  },
+  "user_id": {
+    "$oid": "6710a688ba2a1b2108387879"
+  },
+  "restaurant_id": {
+    "$oid": "66b9a68bc4d33d0750c63e74"
+  },
+  "items": [
+    {
+      "food_item_id": "67149556ab6ec789aaf3d7eb",
+      "quantity": 2,
+      "price": 350
+    },
+    {
+      "food_item_id": "6714938cab6ec789aaf3d7e6",
+      "quantity": 1,
+      "price": 270
+    },
+    {
+      "food_item_id": "67148ef9ab6ec789aaf3d7dd",
+      "quantity": 2,
+      "price": 350
+    }
+  ],
+  "total_price": 1720,
+  "order_status": "pending",
+  "delivery_address": "123 Main St, Springfield, USA",
+  "payment_method": "Credit Card",
+  "placed_at": "2024-08-03T12:00:00Z",
+  "updated_at": "2024-08-03T12:00:00Z",
+  "billing_address": "123 Main St, Springfield, USA"
+},
+{
+  "_id": {
+    "$oid": "6719c4536233e8294f5b89bb"
+  },
+  "user_id": {
+    "$oid": "6710a688ba2a1b2108387879"
+  },
+  "restaurant_id": {
+    "$oid": "6713d9ff1d14e0d08cea6ec8"
+  },
+  "items": [
+    {
+      "food_item_id": "6712746c178dbbc66ffbcc8e",
+      "quantity": 3,
+      "price": 280
+    },
+    {
+      "food_item_id": "67145d80ab6ec789aaf3d7bb",
+      "quantity": 2,
+      "price": 280
+    }
+  ],
+  "total_price": 1450,
+  "order_status": "cancelled",
+  "delivery_address": "123 Main St, Springfield, USA",
+  "payment_method": "Credit Card",
+  "placed_at": "2024-08-03T12:00:00Z",
+  "updated_at": "2024-08-03T12:00:00Z",
+  "billing_address": "123 Main St, Springfield, USA"
+}]

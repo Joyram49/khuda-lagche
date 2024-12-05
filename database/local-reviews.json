@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "type": "restaurant",
+    "restaurantName": "Burger Xpress",
+    "imageUrl": "restaurants/burger-xpress.jpeg",
+    "rating": 4.5,
+    "comment": "Well decorated with beautiful sunset view and tasty food.",
+    "created_at": "2024-08-23T00:00:00.000Z",
+    "updated_at": "2024-08-23T00:00:00.000Z"
+  },
+  {
+    "id": 2,
+    "type": "food",
+    "foodName": "Spicy Crispy Fried Chicken",
+    "imageUrl": "dish/bfc/regular-crispy.jpeg",
+    "rating": 5,
+    "comment": "The grilled chicken was flavorful and juicy.",
+    "created_at": "2024-08-23T00:00:00.000Z",
+    "updated_at": "2024-08-23T00:00:00.000Z"
+  },
+  {
+    "id": 3,
+    "type": "food",
+    "foodName": "Garlic Burger",
+    "imageUrl": "dish/bfc/garlic-burger.jpeg",
+    "rating": 5,
+    "comment": "The garlic burger was absolutely divine!",
+    "created_at": "2024-08-23T00:00:00.000Z",
+    "updated_at": "2024-08-23T00:00:00.000Z"
+  }
+]

@@ -1,0 +1,248 @@
+[
+  {
+    "_id": {
+      "$oid": "66b99edfc4d33d0750c63e26"
+    },
+    "email": "seal@email.com",
+    "password": "12345",
+    "role": "customer",
+    "address": "j-block, 12/1 road, Mirpur DOHS, Dhaka",
+    "phone": "123456789",
+    "order_history": [],
+    "profilePicture": "/person/seanWilliams.jpg",
+    "created_at": "2024-08-01T10:00:00Z",
+    "updated_at": "2024-08-01T10:00:00Z",
+    "name": "William Seal"
+  },
+  {
+    "_id": {
+      "$oid": "66b99edfc4d33d0750c63e27"
+    },
+    "name": "John Doe",
+    "email": "johndoe@example.com",
+    "password": "12345",
+    "role": "customer",
+    "address": "123 Main St, Springfield, USA",
+    "phone": "+1-555-555-5555",
+    "order_history": ["64d4f037a12f4e001a2a4b1d"],
+    "created_at": "2024-08-01T10:00:00Z",
+    "updated_at": "2024-08-01T10:00:00Z",
+    "profilePicture": "/person/johnDoe.jpg"
+  },
+  {
+    "_id": {
+      "$oid": "66b99edfc4d33d0750c63e28"
+    },
+    "name": "Jane Smith",
+    "email": "janesmith@example.com",
+    "password": "12345",
+    "role": "vendor",
+    "address": "456 Elm St, Springfield, USA",
+    "phone": "+1-555-555-1234",
+    "restaurant_id": "64d4f037a12f4e001a2a4b2e",
+    "created_at": "2024-08-02T10:00:00Z",
+    "updated_at": "2024-08-02T10:00:00Z",
+    "profilePicture": "/person/janeSmith.jpg"
+  },
+  {
+    "_id": {
+      "$oid": "66b99edfc4d33d0750c63e29"
+    },
+    "name": "Alice Johnson",
+    "email": "alicejohnson@example.com",
+    "password": "12345",
+    "role": "admin",
+    "address": "789 Maple St, Springfield, USA",
+    "phone": "+1-555-555-6789",
+    "created_at": "2024-08-03T10:00:00Z",
+    "updated_at": "2024-08-03T10:00:00Z",
+    "profilePicture": "/person/aliceJohnson.jpg"
+  },
+  {
+    "_id": {
+      "$oid": "66b99edfc4d33d0750c63e30"
+    },
+    "name": "Mark Anthony",
+    "email": "anthonyMark@example.com",
+    "password": "12345",
+    "role": "vendor",
+    "address": "789 Goerge St, California, USA",
+    "phone": "+1-555-555-6789",
+    "created_at": "2024-08-03T10:00:00Z",
+    "updated_at": "2024-08-03T10:00:00Z",
+    "profilePicture": "/person/markAnthony.jpg"
+  },
+  {
+    "_id": {
+      "$oid": "670e555ea6192f966bed1b6d"
+    },
+    "name": "Sabuj Das",
+    "email": "sabujdas@mail.com",
+    "password": "$2a$05$u6F/Nm7U2j1VUNUxMATkTOuR3iHgBe81PlJyD1wZ4k54vT6uHVH.O",
+    "role": "customer",
+    "order_history": [],
+    "created_at": {
+      "$date": "2024-10-15T11:43:26.812Z"
+    },
+    "updated_at": {
+      "$date": "2024-10-15T11:43:26.812Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "670e8ae0d9722722a9f85800"
+    },
+    "name": "Shafiq Alam",
+    "email": "shafiqalam@mail.com",
+    "password": "$2a$05$fj117ySbaZLgPbvkETbVDuwAcYZQszp9S0kkEI8I9pT86iS9XdxZy",
+    "role": "vendor",
+    "order_history": [],
+    "created_at": {
+      "$date": "2024-10-15T15:31:44.158Z"
+    },
+    "updated_at": {
+      "$date": "2024-10-15T15:31:44.158Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "6710a688ba2a1b2108387879"
+    },
+    "name": "Test  Customer",
+    "email": "testcustomer@mail.com",
+    "password": "$2a$05$6RQBIdPjua5PmhH6gzL6Qun6PfLK3RcXhsRaedvGoal.4TBKObwQ6",
+    "role": "customer",
+    "order_history": [],
+    "created_at": {
+      "$date": "2024-10-17T05:54:16.139Z"
+    },
+    "updated_at": {
+      "$date": "2024-10-17T05:54:16.139Z"
+    },
+    "__v": 0,
+    "phone": "4256485284",
+    "profilePicture": "/person/Tapas-Adhikary_7pb5GJWSR.jpg",
+    "address": "other, Manik Mia, 10/2, X"
+  },
+  {
+    "_id": {
+      "$oid": "6710a6f3ba2a1b210838787c"
+    },
+    "name": "Arif Mia",
+    "email": "arifmia@mail.com",
+    "password": "$2a$05$fES.il4/TZ11fhZpJuUUX.n63su8vTonm4ZQRSF/bOipYOST/Tu5i",
+    "role": "vendor",
+    "order_history": [],
+    "created_at": {
+      "$date": "2024-10-17T05:56:03.797Z"
+    },
+    "updated_at": {
+      "$date": "2024-10-17T05:56:03.797Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "6713cb5ccf45d34ead3967e0"
+    },
+    "name": "Amit  Das",
+    "email": "amitdas@mail.com",
+    "password": "$2a$05$EwYCPWvL48CGnflm9B0PsO8/LBhEuAdGOzLTyBgwPB4nUolTp2RaC",
+    "role": "vendor",
+    "order_history": [],
+    "created_at": {
+      "$date": "2024-10-19T15:08:12.511Z"
+    },
+    "updated_at": {
+      "$date": "2024-10-19T15:08:12.512Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "6713cb7fcf45d34ead3967e3"
+    },
+    "name": "Shanto Das",
+    "email": "shantodas@mail.com",
+    "password": "$2a$05$B0Qw2n5djKCkYzp6.iCh/OuS18OO8w35zxtECUuHU1q1pFfTiO97K",
+    "role": "vendor",
+    "order_history": [],
+    "created_at": {
+      "$date": "2024-10-19T15:08:47.919Z"
+    },
+    "updated_at": {
+      "$date": "2024-10-19T15:08:47.919Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "6713cbadcf45d34ead3967e6"
+    },
+    "name": "Anik Das",
+    "email": "anikdas@mail.com",
+    "password": "$2a$05$E2IH3gsXCGN4wz7QllS1l.l7.KpBl0LQdx3mnrWMCYoIjgAqyihUW",
+    "role": "vendor",
+    "order_history": [],
+    "created_at": {
+      "$date": "2024-10-19T15:09:33.528Z"
+    },
+    "updated_at": {
+      "$date": "2024-10-19T15:09:33.528Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "6713d93fcf45d34ead3967e9"
+    },
+    "name": "Arko Das",
+    "email": "arkodas@mail.com",
+    "password": "$2a$05$fb/HvM28/2sXccYU5n4soOO.j5jVmtqw82sPR4AUESoHHaf7jH79W",
+    "role": "vendor",
+    "order_history": [],
+    "created_at": {
+      "$date": "2024-10-19T16:07:27.677Z"
+    },
+    "updated_at": {
+      "$date": "2024-10-19T16:07:27.678Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "67160f4ec25245a8ffd8765f"
+    },
+    "name": "Joyram Das",
+    "email": "joyram2015@gmail.com",
+    "password": "sample password",
+    "role": "customer",
+    "order_history": [],
+    "created_at": {
+      "$date": "2024-10-21T08:22:38.101Z"
+    },
+    "updated_at": {
+      "$date": "2024-10-21T08:22:38.101Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "67160fc4c25245a8ffd876ad"
+    },
+    "name": "ജോയ് രാം",
+    "email": "joyram2014@yahoo.com",
+    "password": "sample password",
+    "role": "customer",
+    "order_history": [],
+    "created_at": {
+      "$date": "2024-10-21T08:24:36.557Z"
+    },
+    "updated_at": {
+      "$date": "2024-10-21T08:24:36.557Z"
+    },
+    "__v": 0
+  }
+]

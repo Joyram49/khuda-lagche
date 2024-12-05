@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "name": "Burger Xpress - Banani",
+    "address": "House-33,(4th floor) Road-17, Block-E, Banani, Dhaka-1213.",
+    "imageUrl": "restaurants/burger-xpress.jpeg",
+    "thumbnail": "restaurants/thumbnail/burger-thumbnail.jpeg",
+    "email": "info@burgerxpress.com",
+    "opening_time": "09:00 AM",
+    "closing_time": "11:00 PM",
+    "category": ["mexican", "fast food", "chicken"],
+    "rating": 4.5,
+    "delivery_time": "30 min",
+    "delivery_charge": "50 tk"
+  },
+  {
+    "id": 2,
+    "name": "Kachhi Bhai - Gulshan",
+    "address": "Road 45, Plot 33, 1st floor, Gulshan-2 (Beside Westin) 1212 Dhaka, ",
+    "imageUrl": "restaurants/kacchi-bhai.jpeg",
+    "thumbnail": "restaurants/thumbnail/kacchi-thumbnail.jpeg",
+    "email": "info@kacchibhai.com",
+    "opening_time": "09:00 AM",
+    "closing_time": "11:00 PM",
+    "category": ["Beverage", "dessert", "biriyani"],
+    "rating": 4.7,
+    "delivery_time": "30 min",
+    "delivery_charge": "40 tk"
+  },
+  {
+    "id": 3,
+    "name": "Sultan's Dine - Gulshan 2",
+    "address": "Samsuddin Mansion (1st floor), House: 41,Road: 52, Gulshan-2, Dhaka",
+    "imageUrl": "restaurants/sultan-dines.jpeg",
+    "thumbnail": "restaurants/thumbnail/sultan-thumbnail.jpeg",
+    "email": "info@sultandines.com",
+    "opening_time": "09:00 AM",
+    "closing_time": "11:00 PM",
+    "category": ["Beverage", "dessert", "biriyani"],
+    "rating": 5,
+    "delivery_time": "30 min",
+    "delivery_charge": "40 tk"
+  },
+  {
+    "id": 4,
+    "name": "Chatime - Banani",
+    "address": "40 Kamal Ataturk Avenue, Bulu Ocean Tower (KFC Building) in Banani on the first floor",
+    "imageUrl": "restaurants/cha-time.jpeg",
+    "thumbnail": "restaurants/thumbnail/cha-thumbnail.jpeg",
+    "email": "info@chatime.com",
+    "opening_time": "09:00 AM",
+    "closing_time": "11:00 PM",
+    "category": ["Beverage", "tea & coffee"],
+    "rating": 4.5,
+    "delivery_time": "30 min",
+    "delivery_charge": "40 tk"
+  },
+  {
+    "id": 5,
+    "name": "Soi 71",
+    "address": "Soi 71, Road 101, House 08, Gulshan-2, Dhaka-1212",
+    "imageUrl": "restaurants/soi71.jpeg",
+    "thumbnail": "restaurants/thumbnail/soi-thumbnail.jpeg",
+    "email": "info@soi71.com",
+    "opening_time": "09:00 AM",
+    "closing_time": "11:00 PM",
+    "category": ["dessert", "thai", "fast food", "chicken"],
+    "rating": 4.5,
+    "delivery_time": "35 min",
+    "delivery_charge": "40 tk"
+  }
+]

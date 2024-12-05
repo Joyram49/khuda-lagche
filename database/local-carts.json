@@ -1,0 +1,55 @@
+[
+  {
+    "id": 1,
+    "items": [
+      {
+        "id": 1,
+        "ownerId": 1001,
+        "restaurant": 101,
+        "category": "Chicken",
+        "description": " Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor harum aperiam quisquam? Esse ab dolor velit quam tempora. Tenetur nisi quaerat asperiores ad, dolor vero velit doloremque non provident exercitationem.",
+        "name": "Spicy Crispy Fried Chicken",
+        "price": "250",
+        "quantity": 100,
+        "preparation_time": "15 minutes",
+        "imageUrl": "/assets/images/dish/bfc/regular-crispy.jpeg",
+        "availability": false,
+        "reviews": [],
+        "tags": ["chicken", "fast food", "american"],
+        "bought": 2
+      },
+      {
+        "id": 2,
+        "ownerId": 1001,
+        "restaurant": 101,
+        "category": "Chicken",
+        "description": " Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor harum aperiam quisquam? Esse ab dolor velit quam tempora. Tenetur nisi quaerat asperiores ad, dolor vero velit doloremque non provident exercitationem.",
+        "name": "Regular Crispy Fried Chicken",
+        "price": "280",
+        "quantity": 100,
+        "preparation_time": "15 minutes",
+        "imageUrl": "/assets/images/dish/bfc/regular-crispy-leg.jpeg",
+        "availability": true,
+        "reviews": [],
+        "tags": ["chicken", "fast food", "american"],
+        "bought": 3
+      },
+      {
+        "id": 3,
+        "ownerId": 1001,
+        "restaurant": 101,
+        "category": "Chicken",
+        "description": " Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor harum aperiam quisquam? Esse ab dolor velit quam tempora. Tenetur nisi quaerat asperiores ad, dolor vero velit doloremque non provident exercitationem.",
+        "name": "Regular Crispy Fried Chicken Bucket",
+        "price": "1050",
+        "quantity": 50,
+        "preparation_time": "15 minutes",
+        "imageUrl": "/assets/images/dish/bfc/regular-crispy-bucket.png",
+        "availability": true,
+        "reviews": [],
+        "tags": ["chicken", "fast food", "american"],
+        "bought": 1
+      }
+    ]
+  }
+]

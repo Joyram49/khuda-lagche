@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "restaurantName": "Burger Xpress",
+    "foodItems": [
+      {
+        "foodId": 1,
+        "foodName": "Spicy Crispy Fried Chicken",
+        "quantity": 1,
+        "price": 250,
+        "imageUrl": "dish/bfc/regular-crispy.jpeg",
+        "category": "Chicken"
+      },
+      {
+        "foodId": 2,
+        "foodName": "Garlic Burger",
+        "quantity": 1,
+        "price": 150,
+        "imageUrl": "dish/bfc/garlic-burger.jpeg",
+        "category": "Burger"
+      }
+    ],
+    "order_status": "pending",
+    "placed_at": "2024-08-03T12:00:00Z",
+    "updated_at": "2024-08-03T12:00:00Z"
+  },
+  {
+    "id": 2,
+    "restaurantName": "Sultan Dines",
+    "foodItems": [
+      {
+        "foodId": 1,
+        "foodName": "Basmati Kacchi Half with Chicken Roast - Borhani & Jali Kebab",
+        "quantity": 2,
+        "price": 550,
+        "imageUrl": "dish/sultan-dines/bashmati-kacchi-chicken.jpeg",
+        "category": "Kacchi"
+      }
+    ],
+    "order_status": "delivered",
+    "placed_at": "2024-08-03T12:00:00Z",
+    "updated_at": "2024-08-03T12:00:00Z"
+  }
+]

@@ -1,0 +1,122 @@
+[
+  {
+    "_id": {
+      "$oid": "66b9abbe9e02390e2b1f1a65"
+    },
+    "user_id": {
+      "$oid": "6710a688ba2a1b2108387879"
+    },
+    "fooditem_id": {
+      "$oid": "66b9a384c4d33d0750c63e5c"
+    },
+    "rating": 5,
+    "comment": "The cheesecake was absolutely divine!",
+    "created_at": "2024-08-05T10:00:00Z",
+    "updated_at": "2024-08-05T10:00:00Z"
+  },
+  {
+    "_id": {
+      "$oid": "66b9abbe9e02390e2b1f1a64"
+    },
+    "user_id": {
+      "$oid": "6710a688ba2a1b2108387879"
+    },
+    "fooditem_id": {
+      "$oid": "67148a9cab6ec789aaf3d7d4"
+    },
+    "rating": 4,
+    "comment": "The grilled chicken was flavorful and juicy.",
+    "created_at": "2024-08-04T10:00:00Z",
+    "updated_at": "2024-08-04T10:00:00Z"
+  },
+  {
+    "_id": {
+      "$oid": "671afd8b41c39d8564abed66"
+    },
+    "user_id": {
+      "$oid": "6710a688ba2a1b2108387879"
+    },
+    "fooditem_id": {
+      "$oid": "671490edab6ec789aaf3d7e0"
+    },
+    "rating": 5,
+    "comment": "The grilled chicken was flavorful and juicy.",
+    "created_at": "2024-08-04T10:00:00Z",
+    "updated_at": "2024-08-04T10:00:00Z"
+  },
+  {
+    "_id": {
+      "$oid": "671afda241c39d8564abed67"
+    },
+    "user_id": {
+      "$oid": "6710a688ba2a1b2108387879"
+    },
+    "fooditem_id": {
+      "$oid": "67149655ab6ec789aaf3d7ee"
+    },
+    "rating": 5,
+    "comment": "The grilled chicken was flavorful and juicy.",
+    "created_at": "2024-08-04T10:00:00Z",
+    "updated_at": "2024-08-04T10:00:00Z"
+  },
+  {
+    "_id": {
+      "$oid": "671afe4441c39d8564abed68"
+    },
+    "user_id": {
+      "$oid": "67160f4ec25245a8ffd8765f"
+    },
+    "fooditem_id": {
+      "$oid": "67148585ab6ec789aaf3d7be"
+    },
+    "rating": 5,
+    "comment": "The grilled chicken was flavorful and juicy.",
+    "created_at": "2024-08-04T10:00:00Z",
+    "updated_at": "2024-08-04T10:00:00Z"
+  },
+  {
+    "_id": {
+      "$oid": "671afe4d41c39d8564abed69"
+    },
+    "user_id": {
+      "$oid": "67160f4ec25245a8ffd8765f"
+    },
+    "fooditem_id": {
+      "$oid": "671487e2ab6ec789aaf3d7ca"
+    },
+    "rating": 5,
+    "comment": "The grilled chicken was flavorful and juicy.",
+    "created_at": "2024-08-04T10:00:00Z",
+    "updated_at": "2024-08-04T10:00:00Z"
+  },
+  {
+    "_id": {
+      "$oid": "671afe5641c39d8564abed6a"
+    },
+    "user_id": {
+      "$oid": "67160f4ec25245a8ffd8765f"
+    },
+    "fooditem_id": {
+      "$oid": "6714893aab6ec789aaf3d7d0"
+    },
+    "rating": 5,
+    "comment": "The grilled chicken was flavorful and juicy.",
+    "created_at": "2024-08-04T10:00:00Z",
+    "updated_at": "2024-08-04T10:00:00Z"
+  },
+  {
+    "_id": {
+      "$oid": "671afe6541c39d8564abed6b"
+    },
+    "user_id": {
+      "$oid": "67160f4ec25245a8ffd8765f"
+    },
+    "fooditem_id": {
+      "$oid": "67148d3cab6ec789aaf3d7d8"
+    },
+    "rating": 5,
+    "comment": "The grilled chicken was flavorful and juicy.",
+    "created_at": "2024-08-04T10:00:00Z",
+    "updated_at": "2024-08-04T10:00:00Z"
+  }
+]

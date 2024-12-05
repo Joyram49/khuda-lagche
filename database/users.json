@@ -1,0 +1,75 @@
+[
+  {
+    "_id": {
+      "$oid": "66b99edfc4d33d0750c63e26"
+    },
+    " name": "William Seal",
+    "email": "seal@email.com",
+    "password": "12345",
+    "role": "customer",
+    "address": "j-block, 12/1 road, Mirpur DOHS, Dhaka",
+    "phone": "123456789",
+    "order_history": [],
+    "profilePicture": "seanWilliams.jpg",
+    "created_at": "2024-08-01T10:00:00Z",
+    "updated_at": "2024-08-01T10:00:00Z"
+  },
+  {
+    "_id": {
+      "$oid": "66b99edfc4d33d0750c63e27"
+    },
+    "name": "John Doe",
+    "email": "johndoe@example.com",
+    "password": "12345",
+    "role": "customer",
+    "address": "123 Main St, Springfield, USA",
+    "phone": "+1-555-555-5555",
+    "order_history": ["64d4f037a12f4e001a2a4b1d"],
+    "created_at": "2024-08-01T10:00:00Z",
+    "updated_at": "2024-08-01T10:00:00Z",
+    "profilePicture": "johnDoe.jpg"
+  },
+  {
+    "_id": {
+      "$oid": "66b99edfc4d33d0750c63e28"
+    },
+    "name": "Jane Smith",
+    "email": "janesmith@example.com",
+    "password": "12345",
+    "role": "vendor",
+    "address": "456 Elm St, Springfield, USA",
+    "phone": "+1-555-555-1234",
+    "restaurant_id": "64d4f037a12f4e001a2a4b2e",
+    "created_at": "2024-08-02T10:00:00Z",
+    "updated_at": "2024-08-02T10:00:00Z",
+    "profilePicture": "janeSmith.jpg"
+  },
+  {
+    "_id": {
+      "$oid": "66b99edfc4d33d0750c63e29"
+    },
+    "name": "Alice Johnson",
+    "email": "alicejohnson@example.com",
+    "password": "12345",
+    "role": "admin",
+    "address": "789 Maple St, Springfield, USA",
+    "phone": "+1-555-555-6789",
+    "created_at": "2024-08-03T10:00:00Z",
+    "updated_at": "2024-08-03T10:00:00Z",
+    "profilePicture": "aliceJohnson.jpg"
+  },
+  {
+    "_id": {
+      "$oid": "66b99edfc4d33d0750c63e30"
+    },
+    "name": "Mark Anthony",
+    "email": "anthonyMark@example.com",
+    "password": "12345",
+    "role": "vendor",
+    "address": "789 Goerge St, California, USA",
+    "phone": "+1-555-555-6789",
+    "created_at": "2024-08-03T10:00:00Z",
+    "updated_at": "2024-08-03T10:00:00Z",
+    "profilePicture": "markAnthony.jpg"
+  }
+]

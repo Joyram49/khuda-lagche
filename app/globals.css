@@ -1,33 +1,233 @@
+@import url("leaflet/dist/leaflet.css");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --background: 0 0% 100%;
+    --foreground: 224 71.4% 4.1%;
+    --card: 0 0% 100%;
+    --card-foreground: 224 71.4% 4.1%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 224 71.4% 4.1%;
+    --primary: 220.9 39.3% 11%;
+    --primary-foreground: 210 20% 98%;
+    --secondary: 0, 0%, 65%;
+    --secondary-foreground: 220.9 39.3% 11%;
+    --muted: 220 14.3% 95.9%;
+    --muted-foreground: 210, 6%, 27%;
+    --accent: 220 14.3% 95.9%;
+    --accent-foreground: 220.9 39.3% 11%;
+    --success: 147, 50%, 47%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 20% 98%;
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 224 71.4% 4.1%;
+    --radius: 0.5rem;
+    --chart-1: 12 76% 61%;
+    --chart-2: 173 58% 39%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+    --customYellow: 41, 100%, 59%;
+    --hoverYellow: 43, 100%, 62%;
+    --initial: 210, 2%, 53%;
+    --deepBackground: 0, 0%, 95%;
+    --deep: 210, 6%, 27%;
+  }
+
+  .dark {
+    --background: 224 71.4% 4.1%;
+    --foreground: 210 20% 98%;
+    --initial: 0, 0%, 95%;
+    --deep: 0, 0%, 80%;
+    --card: 224 71.4% 4.1%;
+    --card-foreground: 210 20% 98%;
+    --popover: 224 71.4% 4.1%;
+    --popover-foreground: 210 20% 98%;
+    --primary: 210 20% 98%;
+    --primary-foreground: 220.9 39.3% 11%;
+    --secondary: 215 27.9% 16.9%;
+    --secondary-foreground: 210 20% 98%;
+    --muted: 215 27.9% 16.9%;
+    --muted-foreground: 217.9 10.6% 64.9%;
+    --accent: 215 27.9% 16.9%;
+    --accent-foreground: 210 20% 98%;
+    --success: 138, 53%, 40%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 20% 98%;
+    --border: 215 27.9% 16.9%;
+    --input: 215 27.9% 16.9%;
+    --ring: 216 12.2% 83.9%;
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
 }
 
 @layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  /* top and bottom line css start */
+  .custom-button::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: hsl(var(--hoverYellow)); /* Adjust this color as needed */
+    width: 0;
+    transition: width 0.3s ease;
+    z-index: -1;
+    border-radius: 16px;
+  }
+
+  .custom-button:hover::after {
+    width: 100%;
+  }
+
+  .custom-even-line::after {
+    content: url("/str_top.png");
+    position: absolute;
+    top: 10%;
+    right: -27%;
+    z-index: 1000;
+  }
+
+  .custom-odd-line::after {
+    content: url("/str_bottom.png");
+    position: absolute;
+    bottom: 10%;
+    right: -34%;
+    z-index: 1000;
+  }
+  /* top and bottom line css start */
+
+  .group-hover\:delay-100 {
+    transition-delay: 100ms;
+  }
+
+  .group-hover\:delay-200 {
+    transition-delay: 200ms;
+  }
+
+  /* media queris for lines */
+  @media (max-width: 1023px) {
+    .custom-even-line:nth-child(3):after {
+      top: 10%;
+      left: 25%;
+      transform: rotate(-180deg);
+      transform-origin: left;
+    }
+  }
+  @media (min-width: 1024px) {
+    .custom-odd-line::after {
+      right: -48%;
+    }
+    .custom-even-line::after {
+      right: -48%;
+    }
+  }
+  @media (min-width: 1280px) {
+    .custom-odd-line::after {
+      right: -34%;
+    }
+    .custom-even-line::after {
+      right: -34%;
+    }
+  }
+
+  /* star rating css start  */
+  .star-rating {
+    display: flex;
+  }
+
+  .star {
+    font-size: 24px;
+    position: relative;
+    display: inline-block;
+    color: #aaa; /* Default color for stars */
+  }
+
+  .star.filled {
+    color: #ffd700; /* Gold color for filled stars */
+  }
+
+  .star.partial {
+    color: #aaa; /* Default gray color for partial star */
+  }
+
+  .star.partial::after {
+    content: "★";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: var(--fill-percent); /* Use the custom property to determine fill */
+    overflow: hidden;
+    color: #ffd700; /* Gold color for the partial fill */
+    z-index: 2;
+  }
+
+  .star.empty {
+    color: #aaa; /* Grey color for empty stars */
+  }
+
+  /* star rating css end  */
+
+  /* image gallery layout design */
+  .masonry-gallery-demo {
+    margin: 0 auto;
+  }
+  .masonry-gallery-demo::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+  .grid-sizer,
+  .lg-item {
+    width: 33.33%;
+  }
+  .lg-item {
+    float: left;
+    margin-bottom: 10px;
+  }
+  .lg-item img {
+    display: block;
+    max-width: 100%;
+  }
+
+  /* button ripple effect */
+  .ripple-container {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .ripple-effect {
+    position: absolute;
+    border-radius: 50%;
+    transform: scale(0);
+    animation: ripple-animation 0.6s linear;
+    background-color: rgba(255, 255, 255, 0.6);
+    pointer-events: none; /* Prevent interference with button clicks */
+  }
+
+  @keyframes ripple-animation {
+    to {
+      transform: scale(4);
+      opacity: 0;
+    }
   }
 }

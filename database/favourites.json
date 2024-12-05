@@ -1,0 +1,11 @@
+[
+  {
+    "_id": {
+      "$oid": "66b9c82ba558cef6247463b8"
+    },
+    "user_id": "66b99edfc4d33d0750c63e27",
+    "food_item_ids": ["66b9a384c4d33d0750c63e5b", "66b9a384c4d33d0750c63e5c"],
+    "created_at": "2024-08-07T10:00:00Z",
+    "updated_at": "2024-08-07T10:00:00Z"
+  }
+]

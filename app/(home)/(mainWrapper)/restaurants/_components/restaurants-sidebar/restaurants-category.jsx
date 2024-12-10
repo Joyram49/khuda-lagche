@@ -24,9 +24,7 @@ function SelectCategory({ categories }) {
 
   return (
     <div className='w-full  flex items-center justify-start gap-x-2 flex-wrap space-y-4'>
-      <h3 className='w-full font-medium text-muted-foreground'>
-        Filter By Category:
-      </h3>
+      <h3 className='w-full font-medium text-pText'>Filter By Category:</h3>
 
       {/* Dropdown Menu */}
       <DropdownMenu className='w-full '>

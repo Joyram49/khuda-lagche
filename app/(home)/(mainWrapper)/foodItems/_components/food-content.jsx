@@ -15,7 +15,7 @@ function FoodContentCard({ data }) {
     restaurant: data?.restaurant?.id,
   };
   return (
-    <Card className='w-full  rounded-[16px] justify-self-center group hover:shadow-md transition-shadow duration-150 ease-linear cursor-pointer relative'>
+    <Card className='w-full bg-topBackground rounded-[16px] justify-self-center group hover:shadow-md transition-shadow duration-150 ease-linear cursor-pointer relative border-[1px] border-border dark:border-borderF'>
       <Link href={`/foodItems/${data.id}`} className='w-full block'>
         <CardContent className='p-0'>
           <FoodImageLoader data={data} />

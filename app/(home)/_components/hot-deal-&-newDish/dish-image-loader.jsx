@@ -6,7 +6,7 @@ import Link from "next/link";
 
 function DishImageLoader({ data }) {
   return (
-    <div className='w-full h-44 md:h-56 relative group rounded-[16px] overflow-hidden'>
+    <div className='w-full h-44 md:h-56 relative group rounded-lg overflow-hidden'>
       {data?.image_url ? (
         <Image
           fill
@@ -15,7 +15,7 @@ function DishImageLoader({ data }) {
             imageKitLoader({ src, width: 400, quality: 60 })
           }
           alt={data?.name}
-          className='absolute object-cover  object-center rounded-t-[16px]'
+          className='absolute object-cover  object-center rounded-lg'
           sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw'
           placeholder='blur'
           blurDataURL={imageKitLoader({

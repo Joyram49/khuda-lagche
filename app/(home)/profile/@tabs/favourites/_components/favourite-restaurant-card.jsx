@@ -9,7 +9,7 @@ import FavImageLoader from "./fav-image-loader";
 function FavouriteResCard({ data }) {
   const rating = generateRating(data?.reviews);
   return (
-    <Card className='w-full  rounded-[16px] justify-self-center group hover:shadow-md transition-shadow duration-150 ease-linear cursor-pointer relative'>
+    <Card className='w-full bg-backgroundF border-[1px] border-border dark:border-borderF  rounded-[16px] justify-self-center group hover:shadow-md transition-shadow duration-150 ease-linear cursor-pointer relative'>
       <Link href={`/restaurants/${data.id}`} className='w-full block'>
         <CardContent className='p-0 w-full'>
           <FavImageLoader data={data} />

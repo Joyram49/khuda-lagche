@@ -72,7 +72,7 @@ const Counter = () => {
   return (
     <div className='w-full h-full flex justify-center items-center gap-x-3 md:gap-x-10  3xl:gap-x-20'>
       <div className='flex flex-col items-center gap-4'>
-        <div className='w-10 h-10 md:w-24 md:h-24 bg-white rounded-full  flex justify-center items-center'>
+        <div className='w-10 h-10 md:w-24 md:h-24 bg-backgroundF rounded-full  flex justify-center items-center'>
           <p className='text-deepInitial font-robotoSlab text-base md:text-3xl'>
             {timeRemaining.days}
           </p>
@@ -82,7 +82,7 @@ const Counter = () => {
         </div>
       </div>
       <div className='flex flex-col items-center gap-4'>
-        <div className='w-10 h-10 md:w-24 md:h-24 bg-white rounded-full  flex justify-center items-center'>
+        <div className='w-10 h-10 md:w-24 md:h-24 bg-backgroundF rounded-full  flex justify-center items-center'>
           <p className='text-deepInitial font-robotoSlab text-base md:text-3xl'>
             {timeRemaining.hours}
           </p>
@@ -92,7 +92,7 @@ const Counter = () => {
         </div>
       </div>
       <div className='flex flex-col items-center gap-4'>
-        <div className='w-10 h-10 md:w-24 md:h-24 bg-white rounded-full  flex justify-center items-center'>
+        <div className='w-10 h-10 md:w-24 md:h-24 bg-backgroundF rounded-full  flex justify-center items-center'>
           <p className='text-deepInitial font-robotoSlab text-base md:text-3xl'>
             {timeRemaining.minutes}
           </p>
@@ -102,7 +102,7 @@ const Counter = () => {
         </div>
       </div>
       <div className='flex flex-col items-center gap-4'>
-        <div className='w-10 h-10 md:w-24 md:h-24 bg-white rounded-full  flex justify-center items-center'>
+        <div className='w-10 h-10 md:w-24 md:h-24 bg-backgroundF rounded-full  flex justify-center items-center'>
           <p className='text-deepInitial font-robotoSlab text-base md:text-3xl'>
             {timeRemaining.seconds}
           </p>

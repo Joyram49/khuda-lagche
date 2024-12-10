@@ -110,7 +110,7 @@ function ReviewForm({ itemId, fromRestaurant = false }) {
                 <FormControl>
                   <Textarea
                     placeholder='Write about food here...'
-                    className='max-h-[400px] text-[#414549] placeholder:text-initial font-robotoSlab '
+                    className='max-h-[400px] text-pText placeholder:text-initial font-robotoSlab border-[1px] border-border dark:border-borderF bg-topBackground'
                     {...field}
                   />
                 </FormControl>
@@ -122,7 +122,7 @@ function ReviewForm({ itemId, fromRestaurant = false }) {
             control={form.control}
             name='rating'
             render={({ field }) => (
-              <FormItem className='text-sm sm:text-base text-[#414549] font-robotoSlab flex justify-start items-center gap-x-2'>
+              <FormItem className='text-sm sm:text-base text-pText font-robotoSlab flex justify-start items-center gap-x-2'>
                 <h1 className='mt-2'>Your Rating : </h1>
                 <FormControl>
                   <CreateRating
@@ -138,7 +138,7 @@ function ReviewForm({ itemId, fromRestaurant = false }) {
             <LoadingBtn
               type='submit'
               text='Submitting'
-              className='self-end block max-w-fit'
+              className='self-end  max-w-fit'
             />
           ) : (
             <Button type='submit' className='capitalize self-end '>

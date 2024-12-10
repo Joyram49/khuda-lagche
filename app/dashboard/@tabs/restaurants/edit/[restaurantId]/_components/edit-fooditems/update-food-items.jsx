@@ -75,7 +75,7 @@ export function UpdateFoodItems({ foodItems, restaurant, categories }) {
   return (
     <>
       <div className='w-full'>
-        <div className='flex items-center py-4 font-robotoSlab  text-[#414549]'>
+        <div className='flex items-center py-4 font-robotoSlab  text-pText'>
           <Input
             placeholder='Filter food with name...'
             value={table.getColumn("name")?.getFilterValue() ?? ""}

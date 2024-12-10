@@ -21,7 +21,7 @@ import {
 
 const urlEndpoint = process.env.NEXT_PUBLIC_URL_ENDPOINT;
 
-export function MainNav({ items, children, session }) {
+export function MainNav({ items, children, session, path = null }) {
   const [showMobileMenu, setShowMobileMenu] = useState(false);
   let pathName = usePathname();
 
@@ -73,27 +73,38 @@ export function MainNav({ items, children, session }) {
             {(!session?.user ||
               session?.error === "RefreshAccessTokenError") && (
               <div className='items-center gap-3 hidden lg:flex'>
-                <Link
-                  href='/login'
-                  className={cn(buttonVariants({ size: "sm" }), "px-4")}
-                >
-                  Login
-                </Link>
-                <DropdownMenu>
-                  <DropdownMenuTrigger asChild>
-                    <Button variant='outline' size='sm'>
-                      Register
-                    </Button>
-                  </DropdownMenuTrigger>
-                  <DropdownMenuContent align='end' className='w-56 mt-4'>
-                    <DropdownMenuItem className='cursor-pointer'>
-                      <Link href='/register/customer'>Customer</Link>
-                    </DropdownMenuItem>
-                    <DropdownMenuItem className='cursor-pointer'>
-                      <Link href='/register/vendor'>Vendor</Link>
-                    </DropdownMenuItem>
-                  </DropdownMenuContent>
-                </DropdownMenu>
+                {!pathName.includes("login") && (
+                  <Link
+                    href='/login'
+                    className={cn(buttonVariants({ size: "sm" }), "px-4")}
+                  >
+                    Login
+                  </Link>
+                )}
+                {!pathName.includes("register") && (
+                  <DropdownMenu>
+                    <DropdownMenuTrigger asChild>
+                      <Button
+                        variant='outline'
+                        size='sm'
+                        className='border-[1px] border-border dark:border-borderF'
+                      >
+                        Register
+                      </Button>
+                    </DropdownMenuTrigger>
+                    <DropdownMenuContent
+                      align='end'
+                      className='w-56 mt-4 bg-topBackground border-[1px] border-border dark:border-borderF'
+                    >
+                      <DropdownMenuItem className='cursor-pointer focus:bg-backgroundF'>
+                        <Link href='/register/customer'>Customer</Link>
+                      </DropdownMenuItem>
+                      <DropdownMenuItem className='cursor-pointer focus:bg-backgroundF'>
+                        <Link href='/register/vendor'>Vendor</Link>
+                      </DropdownMenuItem>
+                    </DropdownMenuContent>
+                  </DropdownMenu>
+                )}
               </div>
             )}
 
@@ -121,17 +132,32 @@ export function MainNav({ items, children, session }) {
                   </div>
                 </DropdownMenuTrigger>
                 {session?.user?.role === "customer" ? (
-                  <DropdownMenuContent align='end' className='w-56 mt-4'>
-                    <DropdownMenuItem className='cursor-pointer' asChild>
+                  <DropdownMenuContent
+                    align='end'
+                    className='w-56 mt-4 bg-topBackground border-[1px] border-border dark:border-borderF'
+                  >
+                    <DropdownMenuItem
+                      className='cursor-pointer focus:bg-backgroundF'
+                      asChild
+                    >
                       <Link href='/profile'>Profile</Link>
                     </DropdownMenuItem>
-                    <DropdownMenuItem className='cursor-pointer' asChild>
+                    <DropdownMenuItem
+                      className='cursor-pointer focus:bg-backgroundF'
+                      asChild
+                    >
                       <Link href='/profile/orders'>My Orders</Link>
                     </DropdownMenuItem>
-                    <DropdownMenuItem className='cursor-pointer' asChild>
+                    <DropdownMenuItem
+                      className='cursor-pointer focus:bg-backgroundF'
+                      asChild
+                    >
                       <Link href='/profile/reviews'>My reviews</Link>
                     </DropdownMenuItem>
-                    <DropdownMenuItem className='cursor-pointer' asChild>
+                    <DropdownMenuItem
+                      className='cursor-pointer focus:bg-backgroundF'
+                      asChild
+                    >
                       <Link href='/profile/favourites'>
                         My Favourite Restaurants
                       </Link>
@@ -139,7 +165,7 @@ export function MainNav({ items, children, session }) {
                     <DropdownMenuItem
                       className={`${
                         session?.user
-                          ? "block cursor-pointer"
+                          ? "block cursor-pointer focus:bg-backgroundF"
                           : "hidden cursor-pointer"
                       }`}
                       asChild
@@ -150,17 +176,32 @@ export function MainNav({ items, children, session }) {
                     </DropdownMenuItem>
                   </DropdownMenuContent>
                 ) : (
-                  <DropdownMenuContent align='end' className='w-56 mt-4'>
-                    <DropdownMenuItem className='cursor-pointer' asChild>
+                  <DropdownMenuContent
+                    align='end'
+                    className='w-56 mt-4 bg-topBackground border-[1px] border-border dark:border-borderF'
+                  >
+                    <DropdownMenuItem
+                      className='cursor-pointer focus:bg-backgroundF'
+                      asChild
+                    >
                       <Link href='/business-profile'>Profile</Link>
                     </DropdownMenuItem>
-                    <DropdownMenuItem className='cursor-pointer' asChild>
+                    <DropdownMenuItem
+                      className='cursor-pointer focus:bg-backgroundF'
+                      asChild
+                    >
                       <Link href='/business-profile/orders'>My Orders</Link>
                     </DropdownMenuItem>
-                    <DropdownMenuItem className='cursor-pointer' asChild>
+                    <DropdownMenuItem
+                      className='cursor-pointer focus:bg-backgroundF'
+                      asChild
+                    >
                       <Link href='/business-profile/reviews'>My reviews</Link>
                     </DropdownMenuItem>
-                    <DropdownMenuItem className='cursor-pointer' asChild>
+                    <DropdownMenuItem
+                      className='cursor-pointer focus:bg-backgroundF'
+                      asChild
+                    >
                       <Link href='/business-profile/restaurants'>
                         My Restaurants
                       </Link>
@@ -168,7 +209,7 @@ export function MainNav({ items, children, session }) {
                     <DropdownMenuItem
                       className={`${
                         session?.user
-                          ? "block cursor-pointer"
+                          ? "block cursor-pointer focus:bg-backgroundF"
                           : "hidden cursor-pointer"
                       }`}
                       asChild

@@ -95,7 +95,7 @@ function CheckoutContainer({ user }) {
     <Form {...form}>
       <form
         onSubmit={form.handleSubmit(onSubmit)}
-        className='font-robotoSlab text-[#414549]'
+        className='font-robotoSlab text-pText'
       >
         <div className='container mx-auto px-4 lg:px-10 py-6'>
           {/* Main grid layout */}
@@ -103,7 +103,7 @@ function CheckoutContainer({ user }) {
             {/* Left Section: Address & Payment */}
             <div className='flex flex-col space-y-6 lg:col-span-8'>
               {/* Personal Details */}
-              <div className='bg-white border border-gray-200 rounded-md p-6'>
+              <div className='bg-topBackground border-[1px] border-border dark:border-borderF rounded-md p-6'>
                 <h2 className='text-xl font-medium mb-4'>Personal Details</h2>
                 <div className='flex justify-start items-start gap-x-4'>
                   <User2 />
@@ -115,7 +115,7 @@ function CheckoutContainer({ user }) {
                 </div>
               </div>
               {/* Delivery Address Section */}
-              <div className='bg-white border border-gray-200 rounded-md p-6'>
+              <div className='bg-topBackground border-[1px] border-border dark:border-borderF  rounded-md p-6'>
                 <div className='flex justify-between items-center'>
                   <h2
                     className={`${
@@ -127,8 +127,8 @@ function CheckoutContainer({ user }) {
                   <div
                     className={`cursor-pointer  px-2 py-1 rounded-md flex justify-center items-center text-sm ${
                       isDeliveryEdit
-                        ? "text-destructive hover:bg-red-100/60"
-                        : "text-blue-500 hover:bg-blue-100/60"
+                        ? "text-destructive  hover:bg-backgroundF"
+                        : "text-blue-500 hover:bg-backgroundF"
                     }`}
                     onClick={() => setIsDeliveryEdit((prev) => !prev)}
                   >
@@ -157,7 +157,7 @@ function CheckoutContainer({ user }) {
               </div>
 
               {/* Billing Address */}
-              <div className='bg-white border border-gray-200 rounded-md p-6'>
+              <div className='bg-topBackground border-[1px] border-border dark:border-borderF rounded-md p-6'>
                 <h2 className='text-xl font-medium mb-4'>Billing Address</h2>
                 <div className='flex justify-start items-start gap-x-4'>
                   <IconComponent />
@@ -173,19 +173,28 @@ function CheckoutContainer({ user }) {
 
               {/* Submit Button */}
 
-              <Button
-                className='hidden lg:block w-full py-3 text-white bg-blue-600 rounded-md font-semibold'
-                type='submit'
-              >
-                Place Order
-              </Button>
+              {isSubmitting ? (
+                <LoadingBtn
+                  className='w-full py-3 text-primary-foreground bg-blue-600 dark:text-primary dark:hover:text-primary-foreground rounded-md font-semibold'
+                  type='submit'
+                  text='Order Submitting'
+                />
+              ) : (
+                <Button
+                  className='w-full py-3 text-primary-foreground bg-blue-600  rounded-md font-semibold dark:text-primary dark:hover:text-primary-foreground'
+                  type='submit'
+                  disabled={isSubmitting || isDeliveryEdit}
+                >
+                  Place Order
+                </Button>
+              )}
             </div>
 
             {/* Right Section: Order Summary */}
             <OrderSummary />
           </div>
         </div>
-        <div className='lg:hidden fixed inset-x-0 bottom-0 shadow-lg bg-background p-4 flex flex-col  z-[999]'>
+        <div className='lg:hidden fixed inset-x-0 bottom-0 shadow-lg bg-topBackground p-4 flex flex-col  z-[999] border-t-[1px] border-border dark:border-borderF'>
           <div className='flex justify-between items-center'>
             <div className='flex flex-col justify-start items-start '>
               <h1 className='font-inter'>
@@ -196,7 +205,7 @@ function CheckoutContainer({ user }) {
               </h1>
               <Link
                 href='#'
-                className='underline text-sm hover:bg-deepBackground py-1 rounded-md transition-colors ease-linear duration-100 underline-offset-2 font-medium'
+                className='hover:underline text-sm hover:bg-backgroundF  rounded-md transition-colors ease-linear duration-100 underline-offset-2 font-medium pb-2'
                 onClick={(e) => {
                   e.preventDefault(); // Prevent default link behavior
                   scrollToView("order");
@@ -218,13 +227,13 @@ function CheckoutContainer({ user }) {
           )}
           {isSubmitting ? (
             <LoadingBtn
-              className='py-3 text-white bg-blue-600 rounded-md font-semibold'
+              className='w-full py-3 text-primary-foreground bg-blue-600 dark:text-primary dark:hover:text-primary-foreground rounded-md font-semibold'
               type='submit'
               text='Order Submitting'
             />
           ) : (
             <Button
-              className='w-full py-3 text-white bg-blue-600 rounded-md font-semibold'
+              className='w-full py-3 text-primary-foreground bg-blue-600  rounded-md font-semibold dark:text-primary dark:hover:text-primary-foreground'
               type='submit'
               disabled={isSubmitting || isDeliveryEdit}
             >

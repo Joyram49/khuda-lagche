@@ -13,7 +13,7 @@ export default function EmptyOrder({ text, status }) {
         <h1 className='text-2xl md:text-3xl font-bold text-[#d77a5d]'>
           Oops! Your {status}&apos;s basket is empty
         </h1>
-        <p className='text-lg text-gray-600 pb-6'>{text}</p>
+        <p className='text-lg text-pText pb-6'>{text}</p>
 
         {/* CTA Button */}
         <Link href='/foodItems'>

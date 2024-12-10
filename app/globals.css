@@ -37,6 +37,10 @@
     --initial: 210, 2%, 53%;
     --deepBackground: 0, 0%, 95%;
     --deep: 210, 6%, 27%;
+    --backgroundF: 0 0% 100%;
+    --topBackground: 220 14.3% 95.9%;
+    --p-textF: 210, 6%, 27%;
+    --borderF: 220 13% 91%;
   }
 
   .dark {
@@ -57,7 +61,7 @@
     --accent: 215 27.9% 16.9%;
     --accent-foreground: 210 20% 98%;
     --success: 138, 53%, 40%;
-    --destructive: 0 62.8% 30.6%;
+    --destructive: 0 100% 60.39%;
     --destructive-foreground: 210 20% 98%;
     --border: 215 27.9% 16.9%;
     --input: 215 27.9% 16.9%;
@@ -67,6 +71,10 @@
     --chart-3: 30 80% 55%;
     --chart-4: 280 65% 60%;
     --chart-5: 340 75% 55%;
+    --backgroundF: 0, 0%, 18%;
+    --topBackground: 0, 0%, 20%;
+    --p-textF: 0, 0%, 94%;
+    --borderF: 150, 40%, 98%;
   }
 }
 
@@ -75,7 +83,7 @@
     @apply border-border;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-backgroundF text-foreground;
   }
 }
 

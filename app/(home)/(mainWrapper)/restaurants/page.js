@@ -38,10 +38,10 @@ async function RestaurantsPage({ searchParams }) {
   }
 
   return (
-    <div className='relative pb-16'>
+    <div className='relative bg-backgroundF'>
       {/*end container*/}
       <RestaurantParamsProvider initialFilter={initialFilters}>
-        <div className='w-full sm:container relative mt-6 p-4 sm:p-0'>
+        <div className='w-full sm:container relative  p-4 sm:py-10 '>
           <div className='lg:flex'>
             <RestaurantSidebar />
             <div className='lg:w-3/4 md:px-3 mt-[30px] lg:mt-0'>

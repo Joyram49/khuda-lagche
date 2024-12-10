@@ -22,7 +22,7 @@ function RestaurantMenuContainer({
           ))}
         </div>
         <div
-          className={`lg:w-1/4 md:pr-2 md:pl-4 ring-[1px]   ring-slate-900/10 rounded-md drop-shadow-sm  h-full hidden lg:block`}
+          className={`lg:w-1/4 md:pr-2 md:pl-4 border-[1px] border-border dark:border-borderF rounded-md drop-shadow-sm  h-full hidden lg:block`}
           style={{
             position: "sticky",
             top: headerHeight + 68,

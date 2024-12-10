@@ -259,7 +259,7 @@ const RestaurantAddForm = () => {
                   {/* Overlay Upload Button */}
                   <label
                     htmlFor='thumbnail'
-                    className='absolute bottom-3 right-3 bg-background text-[#414549] text-sm font-medium py-2 px-4 rounded cursor-pointer flex items-center gap-x-2'
+                    className='absolute bottom-3 right-3 bg-background text-pText text-sm font-medium py-2 px-4 rounded cursor-pointer flex items-center gap-x-2'
                   >
                     <Camera className='fill-[#414549] stroke-white' />
                     <span className='hidden xs:block'>

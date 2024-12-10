@@ -27,7 +27,7 @@ async function RestaurantEditPage({ params }) {
 
   return (
     <div className='w-full flex flex-col gap-y-20'>
-      <div className='xs:border border-slate-800/10 drop-shadow-sm rounded-sm  xs:p-10 bg-gray-200'>
+      <div className='xs:border-[1px] border-border dark:border-borderF drop-shadow-sm rounded-sm  xs:p-10 '>
         <div className='w-full'>
           <h1 className='text-center font-robotoSlab  text-3xl'>
             {restaurant?.name}
@@ -41,7 +41,7 @@ async function RestaurantEditPage({ params }) {
         />
       </div>
       <div className='flex flex-col gap-y-2 xs:p-10'>
-        <div className='flex items-center justify-between  font-robotoSlab  text-xl text-[#414549]'>
+        <div className='flex items-center justify-between  font-robotoSlab  text-xl text-pText'>
           <h1 className='capitalize'>
             All foods that
             <span

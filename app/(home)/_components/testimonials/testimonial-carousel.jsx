@@ -65,14 +65,14 @@ function TestimonialCarousel({ bg }) {
         className={`top-[10%] h-16 w-16 left-5 hidden sm:flex border-none ${
           bg
             ? "bg-[#fff3] text-white"
-            : "text-secondary bg-accent hover:text-white hover:bg-[#414549]"
+            : "text-pText bg-topBackground hover:text-white hover:bg-[#414549]  border-[1px] border-border dark:border-borderF"
         } transition-all duration-100 ease-linear`}
       />
       <CarouselNext
         className={`top-[10%] h-16 w-16 right-5 hidden sm:flex border-none ${
           bg
             ? "bg-[#fff3] text-white"
-            : "text-secondary bg-accent hover:text-white hover:bg-[#414549]"
+            : "text-pText bg-topBackground hover:text-white hover:bg-[#414549] border-[1px] border-border dark:border-borderF"
         } transition-all duration-100 ease-linear`}
       />
 
@@ -81,7 +81,7 @@ function TestimonialCarousel({ bg }) {
         <DotButton
           bg={bg}
           className={`h-[6px] w-[6px] rounded-full  appearance-none  touch-manipulation  cursor-pointer border-none p-0 m-0 flex justify-center items-center outline outline-2 outline-offset-1 ${
-            bg ? "outline-background" : "outline-secondary"
+            bg ? "outline-white" : "outline-secondary dark:outline-white"
           }`}
         />
       </div>

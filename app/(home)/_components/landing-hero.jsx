@@ -43,13 +43,13 @@ export function LandingHeroCarousel() {
       <div className='absolute left-[50%] top-[95%] translate-x-[-50%] flex gap-x-2 '>
         <DotButton
           bg={true}
-          className='h-[6px] w-[6px] rounded-full   appearance-none  touch-manipulation  cursor-pointer border-none p-0 m-0 flex justify-center items-center outline outline-2 outline-offset-1 outline-background'
+          className='h-[6px] w-[6px] rounded-full   appearance-none  touch-manipulation  cursor-pointer border-none p-0 m-0 flex justify-center items-center outline outline-2 outline-offset-1 outline-white'
         />
       </div>
 
       {/* carousel brand icons with title */}
       <div className='w-full  hidden lg:flex justify-center items-center absolute top-[80%] left-[50%] translate-x-[-50%]'>
-        <div className='w-full lg:w-[80%]  grid grid-cols-4  divide-x-[1px]  divide-dotted font-medium  text-gray-50 '>
+        <div className='w-full lg:w-[80%]  grid grid-cols-4  divide-x-[1px] divide-gray-200 divide-dotted font-medium  text-gray-50 '>
           <div className='text-base 2xl:text-lg uppercase'>
             <Link
               href='#'

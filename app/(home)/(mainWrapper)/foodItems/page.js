@@ -27,11 +27,11 @@ async function FoodItemsPage({ searchParams }) {
   const foodItems = await getAllFood(initialFilters);
 
   return (
-    <div className='relative'>
+    <div className='relative bg-backgroundF'>
       <CleanFacebookHash />
       {/*end container*/}
       <FoodParamsProvider initialFilters={initialFilters}>
-        <div className='w-full sm:container relative mt-6 p-4 sm:p-0'>
+        <div className='w-full sm:container relative  p-4 sm:py-10 '>
           <div className='lg:flex'>
             <FoodItemsSideBar />
             <div className='lg:w-3/4 md:px-3 mt-[30px] lg:mt-0 '>

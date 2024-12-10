@@ -32,7 +32,7 @@ async function BusinessProfileRestaurantPage() {
   }
 
   return (
-    <div className='flex flex-col justify-center items-start gap-y-6 font-robotoSlab text-[#414549]'>
+    <div className='flex flex-col justify-center items-start gap-y-6 font-robotoSlab text-pText'>
       <div className='w-full flex justify-between items-center'>
         <h1 className='font-medium text-lg capitalize flex justify-center items-center gap-x-2'>
           Restaurants I own

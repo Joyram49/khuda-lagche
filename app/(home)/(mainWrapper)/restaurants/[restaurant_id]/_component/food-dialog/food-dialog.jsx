@@ -16,7 +16,7 @@ function FoodDialog({ data }) {
         <DialogTitle className='font-robotoSlab font-[500]'>
           {data?.name}
         </DialogTitle>
-        <DialogDescription className='text-sm font-robotoSlab text-muted-foreground '>
+        <DialogDescription className='text-sm font-robotoSlab text-pText '>
           {data?.description}
         </DialogDescription>
         <div className='flex justify-between items-center'>
@@ -24,7 +24,7 @@ function FoodDialog({ data }) {
           <span
             className={`${
               data?.availability ? "bg-[#3ca52e]" : "bg-destructive"
-            } text-accent px-3 py-1 my-1 rounded-full font-inter text-[12px]`}
+            } text-pText px-3 py-1 my-1 rounded-full font-inter text-[12px]`}
           >
             {data?.availability ? "In Stock" : "Out of Stock"}
           </span>

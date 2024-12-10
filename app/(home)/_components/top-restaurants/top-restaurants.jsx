@@ -6,7 +6,7 @@ async function TopRestaurants() {
   const topRestaurants = await getTopRatedRestaurants();
 
   return (
-    <section className='h-auto bg-deepBackground '>
+    <section className='h-auto bg-topBackground '>
       <div className='container'>
         <div className=' h-full w-full  flex-col  flex justify-around items-center gap-y-10 sm:gap-y-20 py-10 md:py-20'>
           {/* top restaurants header */}

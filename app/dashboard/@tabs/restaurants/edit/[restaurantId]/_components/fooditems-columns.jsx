@@ -44,7 +44,7 @@ export const FoodItemsTableColumns = ({
       <TableColumnHeader column={column} title='Name' hide={false} />
     ),
     cell: ({ row }) => (
-      <div className='capitalize font-robotoSlab text-[#414549]'>
+      <div className='capitalize font-robotoSlab text-pText'>
         {row.getValue("name")}
       </div>
     ),

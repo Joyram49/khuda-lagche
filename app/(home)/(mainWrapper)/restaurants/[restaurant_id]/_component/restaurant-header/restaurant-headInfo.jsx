@@ -44,7 +44,7 @@ async function RestaurantHeadInfo({ restaurant }) {
             <h1 className='text-primary font-robotoSlab font-medium text-xl md:text-3xl'>
               {restaurant?.name}
             </h1>
-            <div className='flex justify-start items-center flex-wrap gap-y-2 gap-x-2 font-robotoSlab text-sm md:text-base text-muted-foreground'>
+            <div className='flex justify-start items-center flex-wrap gap-y-2 gap-x-2 font-robotoSlab text-sm md:text-base text-pText'>
               <StarRating rating={rating} fontSize={22} />
               <span className=''>-</span>
               <p className='font-semibold'>
@@ -59,7 +59,7 @@ async function RestaurantHeadInfo({ restaurant }) {
                 reviews={reviews}
               />
             </div>
-            <div className='flex justify-start flex-wrap gap-y-2 items-center gap-x-4 font-robotoSlab text-muted-foreground  '>
+            <div className='flex justify-start flex-wrap gap-y-2 items-center gap-x-4 font-robotoSlab text-pText  '>
               <div className='flex justify-start items-start xs:items-center gap-x-2'>
                 <div
                   style={{
@@ -92,7 +92,7 @@ async function RestaurantHeadInfo({ restaurant }) {
         </div>
 
         {/* restaurant adddress, delivery time,categories, offer*/}
-        <div className='flex flex-wrap gap-y-2 gap-x-4 justify-start items-center font-robotoSlab font-[300] text-muted-foreground'>
+        <div className='flex flex-wrap gap-y-2 gap-x-4 justify-start items-center font-robotoSlab font-[300] text-pText'>
           <div className='flex xs:items-center gap-x-2'>
             <FiMapPin className='stroke-customYellow' size={22} />
             <p className=''>{restaurant?.address}</p>
@@ -105,13 +105,13 @@ async function RestaurantHeadInfo({ restaurant }) {
 
         {/* restaurant categories, */}
 
-        <div className='flex gap-x-4 justify-start md:items-center font-robotoSlab text-muted-foreground'>
+        <div className='flex gap-x-4 justify-start md:items-center font-robotoSlab text-pText'>
           <h3>Cuisines: </h3>
           <div className='flex justify-center md:justify-normal items-center flex-wrap gap-x-4 gap-y-2'>
             {restaurant?.categories?.map((cousin) => (
               <span
                 key={cousin?.id}
-                className='text-sm font-medium bg-[#fffafa] rounded-full px-2 py-1 min-w-fit'
+                className='text-sm text-muted-foreground font-medium bg-[#fffafa] dark:bg-topBackground dark:text-pText border-[1px] border-border dark:border-borderF  rounded-full px-2 py-1 min-w-fit '
               >
                 {cousin?.name}
               </span>

@@ -9,7 +9,7 @@ export default function NotFound() {
   const pathName = usePathname();
 
   return (
-    <div className='min-h-screen w-full flex flex-col justify-center items-center '>
+    <div className='min-h-screen w-full flex flex-col justify-center items-center bg-backgroundF '>
       {/* Animation */}
       <div className=' w-36 h-36 md:w-64 md:h-64 '>
         <DotLottieReact
@@ -21,10 +21,8 @@ export default function NotFound() {
 
       {/* Text */}
       <div className='text-center mt-6'>
-        <h1 className='text-4xl font-bold text-gray-800'>
-          Oops! Food Not Found
-        </h1>
-        <p className='mt-2 text-gray-600 font-inter '>
+        <h1 className='text-4xl font-bold text-pText'>Oops! Page Not Found</h1>
+        <p className='mt-2 text-muted-foreground font-inter '>
           The page <strong>&apos;{pathName}&apos;</strong> you're looking for
           isn't available. It might have been removed or the link is incorrect.
         </p>

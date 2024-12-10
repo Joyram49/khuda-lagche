@@ -5,7 +5,7 @@ import NewDish from "./new-dish";
 
 function HotDealWithNewDishes() {
   return (
-    <section className='h-auto min-h-screen bg-background '>
+    <section className='h-auto min-h-screen bg-backgroundF '>
       <div className='container'>
         <div className='h-full flex-col  flex justify-around items-center gap-y-10 py-10 md:py-20'>
           <HotDeal />

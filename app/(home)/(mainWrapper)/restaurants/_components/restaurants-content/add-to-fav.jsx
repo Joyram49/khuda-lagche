@@ -69,7 +69,7 @@ function AddToFav({ restaurantId, className, isFav, restaurantName }) {
           <TooltipTrigger asChild>
             <button
               className={cn(
-                "  w-7 h-7 bg-background rounded-full flex justify-center items-center group/edit",
+                "  w-7 h-7 bg-topBackground rounded-full flex justify-center items-center group/edit border-[1px] border-border dark:border-borderF",
                 className
               )}
               onClick={(e) => updateFav(e)}

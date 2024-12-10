@@ -13,7 +13,7 @@ function AddNewCategoryBtn({ setIsModalOpen }) {
       <Button
         type='button'
         variant='link'
-        className='py-0 px-1 underline hover:text-hoverYellow'
+        className='py-0 px-1 underline text-pText hover:text-hoverYellow'
         onClick={(e) => handleModal(e)}
       >
         here

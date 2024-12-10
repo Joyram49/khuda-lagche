@@ -74,7 +74,7 @@ function UpdateAddress({ user }) {
     <Form {...form}>
       <form
         onSubmit={form.handleSubmit(onSubmit)}
-        className='mt-6 w-full flex flex-col gap-y-6 font-robotoSlab  border-[1px] border-slate-900/10 drop-shadow-sm rounded-sm p-4'
+        className='mt-6 w-full flex flex-col gap-y-6 font-robotoSlab border-[1px] border-border dark:border-borderF drop-shadow-sm rounded-sm p-4'
       >
         <div className=' grid sm:grid-cols-2 gap-6'>
           <FormField
@@ -90,13 +90,28 @@ function UpdateAddress({ user }) {
                     onValueChange={field.onChange}
                     defaultValue={addressInArray[0]}
                   >
-                    <SelectTrigger>
+                    <SelectTrigger className='bg-backgroundF border-[1px] border-border dark:border-borderF'>
                       <SelectValue placeholder='Select an address type' />
                     </SelectTrigger>
-                    <SelectContent className='font-robotoSlab'>
-                      <SelectItem value='home'>Home</SelectItem>
-                      <SelectItem value='office'>Office</SelectItem>
-                      <SelectItem value='other'>Other</SelectItem>
+                    <SelectContent className='font-robotoSlab bg-backgroundF border-[1px] border-border dark:border-borderF'>
+                      <SelectItem
+                        value='home'
+                        className='focus:bg-topBackground'
+                      >
+                        Home
+                      </SelectItem>
+                      <SelectItem
+                        value='office'
+                        className='focus:bg-topBackground'
+                      >
+                        Office
+                      </SelectItem>
+                      <SelectItem
+                        value='other'
+                        className='focus:bg-topBackground'
+                      >
+                        Other
+                      </SelectItem>
                     </SelectContent>
                   </Select>
                 </FormControl>
@@ -115,7 +130,7 @@ function UpdateAddress({ user }) {
                 <FormControl>
                   <Input
                     placeholder='Enter  house no.'
-                    className='focus-visible:ring-2 focus-visible:ring-hoverYellow focus-visible:ring-offset-0'
+                    className='focus-visible:ring-2 focus-visible:ring-hoverYellow focus-visible:ring-offset-0 bg-backgroundF border-[1px] border-border dark:border-borderF'
                     {...field}
                   />
                 </FormControl>
@@ -135,7 +150,7 @@ function UpdateAddress({ user }) {
                 <FormControl>
                   <Input
                     placeholder='Enter road no.'
-                    className='focus-visible:ring-2 focus-visible:ring-hoverYellow focus-visible:ring-offset-0'
+                    className='focus-visible:ring-2 focus-visible:ring-hoverYellow focus-visible:ring-offset-0 bg-backgroundF border-[1px] border-border dark:border-borderF'
                     {...field}
                   />
                 </FormControl>
@@ -155,7 +170,7 @@ function UpdateAddress({ user }) {
                 <FormControl>
                   <Input
                     placeholder='Enter block no.'
-                    className='focus-visible:ring-2 focus-visible:ring-hoverYellow focus-visible:ring-offset-0'
+                    className='focus-visible:ring-2 focus-visible:ring-hoverYellow focus-visible:ring-offset-0 bg-backgroundF border-[1px] border-border dark:border-borderF'
                     {...field}
                   />
                 </FormControl>
@@ -169,7 +184,7 @@ function UpdateAddress({ user }) {
           <LoadingBtn
             type='submit'
             text='Submitting'
-            className='self-end block max-w-fit'
+            className='self-end  max-w-fit'
           />
         ) : (
           <Button type='submit' className='capitalize self-end '>

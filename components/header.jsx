@@ -59,16 +59,20 @@ function Header({ session }) {
   return (
     <header
       ref={headerRef}
-      className='z-30 bg-background/60 backdrop-blur-md fixed top-0 left-0 right-0 border-b h-auto'
+      className={`z-30 fixed bg-backgroundF top-0 left-0 right-0 border-b-[1px] border-border dark:border-borderF h-auto ${
+        topBarVisible
+          ? "opacity-1"
+          : "bg-backgroundF-opacity60 dark:bg-backgroundF-opacity80 backdrop-blur-md"
+      }`}
       style={{
         transition: "transform 0.3s ease",
-        transform: topBarVisible ? "translateY(0)" : `translateY(-50px)`,
+        transform: topBarVisible ? "translateY(0)" : `translateY(-50px) `,
       }}
     >
-      <div className='bg-accent w-full py-[1px]'>
+      <div className='bg-topBackground w-full '>
         <TopBar />
       </div>
-      <div className='container flex items-center justify-between py-4'>
+      <div className='container flex items-center justify-between py-4 '>
         <MainNav items={navLinks} session={session} />
       </div>
     </header>

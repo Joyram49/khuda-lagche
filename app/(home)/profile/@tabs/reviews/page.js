@@ -27,7 +27,7 @@ async function ReviewPage() {
   }
 
   return (
-    <div className='flex flex-col gap-y-4 font-robotoSlab text-[#414549]'>
+    <div className='flex flex-col gap-y-4 font-robotoSlab text-pText'>
       <AllReviews reviews={reviews} />
     </div>
   );

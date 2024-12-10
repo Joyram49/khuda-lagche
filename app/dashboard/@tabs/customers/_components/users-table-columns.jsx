@@ -48,14 +48,10 @@ export const UsersTableColumns = ({ handleDeleteModal, handleViewModal }) => [
   },
   {
     accessorKey: "id",
-    header: ({ column }) => (
-      <p className='font-medium text-[#414549]'>UserId</p>
-    ),
+    header: ({ column }) => <p className='font-medium text-pText'>UserId</p>,
     cell: ({ row }) => {
       return (
-        <div className='font-robotoSlab text-[#414549]'>
-          {row.getValue("id")}
-        </div>
+        <div className='font-robotoSlab text-pText'>{row.getValue("id")}</div>
       );
     },
   },
@@ -65,18 +61,16 @@ export const UsersTableColumns = ({ handleDeleteModal, handleViewModal }) => [
     header: ({ column }) => <TableColumnHeader column={column} title='Name' />,
     cell: ({ row }) => {
       return (
-        <div className='font-robotoSlab text-[#414549]'>
-          {row.getValue("name")}
-        </div>
+        <div className='font-robotoSlab text-pText'>{row.getValue("name")}</div>
       );
     },
   },
   {
     accessorKey: "email",
-    header: ({ column }) => <p className='font-medium text-[#414549]'>Email</p>,
+    header: ({ column }) => <p className='font-medium text-pText'>Email</p>,
     cell: ({ row }) => {
       return (
-        <div className='font-robotoSlab text-[#414549]'>
+        <div className='font-robotoSlab text-pText'>
           {row.getValue("email")}
         </div>
       );
@@ -85,7 +79,7 @@ export const UsersTableColumns = ({ handleDeleteModal, handleViewModal }) => [
 
   {
     accessorKey: "role",
-    header: ({ column }) => <p className='font-medium text-[#414549]'>Role</p>,
+    header: ({ column }) => <p className='font-medium text-pText'>Role</p>,
     cell: ({ row }) => {
       const role = row.getValue("role");
       return (
@@ -111,7 +105,7 @@ export const UsersTableColumns = ({ handleDeleteModal, handleViewModal }) => [
         "MM/dd/yyyy, HH:mm:ss"
       );
       return (
-        <div className='capitalize font-robotoSlab text-[#414549] font-medium hidden xl:block'>
+        <div className='capitalize font-robotoSlab text-pText font-medium hidden xl:block'>
           {formattedDate}
         </div>
       );

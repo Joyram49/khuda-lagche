@@ -11,7 +11,7 @@ import DishImageLoader from "./dish-image-loader";
 
 function NewDishCard({ data }) {
   return (
-    <Card className='max-w-[375px]  justify-self-center bg-none  border-0 shadow-none  '>
+    <Card className='max-w-[375px]  justify-self-center bg-topBackground bg-none  border-[1px] dark:border-borderF shadow-none  '>
       <CardContent className='p-0 '>
         <DishImageLoader data={data} />
         <div className='flex flex-col items-center justify-center my-6 gap-y-2'>
@@ -22,7 +22,7 @@ function NewDishCard({ data }) {
             <span className='mr-1'>&#2547;</span>
             {data?.price}
           </h2>
-          <CardDescription className='font-robotoSlab  text-center '>
+          <CardDescription className='font-robotoSlab  text-center  text-pText'>
             {truncateContent(data?.description, 15)}
           </CardDescription>
         </div>

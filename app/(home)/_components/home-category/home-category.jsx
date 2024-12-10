@@ -7,7 +7,7 @@ async function HomeCategory() {
   const categories = await getAllCategory();
 
   return (
-    <section className='h-auto bg-deepBackground '>
+    <section className='h-auto bg-topBackground '>
       <div className='container '>
         <div className=' h-full flex-col  flex justify-around items-center gap-y-10 md:gap-y-20 py-10 md:py-20'>
           {/* category header */}
@@ -16,7 +16,7 @@ async function HomeCategory() {
               More than <span className='text-customYellow'>20,000 dishes</span>
               to order!
             </h1>
-            <p className=' text-muted-foreground font-medium font-robotoSlab text-sm pt-1 sm:pt-2 '>
+            <p className='text-muted-foreground font-medium font-robotoSlab text-sm pt-1 sm:pt-2 '>
               Welcome to The Biggest Network of Food Ordering & Delivery
             </p>
           </div>

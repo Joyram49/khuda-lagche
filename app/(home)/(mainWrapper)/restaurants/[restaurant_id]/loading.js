@@ -4,7 +4,7 @@ import RestaurantHeaderInfoLoader from "@/components/loader/restaurant/restauran
 
 export default function RestaurantLoadingPage() {
   return (
-    <div className='min-h-screen w-full mt-10'>
+    <div className='min-h-screen w-full mt-10 bg-backgroundF'>
       <div className='w-full flex flex-col  justify-center  items-center gap-y-6 '>
         <RestaurantHeaderInfoLoader />
         <div className='w-full h-[1px] bg-slate-900/10 drop-shadow-sm' />

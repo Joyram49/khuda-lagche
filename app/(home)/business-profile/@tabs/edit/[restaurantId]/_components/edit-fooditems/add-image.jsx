@@ -18,11 +18,11 @@ function AddImage({
 
   return (
     <div className='w-full relative'>
-      <p className='mb-2 font-robotoSlab text-[16px] text-[#414549]'>
+      <p className='mb-2 font-robotoSlab text-[16px] text-pText'>
         Upload food image here.
       </p>
       <div
-        className='relative w-full h-56 bg-gray-100 flex items-center justify-center rounded-lg overflow-hidden'
+        className='relative w-full h-56 bg-topBackground flex items-center justify-center rounded-lg overflow-hidden  border-[1px] border-border dark:border-borderF'
         onMouseEnter={() => setHoverImage(true)}
         onMouseLeave={() => setHoverImage(false)}
       >

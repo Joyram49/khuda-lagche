@@ -8,13 +8,13 @@ function RestaurantFoodSkeletonLoader() {
           {[...Array(3)].map((_, index) => (
             <div key={index} className='space-y-4'>
               {/* Category Title Skeleton */}
-              <div className='h-6 w-1/3 bg-gray-200 animate-pulse rounded-md mb-4'></div>
+              <div className='h-6 w-1/3 bg-gray-200 dark:bg-gray-500 animate-pulse rounded-md mb-4'></div>
 
               {/* Food Items Skeleton */}
               {[...Array(3)].map((_, itemIndex) => (
                 <div
                   key={itemIndex}
-                  className='h-20 w-full bg-gray-200 animate-pulse rounded-md'
+                  className='h-20 w-full bg-gray-200 dark:bg-gray-500 animate-pulse rounded-md'
                 ></div>
               ))}
             </div>
@@ -32,11 +32,11 @@ function RestaurantFoodSkeletonLoader() {
           }}
         >
           <div className='space-y-4 p-4'>
-            <div className='h-6 w-1/2 bg-gray-200 animate-pulse rounded-md mb-4'></div>
+            <div className='h-6 w-1/2 bg-gray-200 dark:bg-gray-500 animate-pulse rounded-md mb-4'></div>
             {[...Array(3)].map((_, index) => (
               <div
                 key={index}
-                className='h-16 w-full bg-gray-200 animate-pulse rounded-md'
+                className='h-16 w-full bg-gray-200 dark:bg-gray-500 animate-pulse rounded-md'
               ></div>
             ))}
           </div>
@@ -46,7 +46,7 @@ function RestaurantFoodSkeletonLoader() {
         <div
           className={`w-full fixed bottom-10 z-20 left-1/2 -translate-x-1/2 flex justify-center items-center lg:hidden`}
         >
-          <Button className='container bg-gray-200 animate-pulse py-4 rounded-md mx-6 sm:mx-10'></Button>
+          <Button className='container bg-gray-200 dark:bg-gray-500 animate-pulse py-4 rounded-md mx-6 sm:mx-10'></Button>
         </div>
       </div>
     </div>

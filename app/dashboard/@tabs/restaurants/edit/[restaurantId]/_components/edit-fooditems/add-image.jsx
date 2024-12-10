@@ -18,7 +18,7 @@ function AddImage({
 
   return (
     <div className='w-full relative'>
-      <p className='mb-2 font-robotoSlab text-[16px] text-[#414549]'>
+      <p className='mb-2 font-robotoSlab text-[16px] text-pText'>
         Upload food image here.
       </p>
       <div

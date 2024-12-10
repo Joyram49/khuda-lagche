@@ -30,12 +30,19 @@ export default function TablePagination({ table, type }) {
               table.setPageSize(Number(value));
             }}
           >
-            <SelectTrigger className='h-8 w-[70px]'>
+            <SelectTrigger className='h-8 w-[70px] bg-topBackground border-[1px] border-border dark:border-borderF'>
               <SelectValue placeholder={table.getState().pagination.pageSize} />
             </SelectTrigger>
-            <SelectContent side='top'>
+            <SelectContent
+              side='top'
+              className='bg-topBackground border-[1px] border-border dark:border-borderF'
+            >
               {[10, 20, 30, 40, 50].map((pageSize) => (
-                <SelectItem key={pageSize} value={`${pageSize}`}>
+                <SelectItem
+                  className='focus:bg-backgroundF'
+                  key={pageSize}
+                  value={`${pageSize}`}
+                >
                   {pageSize}
                 </SelectItem>
               ))}

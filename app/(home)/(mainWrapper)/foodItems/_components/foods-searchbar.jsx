@@ -90,12 +90,12 @@ function FoodsSearchBar() {
           placeholder={isTyping ? "" : placeholderText}
           onFocusCapture={() => setSearchOverlay(true)}
           onBlurCapture={() => setSearchOverlay(false)}
-          className='w-full py-2 border-[1px] border-slate-900/10 drop-shadow-sm rounded-md pl-12 bg-[#fffafa] text-muted-foreground text-sm font-robotoSlab outline-none focus:outline-customYellow outline-offset-0 placeholder-[#e9a321] caret-customYellow'
+          className='w-full py-2   drop-shadow-sm rounded-md pl-12 bg-topBackground text-pText text-sm font-robotoSlab outline-none focus:outline-customYellow outline-offset-0 placeholder-[#e9a321] caret-customYellow border-[1px] border-border dark:border-borderF'
           onFocus={handleInputFocus}
           onBlur={handleInputBlur}
           onChange={handleInputChange}
         />
-        <div className='absolute top-0 w-10 h-full bg-white rounded-l-md border-[1px] border-slate-900/10 drop-shadow-sm '></div>
+        <div className='absolute top-0 w-10 h-full bg-topBackground rounded-l-md border-[1px] border-border dark:border-borderF drop-shadow-sm '></div>
         <Search
           className='stroke-2 stroke-[#e9a321] absolute top-1/2 -translate-y-1/2 left-3 z-10'
           size={18}

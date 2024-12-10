@@ -26,7 +26,7 @@ function UpdateImages({
     <div className='flex flex-col md:flex-row justify-between gap-6'>
       {/* Restaurant Image Upload */}
       <div className='flex-1 relative'>
-        <p className='mb-2 font-robotoSlab text-[16px] text-[#414549]'>
+        <p className='mb-2 font-robotoSlab text-[16px] text-pText'>
           Upload restaurant image here.
         </p>
         <div
@@ -71,7 +71,7 @@ function UpdateImages({
 
       {/* Restaurant Thumbnail Upload */}
       <div className='flex-1 relative'>
-        <p className='mb-2 font-robotoSlab text-[16px] text-[#414549]'>
+        <p className='mb-2 font-robotoSlab text-[16px] text-pText'>
           Upload restaurant thumbnail here.
         </p>
         <div

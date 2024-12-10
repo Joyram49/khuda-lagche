@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export default function RestaurantNotFound() {
   return (
-    <div className='h-auto w-full flex flex-col items-center  '>
+    <div className='h-full min-h-[calc(100vh-150px)] w-full bg-backgroundF flex flex-col justify-center items-center  '>
       {/* Animation */}
       <div className=' w-36 h-36 md:w-64 md:h-64 '>
         <DotLottieReact
@@ -18,10 +18,10 @@ export default function RestaurantNotFound() {
 
       {/* Text */}
       <div className='text-center mt-6'>
-        <h1 className='text-4xl font-bold text-gray-800'>
+        <h1 className='text-4xl font-bold text-pText'>
           Oops! Restaurant Not Found
         </h1>
-        <p className='mt-2 text-gray-600'>
+        <p className='mt-2 text-muted-foreground'>
           The restaurant you're looking for isn't available. It might have been
           removed or the link is incorrect.
         </p>

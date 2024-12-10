@@ -33,8 +33,8 @@ function ImageModal({
   return ReactDOM.createPortal(
     <div className='fixed inset-0 z-[999] flex flex-col items-center justify-around md:justify-between bg-black bg-opacity-80'>
       {/* showing image in modal */}
-      <div className=' container max-w-7xl my-10'>
-        <div className=' w-full h-auto flex justify-center items-center'>
+      <div className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2  w-[80%] max-w-full flex justify-center items-center'>
+        <div className=' w-[80%] h-auto flex justify-center items-center'>
           <div
             className={`relative  ${
               showLayout ? "w-[80%]" : "w-full"
@@ -118,7 +118,7 @@ function ImageModal({
 
       {/* all image show with a carousel */}
       {showLayout && (
-        <div className='h-auto container text-white  my-10'>
+        <div className='absolute bottom-0 h-auto container text-white  my-10'>
           <div className='h-full w-full grid grid-cols-[repeat(auto-fit,minmax(60px,1fr))] justify-center items-center  gap-3'>
             {images.map((image) => (
               <div key={image.id} className='col-span-1 '>

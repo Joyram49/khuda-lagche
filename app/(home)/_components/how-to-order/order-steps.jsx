@@ -8,7 +8,7 @@ function OrderSteps({ Icon, step, text }) {
         step === "2" ? "lg:custom-odd-line" : ""
       } `}
     >
-      <Icon size={100} strokeWidth={0.5} stroke='#555' />
+      <Icon size={100} strokeWidth={0.5} className='stroke-pText' />
 
       <div className='bg-customYellow w-10 h-10 rounded-full flex justify-center items-center'>
         <h1 className='text-white text-xl font-robotoSlab font-semibold'>
@@ -23,8 +23,7 @@ function OrderSteps({ Icon, step, text }) {
           <ArrowBigDown
             size={50}
             strokeWidth={0.5}
-            stroke='#555'
-            className='fill-gray-300/30 '
+            className='fill-pText stroke-pText '
           />
         </div>
       )}

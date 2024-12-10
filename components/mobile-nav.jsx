@@ -31,7 +31,7 @@ export function MobileNav({ items, children, handleClick, loginSession }) {
         "fixed inset-0 z-[999] grid h-[calc(100vh-4rem)] grid-flow-row auto-rows-max overflow-auto p-6 pb-32 shadow-md animate-in slide-in-from-bottom-80 lg:hidden"
       )}
     >
-      <div className='relative z-20 grid gap-6 rounded-md bg-popover p-4 text-popover-foreground shadow-md border mt-10'>
+      <div className='relative z-20 grid gap-6 rounded-md bg-topBackground p-4 text-popover-foreground shadow-md border-[1px] border-border dark:border-borderF mt-10'>
         <button
           className='flex items-center space-x-2 lg:hidden absolute top-4 right-4'
           onClick={() => handleClick()}
@@ -67,15 +67,22 @@ export function MobileNav({ items, children, handleClick, loginSession }) {
             </Link>
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
-                <Button variant='outline' size='sm'>
+                <Button
+                  variant='outline'
+                  size='sm'
+                  className='border-[1px] border-border dark:border-borderF'
+                >
                   Register
                 </Button>
               </DropdownMenuTrigger>
-              <DropdownMenuContent align='center' className='w-56 mt-4'>
-                <DropdownMenuItem className='cursor-pointer'>
+              <DropdownMenuContent
+                align='end'
+                className='w-56 mt-4 bg-topBackground border-[1px] border-border dark:border-borderF'
+              >
+                <DropdownMenuItem className='cursor-pointer focus:bg-backgroundF'>
                   <Link href='/register/customer'>Customer</Link>
                 </DropdownMenuItem>
-                <DropdownMenuItem className='cursor-pointer'>
+                <DropdownMenuItem className='cursor-pointer focus:bg-backgroundF'>
                   <Link href='/register/vendor'>Vendor</Link>
                 </DropdownMenuItem>
               </DropdownMenuContent>

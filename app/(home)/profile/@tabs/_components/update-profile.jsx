@@ -88,7 +88,7 @@ function UpdateProfile({ user }) {
     <Form {...form}>
       <form
         onSubmit={form.handleSubmit(onSubmit)}
-        className='mt-6 w-full flex flex-col gap-y-6 font-robotoSlab  border-[1px] border-slate-900/10 drop-shadow-sm rounded-sm p-4'
+        className='mt-6 w-full flex flex-col gap-y-6 font-robotoSlab  border-[1px] border-border dark:border-borderF drop-shadow-sm rounded-sm p-4'
       >
         <div className=' grid sm:grid-cols-2 gap-6'>
           <FormField
@@ -102,7 +102,7 @@ function UpdateProfile({ user }) {
                 <FormControl>
                   <Input
                     placeholder='Enter first name'
-                    className='focus-visible:ring-2 focus-visible:ring-hoverYellow focus-visible:ring-offset-0'
+                    className='focus-visible:ring-2 focus-visible:ring-hoverYellow focus-visible:ring-offset-0 bg-backgroundF border-[1px] border-border dark:border-borderF'
                     {...field}
                   />
                 </FormControl>
@@ -119,7 +119,7 @@ function UpdateProfile({ user }) {
                 <FormControl>
                   <Input
                     placeholder='Enter last name'
-                    className='focus-visible:ring-2 focus-visible:ring-hoverYellow focus-visible:ring-offset-0'
+                    className='focus-visible:ring-2 focus-visible:ring-hoverYellow focus-visible:ring-offset-0 bg-backgroundF border-[1px] border-border dark:border-borderF'
                     {...field}
                   />
                 </FormControl>
@@ -139,7 +139,7 @@ function UpdateProfile({ user }) {
                 <FormControl>
                   <Input
                     placeholder='Enter mobile no.'
-                    className='focus-visible:ring-2 focus-visible:ring-hoverYellow focus-visible:ring-offset-0'
+                    className='focus-visible:ring-2 focus-visible:ring-hoverYellow focus-visible:ring-offset-0 bg-backgroundF border-[1px] border-border dark:border-borderF'
                     {...field}
                   />
                 </FormControl>
@@ -157,7 +157,12 @@ function UpdateProfile({ user }) {
                   Email <span className='text-red-500'>*</span>{" "}
                 </FormLabel>
                 <FormControl>
-                  <Input disabled type='email' {...field} />
+                  <Input
+                    disabled
+                    type='email'
+                    {...field}
+                    className='bg-topBackground border-[1px] border-border dark:border-borderF'
+                  />
                 </FormControl>
                 <FormMessage />
               </FormItem>
@@ -178,7 +183,7 @@ function UpdateProfile({ user }) {
           <LoadingBtn
             type='submit'
             text='Submitting'
-            className='self-end block max-w-fit'
+            className='self-end  max-w-fit'
           />
         ) : (
           <Button type='submit' className='capitalize self-end '>

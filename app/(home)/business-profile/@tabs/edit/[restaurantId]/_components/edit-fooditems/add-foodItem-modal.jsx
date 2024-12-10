@@ -100,9 +100,9 @@ function AddFoodItemModal({ onClose, restaurantInfo, categories }) {
   const { isSubmitting } = form.formState;
   return (
     <div className='fixed inset-0 bg-black bg-opacity-70 flex justify-center items-center z-[999] '>
-      <div className='w-full max-w-2xl  h-full max-h-[calc(100vh-70px)] ring-[1px] ring-slate-800/10 drop-shadow-sm p-10 bg-background rounded-lg flex flex-col justify-start items-center overflow-y-auto scrollbar-thin scrollbar-thumb-customYellow scrollbar-track-gray-200 overflow-x-hidden'>
+      <div className='w-full max-w-2xl  h-full max-h-[calc(100vh-70px)]  border-[1px] border-border dark:border-borderF drop-shadow-sm p-10 bg-topBackground rounded-lg flex flex-col justify-start items-center overflow-y-auto scrollbar-thin scrollbar-thumb-customYellow scrollbar-track-gray-200 overflow-x-hidden'>
         <div className='w-full h-auto flex flex-col justify-center items-center'>
-          <h1 className='font-robotoSlab capitalize  text-muted-foreground text-xl'>
+          <h1 className='font-robotoSlab capitalize  text-pText text-xl'>
             Add New Food to the{" "}
             <span
               dangerouslySetInnerHTML={{
@@ -115,7 +115,7 @@ function AddFoodItemModal({ onClose, restaurantInfo, categories }) {
           <Form {...form}>
             <form
               onSubmit={form.handleSubmit(onSubmit)}
-              className='mt-6 w-full flex flex-col gap-y-6 font-robotoSlab  border-[1px] border-slate-900/10 drop-shadow-sm rounded-sm p-4 bg-gray-200'
+              className='mt-6 w-full flex flex-col gap-y-6 font-robotoSlab bg-backgroundF border-[1px] border-border dark:border-borderF drop-shadow-sm rounded-sm p-4 '
             >
               {/* food name field */}
               <FormField
@@ -128,7 +128,7 @@ function AddFoodItemModal({ onClose, restaurantInfo, categories }) {
                       <Input
                         placeholder='Enter your food name'
                         type='text'
-                        className='focus-visible:ring-2 focus-visible:ring-hoverYellow focus-visible:ring-offset-0 placeholder-[#414549]'
+                        className='focus-visible:ring-2 focus-visible:ring-hoverYellow focus-visible:ring-offset-0 placeholder-pText bg-topBackground border-[1px] border-border dark:border-borderF'
                         {...field}
                       />
                     </FormControl>
@@ -146,7 +146,7 @@ function AddFoodItemModal({ onClose, restaurantInfo, categories }) {
                     <FormControl>
                       <Textarea
                         placeholder='write something about food..'
-                        className='focus-visible:ring-2 focus-visible:ring-hoverYellow focus-visible:ring-offset-0 placeholder-[#414549] min-h-[80px] max-h-[180px]'
+                        className='focus-visible:ring-2 focus-visible:ring-hoverYellow focus-visible:ring-offset-0 placeholder-pText min-h-[80px] max-h-[180px] bg-topBackground border-[1px] border-border dark:border-borderF'
                         {...field}
                       />
                     </FormControl>
@@ -166,7 +166,7 @@ function AddFoodItemModal({ onClose, restaurantInfo, categories }) {
                       <Input
                         disabled
                         type='text'
-                        className='focus-visible:ring-2 focus-visible:ring-hoverYellow focus-visible:ring-offset-0 placeholder-[#414549]'
+                        className='focus-visible:ring-2 focus-visible:ring-hoverYellow focus-visible:ring-offset-0 placeholder-pText bg-topBackground border-[1px] border-border dark:border-borderF'
                         {...field}
                       />
                     </FormControl>
@@ -182,14 +182,14 @@ function AddFoodItemModal({ onClose, restaurantInfo, categories }) {
                   render={({ field }) => (
                     <FormItem className='flex-1'>
                       <FormLabel>Prepared In</FormLabel>
-                      <FormDescription className='text-initial'>
+                      <FormDescription>
                         write prepared time in number and maximum is 59
                       </FormDescription>
                       <FormControl>
                         <Input
                           type='number'
                           placeholder='e.g. 15 minutes '
-                          className='focus-visible:ring-2 focus-visible:ring-hoverYellow focus-visible:ring-offset-0'
+                          className='focus-visible:ring-2 focus-visible:ring-hoverYellow focus-visible:ring-offset-0 bg-topBackground border-[1px] border-border dark:border-borderF'
                           {...field}
                         />
                       </FormControl>
@@ -203,14 +203,14 @@ function AddFoodItemModal({ onClose, restaurantInfo, categories }) {
                   render={({ field }) => (
                     <FormItem className='flex-1'>
                       <FormLabel>Delivery time</FormLabel>
-                      <FormDescription className='text-initial'>
+                      <FormDescription>
                         write delivery time in number and maximum is 59
                       </FormDescription>
                       <FormControl>
                         <Input
                           type='number'
                           placeholder='e.g. 15 minutes '
-                          className='focus-visible:ring-2 focus-visible:ring-hoverYellow focus-visible:ring-offset-0'
+                          className='focus-visible:ring-2 focus-visible:ring-hoverYellow focus-visible:ring-offset-0 bg-topBackground border-[1px] border-border dark:border-borderF'
                           {...field}
                         />
                       </FormControl>
@@ -232,7 +232,7 @@ function AddFoodItemModal({ onClose, restaurantInfo, categories }) {
                         <Input
                           type='number'
                           placeholder='enter food price '
-                          className='focus-visible:ring-2 focus-visible:ring-hoverYellow focus-visible:ring-offset-0 placeholder-[#414549]'
+                          className='focus-visible:ring-2 focus-visible:ring-hoverYellow focus-visible:ring-offset-0 placeholder-pText bg-topBackground border-[1px] border-border dark:border-borderF'
                           {...field}
                         />
                       </FormControl>
@@ -251,7 +251,7 @@ function AddFoodItemModal({ onClose, restaurantInfo, categories }) {
                         <Input
                           type='number'
                           placeholder='enter food amount here '
-                          className='focus-visible:ring-2 focus-visible:ring-hoverYellow focus-visible:ring-offset-0 placeholder-[#414549]'
+                          className='focus-visible:ring-2 focus-visible:ring-hoverYellow focus-visible:ring-offset-0 placeholder-pText bg-topBackground border-[1px] border-border dark:border-borderF'
                           {...field}
                         />
                       </FormControl>
@@ -274,7 +274,7 @@ function AddFoodItemModal({ onClose, restaurantInfo, categories }) {
                     <FormControl>
                       <Input
                         placeholder='add comma after each tag'
-                        className='focus-visible:ring-2 focus-visible:ring-hoverYellow focus-visible:ring-offset-0 placeholder-[#414549]'
+                        className='focus-visible:ring-2 focus-visible:ring-hoverYellow focus-visible:ring-offset-0 placeholder-pText bg-topBackground border-[1px] border-border dark:border-borderF'
                         {...field}
                       />
                     </FormControl>
@@ -330,10 +330,10 @@ function AddFoodItemModal({ onClose, restaurantInfo, categories }) {
         </div>
 
         <div
-          className='absolute top-2 right-2.5 w-8 h-8 rounded-full flex justify-center items-center ring-[1px] ring-slate-900/10 drop-shadow-sm hover:ring-customYellow cursor-pointer group'
+          className='absolute top-2 right-2.5 w-8 h-8 rounded-full flex justify-center items-center border-[1px] border-border dark:border-borderF drop-shadow-sm hover:ring-customYellow cursor-pointer group'
           onClick={onClose}
         >
-          <X className='text-slate-600 group-hover:text-customYellow' />
+          <X className='text-pText group-hover:text-customYellow' />
         </div>
       </div>
     </div>

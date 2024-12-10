@@ -9,7 +9,7 @@ function EmptyRelatedFood() {
         autoplay
         className='h-56'
       />
-      <p className='font-robotoSlab font-medium text-[#414549]'>
+      <p className='font-robotoSlab font-medium text-pText'>
         No related food items found!
       </p>
     </div>

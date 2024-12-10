@@ -31,14 +31,14 @@ function OrderSummary() {
   return (
     <div
       id='order'
-      className='lg:col-span-4 flex flex-col scroll-smooth text-[#414549]'
+      className='lg:col-span-4 flex flex-col scroll-smooth text-pText'
     >
-      <div className=' bg-white border border-gray-200 rounded-md p-6'>
+      <div className=' bg-topBackground border-[1px] border-border dark:border-borderF rounded-md p-6'>
         <div className='mb-4 flex flex-col items-center gap text-xl font-medium'>
           <h2>Your Order from </h2>
-          <p className='text-initial font-normal text-base'>{restaurantName}</p>
+          <p className='text-pText font-normal text-base'>{restaurantName}</p>
         </div>
-        <div className='flex flex-col justify-center items-start gap-y-4 font-robotoSlab text-initial text-sm xs:text-base'>
+        <div className='flex flex-col justify-center items-start gap-y-4 font-robotoSlab text-pText text-sm xs:text-base'>
           {cartData?.items?.map((item) => (
             <div
               key={item?.id}
@@ -54,7 +54,7 @@ function OrderSummary() {
           ))}
         </div>
         <div className='mt-6 w-full h-[.1px] bg-slate-800/10 drop-shadow-sm' />
-        <div className='w-full flex flex-col justify-center gap-y-2 font-robotoSlab text-initial'>
+        <div className='w-full flex flex-col justify-center gap-y-2 font-robotoSlab text-pText'>
           <div className='flex items-center justify-between mt-4 '>
             <p>Subtotal</p>
             <p>Tk {subtotal}</p>
@@ -68,10 +68,10 @@ function OrderSummary() {
             <p>Tk 0</p>
           </div>
         </div>
-        <div className='w-full flex items-center justify-between text-black font-robotoSlab text-xl mt-6'>
+        <div className='w-full flex items-center justify-between text-primary font-robotoSlab text-xl mt-6'>
           <div>
             <p>Total</p>{" "}
-            <p className='font-inter font-thin text-initial text-sm'>
+            <p className='font-inter font-thin text-pText text-sm'>
               (incl. fees and tax)
             </p>
           </div>

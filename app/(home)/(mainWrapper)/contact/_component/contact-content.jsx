@@ -9,17 +9,14 @@ function ContactInfo() {
   });
   return (
     <section
-      className={`h-auto w-full bg-background bg-center bg-cover bg-no-repeat`}
+      className={`h-auto w-full bg-backgroundF bg-center bg-cover bg-no-repeat`}
     >
       <div className='container w-full'>
         <div className=' h-full flex flex-col justify-around items-center gap-y-10 md:gap-y-20 py-10 md:py-20'>
           {/* contact information */}
           <div className='grid grid-cols-1 md:grid-cols-3 items-center text-center gap-y-10 md:gap-y-0 md:gap-x-10 xl:gap-x-20 '>
             <div
-              className={` p-10 bg-center bg-contain rounded-[16px] flex flex-col items-center gap-y-5`}
-              style={{
-                backgroundImage: `url(${bgImageUrl})`,
-              }}
+              className={` p-10 bg-topBackground bg-center bg-contain rounded-[16px] flex flex-col items-center gap-y-5 border-[1px] border-border dark:border-borderF `}
             >
               <h1 className='text-xl sm:text-2xl xl:text-4xl   font-robotoSlab uppercase text-foreground '>
                 {" "}
@@ -30,10 +27,7 @@ function ContactInfo() {
               </p>
             </div>
             <div
-              className={` p-10 bg-center bg-contain rounded-[16px] flex flex-col items-center gap-y-5`}
-              style={{
-                backgroundImage: `url(${bgImageUrl})`,
-              }}
+              className={` p-10 bg-topBackground bg-center bg-contain rounded-[16px] flex flex-col items-center gap-y-5 border-[1px] border-border dark:border-borderF `}
             >
               <h1 className='text-xl sm:text-2xl xl:text-4xl   font-robotoSlab uppercase text-foreground '>
                 {" "}
@@ -44,13 +38,9 @@ function ContactInfo() {
               </p>
             </div>
             <div
-              className={` p-10 bg-center bg-contain rounded-[16px] flex flex-col items-center gap-y-5`}
-              style={{
-                backgroundImage: `url(${bgImageUrl})`,
-              }}
+              className={` p-10 bg-topBackground bg-center bg-contain rounded-[16px] flex flex-col items-center gap-y-5 border-[1px] border-border dark:border-borderF `}
             >
               <h1 className='text-xl sm:text-2xl xl:text-4xl   font-robotoSlab uppercase text-foreground '>
-                {" "}
                 Email
               </h1>
               <p className=' text-customYellow = font-robotoSlab text-sm pt-1 sm:pt-2 '>

@@ -1,13 +1,24 @@
 "use client";
 import AuthSkeletonLoader from "@/components/loader/auth-loader";
-import { Logo } from "@/components/logo";
+import { MainNav } from "@/components/main-nav";
 import { useSession } from "next-auth/react";
-import Link from "next/link";
-import { useRouter } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
+const navLinks = [
+  { title: "home", href: "/" },
+  { title: "about", href: "/about" },
+  { title: "gallery", href: "/gallery" },
+  { title: "foodItems", href: "/foodItems" },
+  { title: "contact", href: "/contact" },
+];
 
 function AuthLayout({ children }) {
   const { data: session, status } = useSession();
   const router = useRouter();
+  let pathName = usePathname();
+  pathName = pathName
+    .split("/")
+    .map((path) => path.trim())
+    .filter(Boolean)[0];
 
   if (status === "loading") return <AuthSkeletonLoader />;
   if (session && session?.error !== "RefreshAccessTokenError") {
@@ -16,14 +27,12 @@ function AuthLayout({ children }) {
 
   return (
     <div className='min-h-screen flex flex-col w-auto'>
-      <header className='z-40 bg-background/60 backdrop-blur-md fixed top-0 left-0 right-0 border-b h-auto py-4'>
-        <div className='container'>
-          <Link href='/'>
-            <Logo />
-          </Link>
+      <header className='z-40 bg-topBackground-opacity60 backdrop-blur-md fixed top-0 left-0 right-0 border-b-[1px] border-border dark:border-borderF h-auto py-4'>
+        <div className='container flex items-center justify-between py-4 '>
+          <MainNav items={navLinks} session={session} path={pathName} />
         </div>
       </header>
-      <main className='h-auto mt-[70px] flex flex-col bg-deepBackground'>
+      <main className='h-auto mt-[102px] py-10 flex flex-col bg-backgroundF'>
         {children}
       </main>
     </div>

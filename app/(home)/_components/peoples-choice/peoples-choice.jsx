@@ -48,9 +48,9 @@ function PeoplesChoice({ bg }) {
   });
   return (
     <section
-      className='w-full h-auto bg-cover bg-center relative drop-shadow-md'
+      className='w-full h-auto bg-cover bg-center relative drop-shadow-md bg-backgroundF'
       style={{
-        backgroundImage: bg ? `url(${bgImageUrl})` : "bg-background",
+        backgroundImage: bg ? `url(${bgImageUrl})` : "bg-backgroundF",
       }}
     >
       {bg && (
@@ -64,15 +64,13 @@ function PeoplesChoice({ bg }) {
           <div className='flex flex-col  items-center text-center'>
             <h1
               className={`text-xl sm:text-3xl xl:text-5xl 3xl:text-6xl  font-robotoSlab uppercase ${
-                bg ? "text-background" : "text-foreground"
+                bg ? "text-white" : "text-foreground"
               } `}
             >
               Why People <span className='text-hoverYellow'>Choose</span> us
             </h1>
             <p
-              className={` ${
-                bg ? "text-accent" : "text-muted-foreground"
-              } font-medium font-robotoSlab text-sm pt-1 sm:pt-2 `}
+              className={` text-muted-foreground font-medium font-robotoSlab text-sm pt-1 sm:pt-2 `}
             >
               Clients’ Most Popular Choise
             </p>
@@ -87,7 +85,7 @@ function PeoplesChoice({ bg }) {
                   className='flex flex-col items-start lg:items-end  gap-y-2'
                 >
                   <div className='flex lg:flex-row-reverse items-center gap-x-4'>
-                    <h1 className='w-10 h-10 bg-deepBackground rounded-full flex justify-center items-center text-lg font-robotoSlab font-medium'>
+                    <h1 className='w-10 h-10 bg-topBackground rounded-full flex justify-center items-center text-lg font-robotoSlab font-medium text-pText'>
                       {reason.rank}
                     </h1>
                     <h2
@@ -99,8 +97,8 @@ function PeoplesChoice({ bg }) {
                     </h2>
                   </div>
                   <p
-                    className={`text-sm ${
-                      bg ? "text-muted" : "text-muted-foreground"
+                    className={`text-sm text-right  ${
+                      bg ? "text-[#e9e7e7]" : "text-pText"
                     } font-robotoSlab hidden sm:block`}
                   >
                     {reason.description}
@@ -129,7 +127,7 @@ function PeoplesChoice({ bg }) {
                   className='flex flex-col items-start gap-y-2'
                 >
                   <div className='flex items-center gap-x-2'>
-                    <h1 className='w-10 h-10 bg-deepBackground rounded-full flex justify-center items-center text-lg font-robotoSlab font-medium'>
+                    <h1 className='w-10 h-10 bg-topBackground rounded-full flex justify-center items-center text-lg font-robotoSlab font-medium text-pText'>
                       {reason.rank}
                     </h1>
                     <h2
@@ -141,8 +139,8 @@ function PeoplesChoice({ bg }) {
                     </h2>
                   </div>
                   <p
-                    className={`text-sm ${
-                      bg ? "text-muted" : "text-muted-foreground"
+                    className={`text-sm text-left  ${
+                      bg ? "text-[#e9e7e7]" : "text-pText"
                     } font-robotoSlab hidden sm:block`}
                   >
                     {reason.description}

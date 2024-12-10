@@ -24,13 +24,13 @@ export default function AccessDenied() {
   }, [searchParams]);
 
   return (
-    <div className='min-h-screen flex flex-col items-center justify-center bg-gray-100 p-4'>
-      <div className='bg-white p-8 rounded-lg shadow-lg max-w-md w-full text-center'>
+    <div className='min-h-screen flex flex-col items-center justify-center bg-backgroundF p-4'>
+      <div className='bg-topBackground p-8 rounded-lg shadow-lg max-w-md w-full text-center border-[1px] border-border dark:border-borderF'>
         <AlertCircle className='w-16 h-16 text-red-500 animate-pulse mx-auto' />
-        <h1 className='text-2xl font-semibold mt-4 text-gray-800'>
+        <h1 className='text-2xl font-semibold mt-4 text-pText'>
           Access Denied
         </h1>
-        <p className='text-gray-600 mt-2'>{message}</p>
+        <p className='text-muted-foreground mt-2'>{message}</p>
         <Link
           href='/'
           className='inline-flex items-center px-4 py-2 mt-4 font-semibold text-white bg-blue-500 rounded-lg shadow-md hover:bg-blue-600'

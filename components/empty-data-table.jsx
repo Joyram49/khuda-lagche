@@ -4,7 +4,7 @@ import { TableBody, TableCell, TableRow } from "./ui/table";
 
 function EmptyDataOnTable({ type }) {
   return (
-    <TableBody className='text-center  text-[#414549] font-medium '>
+    <TableBody className='text-center  text-pText font-medium '>
       <TableRow>
         <TableCell colSpan={6}>
           <div className='w-full min-h-[50vh] flex flex-col justify-center items-center '>

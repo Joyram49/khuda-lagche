@@ -2,7 +2,7 @@ import FoodItemCard from "./foodItem-card";
 function RestaurantFoodContainer({ category, foodItems }) {
   return (
     <div className='flex flex-col'>
-      <h2 className='text-xl font-semibold text-muted-foreground mb-4'>
+      <h2 className='text-xl font-semibold text-pText mb-4'>
         {category?.name}
       </h2>
       <div className='grid grid-cols-1 lg:grid-cols-2  gap-4'>

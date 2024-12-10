@@ -58,7 +58,7 @@ export const FoodItemsTableColumns = ({
       <TableColumnHeader column={column} title='Name' hide={false} />
     ),
     cell: ({ row }) => (
-      <div className='capitalize font-robotoSlab text-[#414549]'>
+      <div className='capitalize font-robotoSlab text-pText'>
         {row.getValue("name")}
       </div>
     ),
@@ -98,16 +98,19 @@ export const FoodItemsTableColumns = ({
               <MoreHorizontal className='h-4 w-4' />
             </Button>
           </DropdownMenuTrigger>
-          <DropdownMenuContent align='end'>
+          <DropdownMenuContent
+            align='end'
+            className='bg-topBackground border-[1px] border-border dark:border-borderF'
+          >
             <DropdownMenuLabel>Actions</DropdownMenuLabel>
             <DropdownMenuItem
-              className='cursor-pointer hover:bg-sky-500 hover:text-background'
+              className='cursor-pointer hover:bg-sky-500 hover:text-background dark:hover:bg-backgroundF'
               onClick={() => handleEditModal(foodInfo)}
             >
               Edit Food
             </DropdownMenuItem>
             <DropdownMenuItem
-              className='cursor-pointer hover:bg-red-500 hover:text-background'
+              className='cursor-pointer hover:bg-red-500 hover:text-background dark:hover:bg-backgroundF'
               onClick={() => handleDeleteModal(foodInfo)}
             >
               Delete Food

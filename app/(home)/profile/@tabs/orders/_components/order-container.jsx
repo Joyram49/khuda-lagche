@@ -57,22 +57,30 @@ function OrderContainer({ orders }) {
   };
 
   return (
-    <div className='flex flex-col gap-y-4 font-robotoSlab text-[#414549]'>
-      <div className='flex justify-between items-center'>
+    <div className='flex flex-col gap-y-4 font-robotoSlab text-pText'>
+      <div className='flex flex-col-reverse xs:flex-row justify-between items-start xs:items-center gap-y-2  '>
         <h1 className='font-medium text-lg'>
           Your Orders <span className='font-bold'>{totalItems}</span>
         </h1>
         {/* Select dropdown for filtering orders */}
         <Select onValueChange={setSelectedType}>
-          <SelectTrigger className='w-[180px]'>
+          <SelectTrigger className='w-[180px] bg-topBackground border-[1px] border-border dark:border-borderF'>
             <SelectValue placeholder='Filter Orders' />
           </SelectTrigger>
-          <SelectContent>
+          <SelectContent className='bg-topBackground  border-[1px] border-border dark:border-borderF'>
             <SelectGroup>
-              <SelectItem value='all'>All</SelectItem>
-              <SelectItem value='delivered'>Delivered</SelectItem>
-              <SelectItem value='pending'>Pending</SelectItem>
-              <SelectItem value='cancelled'>Cancelled</SelectItem>
+              <SelectItem value='all' className='focus:bg-backgroundF'>
+                All
+              </SelectItem>
+              <SelectItem value='delivered' className='focus:bg-backgroundF'>
+                Delivered
+              </SelectItem>
+              <SelectItem value='pending' className='focus:bg-backgroundF'>
+                Pending
+              </SelectItem>
+              <SelectItem value='cancelled' className='focus:bg-backgroundF'>
+                Cancelled
+              </SelectItem>
             </SelectGroup>
           </SelectContent>
         </Select>

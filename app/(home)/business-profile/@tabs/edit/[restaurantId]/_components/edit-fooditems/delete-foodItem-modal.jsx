@@ -33,7 +33,7 @@ function DeleteFoodItemModal({ onClose, foodInfo, restaurantName }) {
 
   return (
     <div className='fixed inset-0 bg-black bg-opacity-70 flex justify-center items-center z-[999] '>
-      <div className='absolute top-2 left-1/2 -translate-x-1/2 w-full max-w-md  h-auto max-h-[calc(100vh-70px)] ring-[1px] ring-slate-800/10 drop-shadow-sm p-6 bg-background rounded-md overflow-x-hidden flex flex-col justify-center items-center gap-y-6'>
+      <div className='absolute top-2 left-1/2 -translate-x-1/2 w-full max-w-md  h-auto max-h-[calc(100vh-70px)] border-[1px] border-border dark:border-borderF drop-shadow-sm p-6 bg-backgroundF rounded-md overflow-x-hidden flex flex-col justify-center items-center gap-y-6'>
         <div className='flex flex-col'>
           <h1 className='font-robotoSlab'>
             Do you want to remove

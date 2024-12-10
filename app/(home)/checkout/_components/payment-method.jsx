@@ -14,7 +14,7 @@ import Image from "next/image";
 
 function PaymentMethod({ form }) {
   return (
-    <div className='bg-white border border-gray-200 rounded-md p-6'>
+    <div className='bg-backgroundF border-[1px] border-border dark:border-borderF rounded-md p-6'>
       <FormField
         control={form.control}
         name='payment_method'
@@ -27,7 +27,7 @@ function PaymentMethod({ form }) {
               <RadioGroup className='space-y-2' defaultValue='stripe'>
                 <Label
                   htmlFor='r1'
-                  className='flex items-center space-x-4 border border-slate-800/10 hover:border-slate-800 rounded-sm p-4 cursor-pointer transition-colors duration-100 ease-linear drop-shadow-sm group'
+                  className='flex items-center space-x-4 bg-backgroundF hover:bg-topBackground border-[1px] border-border dark:border-borderF rounded-sm p-4 cursor-pointer transition-colors duration-100 ease-linear drop-shadow-sm group'
                 >
                   <RadioGroupItem value='cash on delivery' id='r1' disabled />
                   <div className='flex items-center gap-x-2'>
@@ -43,7 +43,7 @@ function PaymentMethod({ form }) {
 
                 <Label
                   htmlFor='r2'
-                  className='flex items-center space-x-4 border border-slate-800 rounded-sm p-4'
+                  className='flex items-center space-x-4 bg-topBackground border-[1px] border-border dark:border-borderF rounded-sm p-4 '
                 >
                   <RadioGroupItem value='stripe' id='r2' />
                   <div className='flex items-center gap-x-2'>
@@ -58,7 +58,7 @@ function PaymentMethod({ form }) {
                 </Label>
                 <Label
                   htmlFor='r3'
-                  className='flex items-center space-x-4 border border-slate-800/10 hover:border-slate-800 rounded-sm p-4 cursor-pointer transition-colors duration-100 ease-linear drop-shadow-sm group'
+                  className='flex items-center space-x-4 bg-backgroundF hover:bg-topBackground border-[1px] border-border dark:border-borderF rounded-sm p-4 cursor-pointer transition-colors duration-100 ease-linear drop-shadow-sm group'
                 >
                   <RadioGroupItem value='bkash' id='r3' disabled />
                   <div className='flex items-center gap-x-2'>
@@ -73,7 +73,7 @@ function PaymentMethod({ form }) {
                 </Label>
                 <Label
                   htmlFor='r4'
-                  className='flex items-center space-x-4 border border-slate-800/10 hover:border-slate-800 rounded-sm p-4 cursor-pointer transition-colors duration-100 ease-linear drop-shadow-sm group'
+                  className='flex items-center space-x-4 bg-backgroundF hover:bg-topBackground border-[1px] border-border dark:border-borderF rounded-sm p-4 cursor-pointer transition-colors duration-100 ease-linear drop-shadow-sm group'
                 >
                   <RadioGroupItem value='other' id='r4' disabled />
                   <div className='flex items-center gap-x-2'>

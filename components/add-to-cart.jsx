@@ -78,7 +78,7 @@ function AddToCart({
   }
 
   return fromCart ? (
-    <div className=' bg-[#fffafa] ring-[1px] ring-[#fed5c0] drop-shadow-sm  rounded-sm flex justify-center items-center gap-x-2 overflow-hidden'>
+    <div className=' bg-[#fffafa] dark:bg-topBackground border-[1px] border-[#fed5c0] dark:border-borderF drop-shadow-sm  rounded-sm flex justify-center items-center gap-x-2 overflow-hidden'>
       <div className=' py-1 px-2 cursor-pointer hover:bg-[#e4d8d6] rounded-sm'>
         {data?.quantity > 1 ? (
           <Minus

@@ -70,7 +70,7 @@ export const RestaurantsTableColumns = ({ handleDeleteModal }) => {
       cell: ({ row }) => {
         const restaurant = row.original;
         return (
-          <div className='font-robotoSlab text-[#414549] '>
+          <div className='font-robotoSlab text-pText '>
             <h1 className=' font-medium'>{restaurant.name}</h1>
             <p className='hidden sm:block'>{restaurant.email}</p>
           </div>
@@ -88,7 +88,7 @@ export const RestaurantsTableColumns = ({ handleDeleteModal }) => {
           "MM/dd/yyyy, HH:mm:ss"
         );
         return (
-          <div className='capitalize font-robotoSlab text-[#414549] font-medium hidden xl:block'>
+          <div className='capitalize font-robotoSlab text-pText font-medium hidden xl:block'>
             {formattedDate}
           </div>
         );
@@ -100,7 +100,7 @@ export const RestaurantsTableColumns = ({ handleDeleteModal }) => {
       cell: ({ row }) => {
         const { owner } = row.original;
         return (
-          <div className='font-robotoSlab text-[#414549] hidden sm:block'>
+          <div className='font-robotoSlab text-pText hidden sm:block'>
             <h1 className=' font-medium'>{owner.name}</h1>
             <p>{owner.email}</p>
           </div>
@@ -112,7 +112,7 @@ export const RestaurantsTableColumns = ({ handleDeleteModal }) => {
       header: "Opened At",
       cell: ({ row }) => {
         return (
-          <div className='font-robotoSlab text-[#414549]'>
+          <div className='font-robotoSlab text-pText'>
             {row.getValue("opening_time")}
           </div>
         );
@@ -123,7 +123,7 @@ export const RestaurantsTableColumns = ({ handleDeleteModal }) => {
       header: "Closed At",
       cell: ({ row }) => {
         return (
-          <div className='font-robotoSlab text-[#414549]'>
+          <div className='font-robotoSlab text-pText'>
             {row.getValue("closing_time")}
           </div>
         );

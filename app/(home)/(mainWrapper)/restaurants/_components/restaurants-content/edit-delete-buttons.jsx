@@ -17,7 +17,7 @@ function EditOrDeleteBtn({ restaurant }) {
             <Link href={`/business-profile/edit/${restaurant?.id}`}>
               <FaRegEdit
                 size={24}
-                className='stroke-[#414549] hover:stroke-cyan-500 transition-colors duration-150 ease-linear '
+                className='stroke-pText hover:stroke-cyan-500 transition-colors duration-150 ease-linear '
               />
             </Link>
           </TooltipTrigger>
@@ -31,7 +31,7 @@ function EditOrDeleteBtn({ restaurant }) {
           <TooltipTrigger asChild>
             <Trash
               size={24}
-              className='stroke-[#414549] hover:stroke-red-500 transition-colors duration-150 ease-linear '
+              className='stroke-pText hover:stroke-red-500 transition-colors duration-150 ease-linear '
             />
           </TooltipTrigger>
           <TooltipContent>

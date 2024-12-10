@@ -119,7 +119,7 @@ function FoodItemsContainer() {
           <FoodsSearchBar />
         </div>
         <RippleButton
-          className='flex items-center gap-x-2'
+          className='flex items-center gap-x-2 dark:bg-topBackground dark:text-pText dark:hover:bg-backgroundF border-[1px] border-border dark:border-borderF'
           onClick={handleResetFilter}
         >
           <Settings

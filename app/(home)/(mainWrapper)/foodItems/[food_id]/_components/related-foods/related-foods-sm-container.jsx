@@ -27,8 +27,8 @@ export default async function RelatedFoodSmallContainer({ relatedFoods = [] }) {
           </CarouselItem>
         ))}
       </CarouselContent>
-      <CarouselPrevious className='left-[45%] xs:left-[46%] -translate-x-1/2 top-[110%] sm:left-0 sm:translate-x-0 ' />
-      <CarouselNext className='left-[60%] xs:left-[54%] -translate-x-1/2 top-[110%] sm:left-12 sm:translate-x-0' />
+      <CarouselPrevious className='left-[45%] xs:left-[46%] -translate-x-1/2 top-[110%] sm:left-0 sm:translate-x-0 border-[1px] border-border dark:border-borderF' />
+      <CarouselNext className='left-[60%] xs:left-[54%] -translate-x-1/2 top-[110%] sm:left-12 sm:translate-x-0 border-[1px] border-border dark:border-borderF' />
     </Carousel>
   );
 }

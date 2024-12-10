@@ -17,9 +17,9 @@ function ProfileSidebar({ loggedInUser }) {
 
   return (
     <div className='lg:w-1/4 flex flex-col '>
-      <div className='border-[1px] border-slate-900/10 drop-shadow-sm rounded-md  '>
-        <div className='w-full flex flex-col bg-white'>
-          <div className='w-full h-72 flex flex-col justify-center items-center gap-y-4 border-b-[1px] border-slate-900/10 drop-shadow-sm  pb-4 relative'>
+      <div className='border-[1px] border-border dark:border-borderF drop-shadow-sm rounded-md overflow-hidden '>
+        <div className='w-full flex flex-col '>
+          <div className='w-full h-72 flex flex-col justify-center items-center gap-y-4 border-b-[1px] border-border dark:border-borderF drop-shadow-sm  pb-4 relative'>
             <div
               className='absolute top-0 left-0 h-36 w-full bg-cover bg-center'
               style={{
@@ -30,7 +30,7 @@ function ProfileSidebar({ loggedInUser }) {
             <ProfileImageLoader data={loggedInUser} />
 
             <div className='flex flex-col items-center '>
-              <h1 className='text-[#414549] font-medium font-robotoSlab'>
+              <h1 className='text-pText font-medium font-robotoSlab'>
                 {loggedInUser?.name}
               </h1>
               <p className='text-initial  font-robotoSlab'>
@@ -42,8 +42,8 @@ function ProfileSidebar({ loggedInUser }) {
             <li
               className={`transition-all duration-300 ease-in-out py-[2px] px-3 border-[1px] rounded-md drop-shadow-sm ${
                 pathName === "/profile"
-                  ? "bg-[#fffafa] text-hoverYellow border-[#fed5c0]"
-                  : "bg-white text-[#414549] border-transparent hover:bg-[#f9f9f9] hover:border-gray-300"
+                  ? "bg-[#fffafa] text-hoverYellow border-[#fed5c0] dark:bg-topBackground"
+                  : "bg-white text-pText border-transparent hover:bg-[#f9f9f9] hover:border-gray-300 dark:bg-topBackground dark:hover:bg-backgroundF dark:border-borderF"
               }`}
             >
               <Link href='/profile'>Profile</Link>
@@ -51,8 +51,8 @@ function ProfileSidebar({ loggedInUser }) {
             <li
               className={`transition-all duration-300 ease-in-out py-[2px] px-3 border-[1px] rounded-md drop-shadow-sm ${
                 pathName.includes("orders")
-                  ? "bg-[#fffafa] text-hoverYellow border-[#fed5c0]"
-                  : "bg-white text-[#414549] border-transparent hover:bg-[#f9f9f9] hover:border-gray-300"
+                  ? "bg-[#fffafa] text-hoverYellow border-[#fed5c0] dark:bg-topBackground"
+                  : "bg-white text-pText border-transparent hover:bg-[#f9f9f9] hover:border-gray-300 dark:bg-topBackground dark:hover:bg-backgroundF dark:border-borderF"
               }`}
             >
               <Link href='/profile/orders'>My Orders</Link>
@@ -60,8 +60,8 @@ function ProfileSidebar({ loggedInUser }) {
             <li
               className={`transition-all duration-300 ease-in-out py-[2px] px-3 border-[1px] rounded-md drop-shadow-sm ${
                 pathName.includes("reviews")
-                  ? "bg-[#fffafa] text-hoverYellow border-[#fed5c0]"
-                  : "bg-white text-[#414549] border-transparent hover:bg-[#f9f9f9] hover:border-gray-300"
+                  ? "bg-[#fffafa] text-hoverYellow border-[#fed5c0] dark:bg-topBackground"
+                  : "bg-white text-pText border-transparent hover:bg-[#f9f9f9] hover:border-gray-300 dark:bg-topBackground dark:hover:bg-backgroundF dark:border-borderF"
               }`}
             >
               <Link href='/profile/reviews'>My Reviews</Link>
@@ -69,8 +69,8 @@ function ProfileSidebar({ loggedInUser }) {
             <li
               className={`transition-all duration-300 ease-in-out py-[2px] px-3 border-[1px] rounded-md drop-shadow-sm ${
                 pathName.includes("favourites")
-                  ? "bg-[#fffafa] text-hoverYellow border-[#fed5c0]"
-                  : "bg-white text-[#414549] border-transparent hover:bg-[#f9f9f9] hover:border-gray-300"
+                  ? "bg-[#fffafa] text-hoverYellow border-[#fed5c0] dark:bg-topBackground"
+                  : "bg-white text-pText border-transparent hover:bg-[#f9f9f9] hover:border-gray-300 dark:bg-topBackground dark:hover:bg-backgroundF dark:border-borderF"
               }`}
             >
               <Link href='/profile/favourites'>My favourite Restaurants</Link>

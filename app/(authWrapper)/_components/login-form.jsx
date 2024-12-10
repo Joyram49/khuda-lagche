@@ -61,7 +61,7 @@ function LoginForm() {
                 <Input
                   placeholder='Enter your email'
                   type='email'
-                  className='focus-visible:ring-2 focus-visible:ring-hoverYellow focus-visible:ring-offset-0'
+                  className='focus-visible:ring-2 focus-visible:ring-hoverYellow focus-visible:ring-offset-0 bg-backgroundF border-border dark:border-borderF'
                   {...field}
                 />
               </FormControl>
@@ -79,7 +79,7 @@ function LoginForm() {
                 <Input
                   placeholder='type password'
                   type='password'
-                  className='focus-visible:ring-2 focus-visible:ring-hoverYellow focus-visible:ring-offset-0'
+                  className='focus-visible:ring-2 focus-visible:ring-hoverYellow focus-visible:ring-offset-0 bg-backgroundF border-border dark:border-borderF'
                   {...field}
                 />
               </FormControl>

@@ -270,7 +270,7 @@ const DotButton = React.forwardRef(
         className={cn(
           index === selectedIndex
             ? bg
-              ? "bg-background"
+              ? "bg-white"
               : "bg-muted-foreground "
             : "bg-transparent",
           className

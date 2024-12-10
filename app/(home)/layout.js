@@ -15,7 +15,7 @@ async function MainLayout({ children }) {
           <main className='h-auto mt-32 md:mt-28 flex flex-col '>
             {children}
           </main>
-          <SiteFooter className={"h-auto bg-deepBackground "} />
+          <SiteFooter className={"h-auto bg-topBackground "} />
         </div>
       </SearchOverlayProvider>
     </HeaderHeightProvider>

@@ -15,7 +15,7 @@ export async function generateMetadata({ params }) {
 function RegistrationPage({ params: { role } }) {
   return (
     <div className='container  flex justify-center items-center min-h-[calc(100vh-70px)]'>
-      <div className='max-w-xl h-auto ring-[1px] ring-slate-800/10 drop-shadow-sm p-10 bg-background rounded-lg'>
+      <div className='max-w-xl h-auto border-[1px] border-border dark:border-borderF drop-shadow-sm p-4 md:p-10 bg-topBackground rounded-lg'>
         <div className='flex flex-col justify-center items-center gap-y-5'>
           <div className='flex flex-col justify-center items-center gap-y-2 mb-5'>
             <FaUserCircle className='fill-initial' size={44} />

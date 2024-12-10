@@ -3,7 +3,7 @@ import OrderSteps from "./order-steps";
 
 function HowToOrder() {
   return (
-    <section className='h-auto  3xl:min-h-[calc(70vh-112px)]  bg-background '>
+    <section className='h-auto  3xl:min-h-[calc(70vh-112px)]  bg-backgroundF '>
       <div className='container h-full'>
         <div className='h-full flex-col  flex justify-around items-center gap-y-10 lg:gap-y-0 py-10 md:py-20'>
           {/* how-to-order header */}

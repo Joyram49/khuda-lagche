@@ -9,9 +9,9 @@ function Testimonials({ bg }) {
   });
   return (
     <section
-      className='w-full h-auto bg-cover bg-center relative drop-shadow-md'
+      className='w-full h-auto bg-cover bg-center relative drop-shadow-md bg-backgroundF'
       style={{
-        backgroundImage: bg ? `url(${bgImageUrl})` : "bg-background",
+        backgroundImage: bg ? `url(${bgImageUrl})` : "bg-backgroundF",
       }}
     >
       {bg && (
@@ -25,14 +25,14 @@ function Testimonials({ bg }) {
           <div className='flex flex-col items-center text-center'>
             <h1
               className={`text-xl sm:text-3xl xl:text-5xl 3xl:text-6xl  font-robotoSlab uppercase ${
-                bg ? "text-card" : "text-foreground"
+                bg ? "text-white" : "text-foreground"
               } `}
             >
               client about us
             </h1>
             <p
               className={` ${
-                bg ? "text-accent" : "text-muted-foreground"
+                bg ? "text-[#efefef]" : "text-muted-foreground"
               } font-medium font-robotoSlab text-sm pt-1 sm:pt-2 `}
             >
               Testimonials

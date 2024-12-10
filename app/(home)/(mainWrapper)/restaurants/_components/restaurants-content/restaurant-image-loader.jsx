@@ -18,7 +18,7 @@ function RestaurantImageLoader({ data, business }) {
         sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw'
       />
       {!business && (
-        <div className='absolute bottom-2 right-2 px-2 py-1 bg-background rounded-md flex justify-center items-center text-sm font-robotoSlab gap-x-1 drop-shadow-sm'>
+        <div className='absolute bottom-2 right-2 px-2 py-1 bg-topBackground rounded-md flex justify-center items-center text-sm font-robotoSlab gap-x-1 drop-shadow-sm border-[1px] border-border dark:border-borderF'>
           <LuClock />
           <span>{data.delivery_time}</span>
         </div>

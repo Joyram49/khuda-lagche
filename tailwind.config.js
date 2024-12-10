@@ -22,6 +22,7 @@ module.exports = {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
+
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         customYellow: "hsl(var(--customYellow))",
@@ -59,6 +60,22 @@ module.exports = {
         card: {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
+        },
+        backgroundF: {
+          DEFAULT: "hsl(var(--backgroundF))",
+          opacity60: "hsl(var(--backgroundF), 0.6)",
+          opacity80: "hsl(var(--backgroundF), 0.8)",
+        },
+        topBackground: {
+          DEFAULT: "hsl(var(--topBackground))",
+          opacity60: "hsl(var(--topBackground), 0.6)",
+          opacity80: "hsl(var(--topBackground), 0.8)",
+        },
+        pText: {
+          DEFAULT: "hsl(var(--p-textF))",
+        },
+        borderF: {
+          DEFAULT: "hsl(var(--borderF), 0.1)",
         },
       },
       textShadow: {

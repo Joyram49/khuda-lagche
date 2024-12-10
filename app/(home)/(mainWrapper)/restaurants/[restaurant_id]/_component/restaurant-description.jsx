@@ -1,7 +1,7 @@
 function RestaurantDescription() {
   return (
-    <div className='w-full sm:container font-robotoSlab text-muted-foreground mb-10 p-4 sm:p-0'>
-      <h1 className='text-lg bg-gradient-to-r from-hoverYellow to-customYellow text-muted-foreground  px-3 rounded-md flex justify-start items-center gap-x-1 max-w-fit mb-2'>
+    <div className='w-full sm:container font-robotoSlab text-pText mb-10 p-4 sm:p-0'>
+      <h1 className='text-lg bg-gradient-to-r from-hoverYellow to-customYellow   px-3 rounded-md flex justify-start items-center gap-x-1 max-w-fit mb-2'>
         Who We Are
         <span>
           <svg
@@ -22,7 +22,7 @@ function RestaurantDescription() {
         </span>
       </h1>
 
-      <p className='text-sm text-muted-foreground'>
+      <p className='text-sm'>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo earum,
         quam ducimus voluptatum laboriosam harum qui quas hic? Neque et mollitia
         minus, nihil odit sapiente ullam officia quod! Error doloremque nulla

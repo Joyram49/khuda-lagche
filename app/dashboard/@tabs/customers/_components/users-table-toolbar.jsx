@@ -15,7 +15,7 @@ import { useState } from "react";
 function UsersTableToolbar({ table, sortType, setSortType }) {
   const [searchFilter, setSearchFilter] = useState("name");
   return (
-    <div className='flex flex-col xs:flex-row gap-y-2 xs:gap-y-0 gap-x-2 items-center py-4 font-robotoSlab  text-[#414549]'>
+    <div className='flex flex-col xs:flex-row gap-y-2 xs:gap-y-0 gap-x-2 items-center py-4 font-robotoSlab  text-pText'>
       {/* filter restaurants by restaurant name */}
       <div className='flex gap-x-2'>
         <Input

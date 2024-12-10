@@ -10,7 +10,7 @@ function HotDeal() {
     quality: 30,
   });
   return (
-    <div className='h-auto w-full lg:mx-[10vw] bg-deepBackground rounded-[16px] md:rounded-[24px] shadow-slate-800/30 shadow-sm md:shadow-none md:drop-shadow-md overflow-hidden'>
+    <div className='h-auto w-full lg:mx-[10vw] bg-topBackground rounded-[16px] md:rounded-[24px] shadow-slate-800/30 shadow-sm md:shadow-none md:drop-shadow-md overflow-hidden border-[1px] border-border dark:border-borderF'>
       <div
         className={` h-[180px] md:h-[350px] w-full bg-cover bg-no-repeat bg-center relative`}
         style={{

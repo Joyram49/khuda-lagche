@@ -47,7 +47,7 @@ function RestaurantDeleteModal({ onClose, restaurantInfo }) {
               />
             </div>
             <div>
-              <p className='text-[#414549] font-medium text-sm'>
+              <p className='text-pText font-medium text-sm'>
                 This restaurant has completed{" "}
                 <strong>{restaurantInfo?.orders?.length} </strong> order(s)
               </p>

@@ -20,10 +20,10 @@ function AboutHero() {
         <div className='container  flex justify-start items-center ml-0 lg:ml-[100px] xl:ml-[200px] 3xl:ml-[400px]'>
           <div className='h-full  max-w-sm lg:max-w-lg   flex flex-col justify-center items-center gap-y-6 md:gap-y-10 py-10 md:py-20'>
             <div className='flex flex-col  items-center text-center'>
-              <h1 className='text-xl sm:text-3xl xl:text-5xl 3xl:text-6xl  font-robotoSlab uppercase text-foreground '>
+              <h1 className='text-xl sm:text-3xl xl:text-5xl 3xl:text-6xl  font-robotoSlab uppercase text-gray-800 '>
                 Welcome
               </h1>
-              <p className=' text-muted-foreground font-medium font-robotoSlab text-sm pt-1 sm:pt-2 capitalize '>
+              <p className=' text-gray-600 font-medium font-robotoSlab text-sm pt-1 sm:pt-2 capitalize '>
                 Who we are
               </p>
             </div>

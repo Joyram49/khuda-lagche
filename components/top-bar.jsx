@@ -3,7 +3,7 @@ import { ModeToggle } from "./mode-toggle";
 
 function TopBar() {
   return (
-    <div className='container flex justify-between items-center '>
+    <div className='container flex justify-between items-center py-1'>
       <div className='flex gap-x-6 flex-col md:flex-row items-center'>
         <p className='text-initial text-[13px] font-roboto'>
           Call us for Ordering

@@ -19,7 +19,7 @@ function CategoryNavigation({
 
   return (
     <div
-      className='w-full bg-slate-50 ring-[1px] drop-shadow-sm ring-slate-900/10 py-2 font-robotoSlab font-medium text-foreground flex justify-center items-center backdrop-blur-sm'
+      className='w-full bg-topBackground border-[1px] border-border dark:border-borderF drop-shadow-sm  py-2 font-robotoSlab font-medium text-foreground flex justify-center items-center backdrop-blur-sm'
       style={{
         position: "sticky",
         top: headerHeight, // Stick below the header dynamically
@@ -43,7 +43,7 @@ function CategoryNavigation({
                   activeCategory === category?.id
                     ? "text-customYellow"
                     : "text-primary"
-                } hover:text-customYellow`}
+                } hover:text-customYellow hover:bg-backgroundF`}
                 onClick={() => handleScrollToCategory(category?.id)}
               >
                 {category?.name}
@@ -51,8 +51,8 @@ function CategoryNavigation({
             </CarouselItem>
           ))}
         </CarouselContent>
-        <CarouselPrevious className='absolute left-0 top-1/2 transform -translate-y-1/2 invisible md:visible' />
-        <CarouselNext className='absolute right-0 top-1/2 transform -translate-y-1/2 invisible md:visible' />
+        <CarouselPrevious className='absolute left-0 top-1/2 transform -translate-y-1/2 invisible md:visible border-[1px] border-border dark:border-borderF' />
+        <CarouselNext className='absolute right-0 top-1/2 transform -translate-y-1/2 invisible md:visible border-[1px] border-border dark:border-borderF' />
       </Carousel>
     </div>
   );

@@ -9,7 +9,7 @@ function SortFoods() {
   };
   return (
     <div>
-      <h3 className='  text-muted-foreground font-robotoSlab pb-2'>Sort By</h3>
+      <h3 className='text-pText font-robotoSlab pb-2'>Sort By</h3>
       <RadioGroup
         defaultValue='default'
         className='gap-3'
@@ -20,12 +20,9 @@ function SortFoods() {
           <RadioGroupItem
             value='default'
             id='r1'
-            className='border-muted-foreground text-muted-foreground'
+            className='border-border dark:border-borderF text-pText'
           />
-          <Label
-            htmlFor='r1'
-            className='text-muted-foreground font-robotoSlab font-[400]'
-          >
+          <Label htmlFor='r1' className='text-pText font-robotoSlab font-[400]'>
             Default
           </Label>
         </div>
@@ -33,12 +30,9 @@ function SortFoods() {
           <RadioGroupItem
             value='most_sales'
             id='r2'
-            className='border-muted-foreground text-muted-foreground  '
+            className='border-border dark:border-borderF text-pText  '
           />
-          <Label
-            htmlFor='r2'
-            className='text-muted-foreground font-robotoSlab font-[400]'
-          >
+          <Label htmlFor='r2' className='text-pText font-robotoSlab font-[400]'>
             Top Seller
           </Label>
         </div>
@@ -46,12 +40,9 @@ function SortFoods() {
           <RadioGroupItem
             value='top_rated'
             id='r3'
-            className='border-muted-foreground text-muted-foreground '
+            className='border-border dark:border-borderF text-pText '
           />
-          <Label
-            htmlFor='r3'
-            className='text-muted-foreground font-robotoSlab font-[400]'
-          >
+          <Label htmlFor='r3' className='text-pText font-robotoSlab font-[400]'>
             Top Rated
           </Label>
         </div>
@@ -59,12 +50,9 @@ function SortFoods() {
           <RadioGroupItem
             value='favourites'
             id='r4'
-            className='border-muted-foreground text-muted-foreground '
+            className='border-border dark:border-borderF text-pText '
           />
-          <Label
-            htmlFor='r4'
-            className='text-muted-foreground font-robotoSlab font-[400]'
-          >
+          <Label htmlFor='r4' className='text-pText font-robotoSlab font-[400]'>
             Most Favourites
           </Label>
         </div>

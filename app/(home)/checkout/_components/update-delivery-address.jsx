@@ -4,6 +4,7 @@ import {
   FormField,
   FormItem,
   FormLabel,
+  FormMessage,
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import {
@@ -35,16 +36,23 @@ function UpdateDeliverAddress({ form, setIsDeliveryEdit, setDeliveryAddress }) {
             </FormLabel>
             <FormControl>
               <Select onValueChange={field.onChange} defaultValue='home'>
-                <SelectTrigger>
+                <SelectTrigger className='bg-backgroundF border-[1px] border-border dark:border-borderF'>
                   <SelectValue placeholder='Select an address type' />
                 </SelectTrigger>
-                <SelectContent className='font-robotoSlab'>
-                  <SelectItem value='home'>Home</SelectItem>
-                  <SelectItem value='office'>Office</SelectItem>
-                  <SelectItem value='other'>Other</SelectItem>
+                <SelectContent className='font-robotoSlab bg-backgroundF border-[1px] border-border dark:border-borderF'>
+                  <SelectItem value='home' className='focus:bg-topBackground'>
+                    Home
+                  </SelectItem>
+                  <SelectItem value='office' className='focus:bg-topBackground'>
+                    Office
+                  </SelectItem>
+                  <SelectItem value='other' className='focus:bg-topBackground'>
+                    Other
+                  </SelectItem>
                 </SelectContent>
               </Select>
             </FormControl>
+            <FormMessage />
           </FormItem>
         )}
       />
@@ -60,7 +68,7 @@ function UpdateDeliverAddress({ form, setIsDeliveryEdit, setDeliveryAddress }) {
             <FormControl>
               <Input
                 placeholder='Enter  house no.'
-                className='focus-visible:ring-2 focus-visible:ring-hoverYellow focus-visible:ring-offset-0'
+                className='focus-visible:ring-2 focus-visible:ring-hoverYellow focus-visible:ring-offset-0 bg-backgroundF border-[1px] border-border dark:border-borderF'
                 {...field}
               />
             </FormControl>
@@ -79,7 +87,7 @@ function UpdateDeliverAddress({ form, setIsDeliveryEdit, setDeliveryAddress }) {
             <FormControl>
               <Input
                 placeholder='Enter road no.'
-                className='focus-visible:ring-2 focus-visible:ring-hoverYellow focus-visible:ring-offset-0'
+                className='focus-visible:ring-2 focus-visible:ring-hoverYellow focus-visible:ring-offset-0 bg-backgroundF border-[1px] border-border dark:border-borderF'
                 {...field}
               />
             </FormControl>
@@ -98,7 +106,7 @@ function UpdateDeliverAddress({ form, setIsDeliveryEdit, setDeliveryAddress }) {
             <FormControl>
               <Input
                 placeholder='Enter block no.'
-                className='focus-visible:ring-2 focus-visible:ring-hoverYellow focus-visible:ring-offset-0'
+                className='focus-visible:ring-2 focus-visible:ring-hoverYellow focus-visible:ring-offset-0 bg-backgroundF border-[1px] border-border dark:border-borderF'
                 {...field}
               />
             </FormControl>

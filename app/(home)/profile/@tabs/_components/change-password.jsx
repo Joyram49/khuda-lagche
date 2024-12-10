@@ -83,18 +83,18 @@ function ChangePassword({ email }) {
   const { isSubmitting } = form.formState;
 
   return (
-    <Card className='font-robotoSlab'>
+    <Card className='font-robotoSlab bg-backgroundF border-[1px] border-border dark:border-borderF'>
       <CardHeader className='text-center'>
         <CardTitle>Change Password</CardTitle>
-        <CardDescription>
+        <CardDescription className='text-pText'>
           Change your password here. After saving, you'll be logged out.
         </CardDescription>
       </CardHeader>
-      <CardContent>
+      <CardContent className='p-0 sm:p-6'>
         <Form {...form}>
           <form
             onSubmit={form.handleSubmit(onSubmit)}
-            className='mt-6 w-full flex flex-col gap-y-6 font-robotoSlab  border-[1px] border-slate-900/10 drop-shadow-sm rounded-sm p-4'
+            className='mt-6 w-full flex flex-col gap-y-6 font-robotoSlab  p-4'
           >
             <FormField
               control={form.control}
@@ -108,7 +108,7 @@ function ChangePassword({ email }) {
                     <Input
                       type='password'
                       placeholder='Enter old password'
-                      className='focus-visible:ring-2 focus-visible:ring-hoverYellow focus-visible:ring-offset-0'
+                      className='focus-visible:ring-2 focus-visible:ring-hoverYellow focus-visible:ring-offset-0 bg-backgroundF border-[1px] border-border dark:border-borderF'
                       {...field}
                     />
                   </FormControl>
@@ -129,7 +129,7 @@ function ChangePassword({ email }) {
                     <Input
                       placeholder='Enter new password'
                       type='password'
-                      className='focus-visible:ring-2 focus-visible:ring-hoverYellow focus-visible:ring-offset-0'
+                      className='focus-visible:ring-2 focus-visible:ring-hoverYellow focus-visible:ring-offset-0 bg-backgroundF border-[1px] border-border dark:border-borderF'
                       {...field}
                     />
                   </FormControl>
@@ -150,7 +150,7 @@ function ChangePassword({ email }) {
                     <Input
                       placeholder='Enter again new password '
                       type='password'
-                      className='focus-visible:ring-2 focus-visible:ring-hoverYellow focus-visible:ring-offset-0'
+                      className='focus-visible:ring-2 focus-visible:ring-hoverYellow focus-visible:ring-offset-0 bg-backgroundF border-[1px] border-border dark:border-borderF'
                       {...field}
                     />
                   </FormControl>
@@ -163,7 +163,7 @@ function ChangePassword({ email }) {
               <LoadingBtn
                 type='submit'
                 text='Submitting'
-                className='self-end block max-w-fit'
+                className='self-end  max-w-fit'
               />
             ) : (
               <Button type='submit' className='capitalize self-end '>

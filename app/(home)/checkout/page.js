@@ -20,7 +20,7 @@ async function CheckoutPage() {
   }
 
   return (
-    <div className='w-full bg-gray-100 min-h-screen'>
+    <div className='w-full bg-backgroundF min-h-screen'>
       <CheckoutContainer user={loggedInUser} />
     </div>
   );

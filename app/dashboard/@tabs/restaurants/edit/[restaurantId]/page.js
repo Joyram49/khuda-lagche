@@ -41,7 +41,7 @@ async function RestaurantEditPage({ params }) {
         />
       </div>
       <div className='flex flex-col gap-y-2 xs:p-10'>
-        <div className='flex items-center justify-between  font-robotoSlab  text-xl text-[#414549]'>
+        <div className='flex items-center justify-between  font-robotoSlab  text-xl text-pText'>
           <h1 className='capitalize'>
             All foods that
             <span

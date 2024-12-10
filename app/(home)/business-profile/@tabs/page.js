@@ -29,40 +29,43 @@ async function BusinessProfilePage() {
   }
 
   return (
-    <Tabs defaultValue='user-profile' className='w-full bg-white p-6'>
-      <TabsList className='hidden sm:grid w-full grid-cols-4'>
+    <Tabs
+      defaultValue='user-profile'
+      className='w-full bg-backgroundF rounded-sm p-0 sm:p-6 sm:border-[1px] border-border dark:border-borderF'
+    >
+      <TabsList className='hidden sm:grid w-full grid-cols-4 bg-topBackground border-[1px] border-border dark:border-borderF'>
         <TabsTrigger
-          className='data-[state=active]:bg-[#fffafa] data-[state=active]:text-hoverYellow data-[state=active]:border-[1px] data-[state=active]:border-[#fed5c0] '
+          className='text-pText bg-topBackground hover:bg-[#fffafa] hover:border-[1px] hover:border-[#fed5c0] data-[state=active]:bg-[#fffafa] data-[state=active]:text-hoverYellow data-[state=active]:border-[1px] data-[state=active]:border-[#fed5c0] dark:data-[state=active]:bg-backgroundF dark:hover:bg-backgroundF dark:hover:border-[1px] dark:border-borderF'
           value='user-profile'
         >
           User Profile
         </TabsTrigger>
         <TabsTrigger
-          className='data-[state=active]:bg-[#fffafa] data-[state=active]:text-hoverYellow data-[state=active]:border-[1px] data-[state=active]:border-[#fed5c0] '
+          className='text-pText bg-topBackground hover:bg-[#fffafa] hover:border-[1px] hover:border-[#fed5c0] data-[state=active]:bg-[#fffafa] data-[state=active]:text-hoverYellow data-[state=active]:border-[1px] data-[state=active]:border-[#fed5c0] dark:data-[state=active]:bg-backgroundF dark:hover:bg-backgroundF dark:hover:border-[1px] dark:border-borderF'
           value='update-profile'
         >
           Update Profile
         </TabsTrigger>
         <TabsTrigger
-          className='data-[state=active]:bg-[#fffafa] data-[state=active]:text-hoverYellow data-[state=active]:border-[1px] data-[state=active]:border-[#fed5c0] '
+          className='text-pText bg-topBackground hover:bg-[#fffafa] hover:border-[1px] hover:border-[#fed5c0] data-[state=active]:bg-[#fffafa] data-[state=active]:text-hoverYellow data-[state=active]:border-[1px] data-[state=active]:border-[#fed5c0] dark:data-[state=active]:bg-backgroundF dark:hover:bg-backgroundF dark:hover:border-[1px] dark:border-borderF'
           value='update-address'
         >
           Update Address
         </TabsTrigger>
         <TabsTrigger
-          className='data-[state=active]:bg-[#fffafa] data-[state=active]:text-hoverYellow data-[state=active]:border-[1px] data-[state=active]:border-[#fed5c0] '
+          className='text-pText bg-topBackground hover:bg-[#fffafa] hover:border-[1px] hover:border-[#fed5c0] data-[state=active]:bg-[#fffafa] data-[state=active]:text-hoverYellow data-[state=active]:border-[1px] data-[state=active]:border-[#fed5c0] dark:data-[state=active]:bg-backgroundF dark:hover:bg-backgroundF dark:hover:border-[1px] dark:border-borderF'
           value='change-password'
         >
           Change Password
         </TabsTrigger>
       </TabsList>
       {/* tab list for smaller screen */}
-      <TabsList className='w-full grid sm:hidden'>
-        <Carousel className='w-[300px]'>
+      <TabsList className='w-full grid sm:hidden bg-topBackground'>
+        <Carousel className='w-[280px]'>
           <CarouselContent>
             <CarouselItem className='text-center '>
               <TabsTrigger
-                className='data-[state=active]:bg-[#fffafa] data-[state=active]:text-hoverYellow data-[state=active]:border-[1px] data-[state=active]:border-[#fed5c0] '
+                className='text-pText bg-topBackground hover:bg-[#fffafa] hover:border-[1px] hover:border-[#fed5c0] data-[state=active]:bg-[#fffafa] data-[state=active]:text-hoverYellow data-[state=active]:border-[1px] data-[state=active]:border-[#fed5c0] dark:data-[state=active]:bg-backgroundF dark:hover:bg-backgroundF dark:hover:border-[1px] dark:border-borderF'
                 value='user-profile'
               >
                 User Profile
@@ -70,7 +73,7 @@ async function BusinessProfilePage() {
             </CarouselItem>
             <CarouselItem className='text-center '>
               <TabsTrigger
-                className='data-[state=active]:bg-[#fffafa] data-[state=active]:text-hoverYellow data-[state=active]:border-[1px] data-[state=active]:border-[#fed5c0] '
+                className='text-pText bg-topBackground hover:bg-[#fffafa] hover:border-[1px] hover:border-[#fed5c0] data-[state=active]:bg-[#fffafa] data-[state=active]:text-hoverYellow data-[state=active]:border-[1px] data-[state=active]:border-[#fed5c0] dark:data-[state=active]:bg-backgroundF dark:hover:bg-backgroundF dark:hover:border-[1px] dark:border-borderF'
                 value='update-profile'
               >
                 Update Profile
@@ -78,7 +81,7 @@ async function BusinessProfilePage() {
             </CarouselItem>
             <CarouselItem className='text-center '>
               <TabsTrigger
-                className='data-[state=active]:bg-[#fffafa] data-[state=active]:text-hoverYellow data-[state=active]:border-[1px] data-[state=active]:border-[#fed5c0] '
+                className='text-pText bg-topBackground hover:bg-[#fffafa] hover:border-[1px] hover:border-[#fed5c0] data-[state=active]:bg-[#fffafa] data-[state=active]:text-hoverYellow data-[state=active]:border-[1px] data-[state=active]:border-[#fed5c0] dark:data-[state=active]:bg-backgroundF dark:hover:bg-backgroundF dark:hover:border-[1px] dark:border-borderF'
                 value='update-address'
               >
                 Update Address
@@ -86,15 +89,15 @@ async function BusinessProfilePage() {
             </CarouselItem>
             <CarouselItem className='text-center '>
               <TabsTrigger
-                className='data-[state=active]:bg-[#fffafa] data-[state=active]:text-hoverYellow data-[state=active]:border-[1px] data-[state=active]:border-[#fed5c0] '
+                className='text-pText bg-topBackground hover:bg-[#fffafa] hover:border-[1px] hover:border-[#fed5c0] data-[state=active]:bg-[#fffafa] data-[state=active]:text-hoverYellow data-[state=active]:border-[1px] data-[state=active]:border-[#fed5c0] dark:data-[state=active]:bg-backgroundF dark:hover:bg-backgroundF dark:hover:border-[1px] dark:border-borderF'
                 value='change-password'
               >
                 Change Password
               </TabsTrigger>
             </CarouselItem>
           </CarouselContent>
-          <CarouselPrevious className='left-0 translate-x-0' />
-          <CarouselNext className='right-0 translate-x-0' />
+          <CarouselPrevious className='left-0 translate-x-0 border-[1px] border-border dark:border-borderF' />
+          <CarouselNext className='right-0 translate-x-0 border-[1px] border-border dark:border-borderF' />
         </Carousel>
       </TabsList>
       <TabsContent value='user-profile'>

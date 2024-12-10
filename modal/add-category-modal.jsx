@@ -66,9 +66,9 @@ function AddCategoryModal({ onClose }) {
 
   return (
     <div className='fixed inset-0 bg-black bg-opacity-70 flex justify-center items-center z-[999]'>
-      <div className='w-full max-w-xl  h-full   max-h-[calc(100vh-70px)] ring-[1px] ring-slate-800/10 drop-shadow-sm p-10 bg-background rounded-lg flex justify-center items-center'>
+      <div className='w-full max-w-xl  h-full   max-h-[calc(100vh-70px)] border-[1px] border-border dark:border-borderF drop-shadow-sm p-10 bg-backgroundF rounded-lg flex justify-center items-center'>
         <div className='w-full flex flex-col gap-y-10'>
-          <h1 className='text-center font-robotoSlab text-[#414549] text-3xl'>
+          <h1 className='text-center font-robotoSlab text-pText text-3xl'>
             Add New Category
           </h1>
           <Form {...form}>
@@ -84,7 +84,7 @@ function AddCategoryModal({ onClose }) {
                     <FormControl>
                       <Input
                         placeholder='write category name'
-                        className=' text-[#414549] placeholder:text-initial font-robotoSlab '
+                        className=' text-pText placeholder:text-initial font-robotoSlab bg-topBackground border-[1px] border-border dark:border-borderF '
                         {...field}
                       />
                     </FormControl>
@@ -100,7 +100,7 @@ function AddCategoryModal({ onClose }) {
                     <FormControl>
                       <Textarea
                         placeholder='Write about category here...'
-                        className='max-h-[400px] text-[#414549] placeholder:text-initial font-robotoSlab '
+                        className='max-h-[400px] text-pText placeholder:text-initial font-robotoSlab bg-topBackground border-[1px] border-border dark:border-borderF '
                         {...field}
                       />
                     </FormControl>
@@ -123,10 +123,10 @@ function AddCategoryModal({ onClose }) {
           </Form>
         </div>
         <div
-          className='absolute top-2 right-2.5 w-8 h-8 rounded-full flex justify-center items-center ring-[1px] ring-slate-900/10 drop-shadow-sm hover:ring-customYellow cursor-pointer group'
+          className='absolute top-2 right-2.5 w-8 h-8 rounded-full flex justify-center items-center  border-[1px] border-border dark:border-borderF drop-shadow-sm hover:ring-customYellow cursor-pointer group'
           onClick={onClose}
         >
-          <X className='text-slate-600 group-hover:text-customYellow' />
+          <X className='text-pText group-hover:text-customYellow' />
         </div>
       </div>
     </div>

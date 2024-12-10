@@ -7,7 +7,7 @@ import ThreeDots from "./three-dots";
 function TopRestaurantCard({ data }) {
   return (
     <div className='w-[190px] max-w-[275px] justify-self-center '>
-      <div className='relative w-full  h-44 bg-white rounded-[32px] overflow-hidden group  cursor-pointer'>
+      <div className='relative w-full  h-44 bg-white dark:bg-[#f2f2f234] rounded-[32px] overflow-hidden group  cursor-pointer'>
         <HomeRestaurantImageLoader data={data} />
         <div className='h-full w-full bg-[#414549b3] absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-linear' />
         <ThreeDots data={data} />

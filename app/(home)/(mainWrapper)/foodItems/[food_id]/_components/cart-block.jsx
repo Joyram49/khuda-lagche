@@ -23,25 +23,21 @@ function CartBlock({ data }) {
   return (
     <>
       <div className='w-full flex justify-start items-center flex-wrap gap-x-2'>
-        <p className='text-[#414549] font-robotoSlab font-medium whitespace-nowrap'>
-          Quantity :{" "}
-        </p>
-        <div className='  flex justify-center items-center gap-x-2 '>
+        <p className='font-medium whitespace-nowrap'>Quantity : </p>
+        <div className='flex justify-center items-center gap-x-2 '>
           <div
             className={`py-1 px-2  ${
               quantity === 1
                 ? " pointer-events-none opacity-50"
-                : " cursor-pointer hover:bg-[#e4d8d6] rounded-sm"
+                : " cursor-pointer bg-topBackground hover:bg-backgroundF rounded-sm border-[1px] border-border dark:border-borderF"
             }`}
             onClick={() => handleQuantity("minus")}
           >
             <Minus size={20} className='stroke-customYellow' />
           </div>
-          <div className='text-[#414549] text-lg font-medium font-robotoSlab'>
-            {quantity}
-          </div>
+          <div className='text-lg font-medium'>{quantity}</div>
           <div
-            className='py-1 px-2 cursor-pointer hover:bg-[#e4d8d6] rounded-sm'
+            className='py-1 px-2 cursor-pointer bg-topBackground hover:bg-backgroundF rounded-sm border-[1px] border-border dark:border-borderF'
             onClick={() => handleQuantity("plus")}
           >
             <Plus size={20} className='text-customYellow' />

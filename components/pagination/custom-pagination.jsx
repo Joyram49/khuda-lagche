@@ -22,7 +22,7 @@ const CustomPagination = ({
           type='number'
           value={itemsPerPage}
           onChange={(e) => handleItemsPerPage(e.target.value)}
-          className='max-w-20'
+          className='max-w-20 bg-topBackground border-[1px] border-border dark:border-borderF'
         />
       </div>
       <PaginatedItems

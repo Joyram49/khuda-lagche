@@ -55,37 +55,39 @@ async function FoodPage({ params: { food_id } }) {
   }
 
   return (
-    <div className='w-full sm:container my-10 p-4 sm:p-0 '>
-      <div className='w-full flex flex-col gap-y-10 lg:gap-y-20 items-start '>
-        <div className='w-full flex flex-col xl:flex-row xl:gap-x-6 '>
-          {/* food image and info  */}
-          <div className='w-full  xl:w-3/4 border-[1px] border-slate-900/10 drop-shadow-sm rounded-md p-2 md:p-6 '>
-            <div className='w-full grid  grid-cols-1 md:grid-cols-2 gap-6 justify-between items-start '>
-              <FoodImageLoader selectedFood={selectedFood} />
-              <Suspense fallback={<FoodInfoLoader />}>
-                <FoodInfo foodId={food_id} />
-              </Suspense>
+    <div className='bg-backgroundF'>
+      <div className='w-full sm:container p-4 sm:py-10'>
+        <div className='w-full flex flex-col gap-y-10 lg:gap-y-20 items-start '>
+          <div className='w-full flex flex-col xl:flex-row xl:gap-x-6 '>
+            {/* food image and info  */}
+            <div className='w-full  xl:w-3/4 border-[1px] border-border dark:border-borderF drop-shadow-sm rounded-md p-2 md:p-6 '>
+              <div className='w-full grid  grid-cols-1 md:grid-cols-2 gap-6 justify-between items-start '>
+                <FoodImageLoader selectedFood={selectedFood} />
+                <Suspense fallback={<FoodInfoLoader />}>
+                  <FoodInfo foodId={food_id} />
+                </Suspense>
+              </div>
             </div>
+            {/* related foods for bigger screen */}
+            <Suspense fallback={<RelatedFoodBigLoader />}>
+              <RelatedFoodsBigScreen foodId={food_id} />
+            </Suspense>
           </div>
-          {/* related foods for bigger screen */}
-          <Suspense fallback={<RelatedFoodBigLoader />}>
-            <RelatedFoodsBigScreen foodId={food_id} />
+          {/* food description with tabds */}
+          <Suspense fallback={<FoodTabsLoader />}>
+            <FoodTabs foodId={food_id} />
+          </Suspense>
+
+          {/* submit food review */}
+          <Suspense fallback={<ReviewFormLoader />}>
+            <FoodReview foodId={food_id} userInfo={loggedInUser} />
+          </Suspense>
+          {/* related foods for smaller screen */}
+
+          <Suspense fallback={<RelatedFoodSmLoader />}>
+            <RelatedFoodsSmallScreen foodId={food_id} />
           </Suspense>
         </div>
-        {/* food description with tabds */}
-        <Suspense fallback={<FoodTabsLoader />}>
-          <FoodTabs foodId={food_id} />
-        </Suspense>
-
-        {/* submit food review */}
-        <Suspense fallback={<ReviewFormLoader />}>
-          <FoodReview foodId={food_id} userInfo={loggedInUser} />
-        </Suspense>
-        {/* related foods for smaller screen */}
-
-        <Suspense fallback={<RelatedFoodSmLoader />}>
-          <RelatedFoodsSmallScreen foodId={food_id} />
-        </Suspense>
       </div>
     </div>
   );

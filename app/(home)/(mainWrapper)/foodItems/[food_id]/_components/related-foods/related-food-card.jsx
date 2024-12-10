@@ -8,7 +8,7 @@ import RelatedFoodImageLoader from "./related-food-image-loader";
 function RelatedFoodCard({ data }) {
   const rating = generateRating(data?.reviews);
   return (
-    <Card className='w-auto max-w-[375px] drop-shadow-sm rounded-md  group cursor-pointer hover:bg-[#fffafa] hover:shadow-[0_4px_19px_3px_rgba(0,0,0,0.05)] hover:border hover:border-[#fed5c0] relative overflow-hidden '>
+    <Card className='w-auto max-w-[375px] drop-shadow-sm rounded-md  group cursor-pointer bg-topBackground hover:bg-backgroundF hover:shadow-[0_4px_19px_3px_rgba(0,0,0,0.05)] hover:border border-border dark:border-borderF relative overflow-hidden '>
       <Link
         href={`/foodItems/${data?.id}`}
         className='absolute inset-0 z-10'

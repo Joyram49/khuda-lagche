@@ -44,13 +44,13 @@ async function RestaurantPage({ params: { restaurant_id } }) {
     restaurant_id
   );
   return (
-    <div className='min-h-screen w-full mt-10'>
+    <div className='min-h-screen w-full pt-10 bg-backgroundF'>
       <div className='w-full flex flex-col  justify-center  items-center gap-y-6 '>
         {/* restaurant page head content with image and info */}
 
         <RestaurantHeadInfo restaurant={restaurant} />
 
-        <div className='w-full h-[1px] bg-slate-900/10 drop-shadow-sm' />
+        <div className='w-full h-[1px] bg-border dark:bg-borderF drop-shadow-sm' />
         <RestaurantDescription />
         <RestaurantMenu uniqueCategories={categoriesOfEachRes}>
           <RestaurantMenuContainer

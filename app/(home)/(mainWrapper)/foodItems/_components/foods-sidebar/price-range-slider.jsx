@@ -12,7 +12,7 @@ function PriceRangeSlider() {
 
   return (
     <div className='w-full flex flex-col'>
-      <div className='w-full flex lg:flex-col xl:flex-row  justify-start items-center text-muted-foreground font-robotoSlab pb-3 font-medium '>
+      <div className='w-full flex lg:flex-col xl:flex-row  justify-start items-center text-pText font-robotoSlab pb-3 font-medium '>
         <h1 className='flex items-center mr-2'>
           Price Range ( <TbCurrencyTaka className='stroke-[2.5px]' />) :{" "}
         </h1>
@@ -25,7 +25,7 @@ function PriceRangeSlider() {
         min={20}
         max={3000}
         step={10}
-        className={cn("w-full")}
+        className={cn("w-full ")}
         onValueChange={handlePriceRangeChange}
       />
     </div>

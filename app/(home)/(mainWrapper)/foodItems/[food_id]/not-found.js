@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export default function FoodNotFound() {
   return (
-    <div className='h-auto w-full flex flex-col items-center  '>
+    <div className='h-full min-h-[calc(100vh-150px)] w-full flex flex-col justify-center items-center bg-backgroundF  '>
       {/* Animation */}
       <div className=' w-36 h-36 md:w-64 md:h-64 '>
         <DotLottieReact
@@ -18,10 +18,8 @@ export default function FoodNotFound() {
 
       {/* Text */}
       <div className='text-center mt-6'>
-        <h1 className='text-4xl font-bold text-gray-800'>
-          Oops! Food Not Found
-        </h1>
-        <p className='mt-2 text-gray-600'>
+        <h1 className='text-4xl font-bold text-pText'>Oops! Food Not Found</h1>
+        <p className='mt-2 text-muted-foreground'>
           The food item you're looking for isn't available. It might have been
           removed or the link is incorrect.
         </p>

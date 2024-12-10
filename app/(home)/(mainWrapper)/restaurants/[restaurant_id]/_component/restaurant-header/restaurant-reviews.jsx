@@ -13,7 +13,7 @@ function RestaurantReviews({ restaurantId, userInfo, reviews }) {
 
   return (
     <div
-      className='ml-2 text-foreground font-inter hover:underline hover:text-hoverYellow font-[400] text-sm cursor-pointer'
+      className='ml-2 text-pText font-inter hover:underline hover:text-hoverYellow font-[400] text-sm cursor-pointer'
       onClick={handleModal}
     >
       <p>See Reviews</p>

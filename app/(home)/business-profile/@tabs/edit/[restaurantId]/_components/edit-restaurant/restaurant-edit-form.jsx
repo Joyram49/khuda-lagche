@@ -129,7 +129,11 @@ const RestaurantEditForm = ({ data, allCategories, foodItems, userId }) => {
               <FormItem>
                 <FormLabel>Name</FormLabel>
                 <FormControl>
-                  <Input placeholder='Restaurant Name' {...field} />
+                  <Input
+                    placeholder='Restaurant Name'
+                    className='bg-topBackground border-[1px] border-border dark:border-borderF'
+                    {...field}
+                  />
                 </FormControl>
                 <FormMessage />
               </FormItem>
@@ -147,7 +151,7 @@ const RestaurantEditForm = ({ data, allCategories, foodItems, userId }) => {
                   <Textarea
                     placeholder='Restaurant Address'
                     {...field}
-                    className='max-h-[180px]'
+                    className='max-h-[180px] bg-topBackground border-[1px] border-border dark:border-borderF'
                   />
                 </FormControl>
                 <FormMessage />
@@ -165,7 +169,11 @@ const RestaurantEditForm = ({ data, allCategories, foodItems, userId }) => {
                 <FormItem className='w-full'>
                   <FormLabel>Phone</FormLabel>
                   <FormControl>
-                    <Input placeholder='Phone Number' {...field} />
+                    <Input
+                      placeholder='Phone Number'
+                      className='bg-topBackground border-[1px] border-border dark:border-borderF'
+                      {...field}
+                    />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
@@ -180,7 +188,11 @@ const RestaurantEditForm = ({ data, allCategories, foodItems, userId }) => {
                 <FormItem className='w-full'>
                   <FormLabel>Email</FormLabel>
                   <FormControl>
-                    <Input placeholder='Email Address' {...field} />
+                    <Input
+                      placeholder='Email Address'
+                      className='bg-topBackground border-[1px] border-border dark:border-borderF'
+                      {...field}
+                    />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
@@ -198,7 +210,11 @@ const RestaurantEditForm = ({ data, allCategories, foodItems, userId }) => {
                 <FormItem className='w-full'>
                   <FormLabel>Opening Time</FormLabel>
                   <FormControl>
-                    <Input type='time' {...field} />
+                    <Input
+                      type='time'
+                      className='bg-topBackground border-[1px] border-border dark:border-borderF'
+                      {...field}
+                    />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
@@ -213,7 +229,11 @@ const RestaurantEditForm = ({ data, allCategories, foodItems, userId }) => {
                 <FormItem className='w-full'>
                   <FormLabel>Closing Time</FormLabel>
                   <FormControl>
-                    <Input type='time' {...field} />
+                    <Input
+                      type='time'
+                      className='bg-topBackground border-[1px] border-border dark:border-borderF'
+                      {...field}
+                    />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
@@ -234,6 +254,7 @@ const RestaurantEditForm = ({ data, allCategories, foodItems, userId }) => {
                     <Input
                       type='number'
                       placeholder='enter delivery time'
+                      className='bg-topBackground border-[1px] border-border dark:border-borderF'
                       {...field}
                     />
                   </FormControl>
@@ -253,6 +274,7 @@ const RestaurantEditForm = ({ data, allCategories, foodItems, userId }) => {
                     <Input
                       type='number'
                       placeholder='enter delivery charge'
+                      className='bg-topBackground border-[1px] border-border dark:border-borderF'
                       {...field}
                     />
                   </FormControl>
@@ -285,6 +307,7 @@ const RestaurantEditForm = ({ data, allCategories, foodItems, userId }) => {
                         <FormControl>
                           <Checkbox
                             checked={field.value.includes(item.id)}
+                            className='dark:data-[state=checked]:bg-white dark:data-[state=checked]:text-background'
                             onCheckedChange={(checked) => {
                               // Update the outer field's value directly
                               const updatedCategories = checked

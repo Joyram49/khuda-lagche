@@ -41,7 +41,7 @@ const team = [
 ];
 function TeamMember() {
   return (
-    <section className='h-auto    bg-background '>
+    <section className='h-auto bg-backgroundF '>
       <div className='container '>
         <div className=' h-full flex-col  flex justify-around items-center gap-y-10 md:gap-y-20 py-10 md:py-20'>
           {/* popular dishes header */}

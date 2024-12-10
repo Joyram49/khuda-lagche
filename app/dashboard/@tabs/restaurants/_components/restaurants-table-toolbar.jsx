@@ -14,7 +14,7 @@ import { Input } from "@/components/ui/input";
 import Link from "next/link";
 function RestaurantsTableToolbar({ table, sortType, setSortType }) {
   return (
-    <div className='flex flex-col xs:flex-row gap-y-2 xs:gap-y-0 gap-x-2 items-center py-4 font-robotoSlab  text-[#414549]'>
+    <div className='flex flex-col xs:flex-row gap-y-2 xs:gap-y-0 gap-x-2 items-center py-4 font-robotoSlab  text-pText'>
       {/* filter restaurants by restaurant name */}
       <Input
         placeholder='Find restaurant with name...'

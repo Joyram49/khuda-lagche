@@ -3,8 +3,8 @@ import { Skeleton } from "@/components/ui/skeleton"; // Replace with your own Sk
 
 const AuthSkeletonLoader = () => {
   return (
-    <div className='flex flex-col items-center justify-center min-h-screen bg-[#f2f4f8]'>
-      <Card className='w-full max-w-md px-4 py-6'>
+    <div className='flex flex-col items-center justify-center min-h-screen bg-backgroundF'>
+      <Card className='w-full max-w-md px-4 py-6 bg-topBackground border-[1px] border-border dark:border-borderF'>
         <CardHeader className='flex flex-col items-center'>
           {/* User Icon Placeholder */}
           <Skeleton className='h-16 w-16 rounded-full mb-4' />

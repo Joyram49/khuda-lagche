@@ -4,7 +4,7 @@ import ArticleImageLoader from "./article-image-loader";
 
 function ArticleCard({ data }) {
   return (
-    <Card className='max-w-[375px] shadow-lg rounded-[16px] '>
+    <Card className='max-w-[375px] shadow-lg rounded-[16px] bg-backgroundF border-[1px] dark:border-borderF'>
       <CardContent className='p-0 '>
         <ArticleImageLoader data={data} />
         <div className='flex flex-col items-center justify-center my-6 gap-y-2 px-4 md:px-10'>
@@ -20,7 +20,7 @@ function ArticleCard({ data }) {
           <h1 className='text-xl font-robotoSlab text-foreground text-center hover:text-hoverYellow transition-colors duration-200 ease-linear cursor-pointer'>
             {data?.title}
           </h1>
-          <CardDescription className='font-robotoSlab  text-center text-pretty'>
+          <CardDescription className='font-robotoSlab  text-center text-pretty  text-pText'>
             {truncateContent(data.content, 15)}
           </CardDescription>
         </div>

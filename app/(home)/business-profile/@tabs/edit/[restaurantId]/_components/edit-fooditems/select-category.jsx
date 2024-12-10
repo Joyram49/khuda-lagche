@@ -1,6 +1,7 @@
 "use client";
 import { Check, ChevronsUpDown } from "lucide-react";
 
+import Portal from "@/components/portal";
 import { Button } from "@/components/ui/button";
 import {
   Command,
@@ -38,6 +39,7 @@ function SelectCategories({ categories, form }) {
       render={({ field }) => (
         <FormItem className='flex flex-col'>
           <FormLabel>Select Category</FormLabel>
+
           <Popover>
             <PopoverTrigger asChild>
               <FormControl>
@@ -45,8 +47,8 @@ function SelectCategories({ categories, form }) {
                   variant='outline'
                   role='combobox'
                   className={cn(
-                    "w-[200px] justify-between",
-                    !field.value && "text-muted-foreground"
+                    "w-[200px] justify-between border-[1px] border-border dark:border-borderF",
+                    !field.value && "text-pText"
                   )}
                 >
                   {field.value
@@ -57,38 +59,41 @@ function SelectCategories({ categories, form }) {
                 </Button>
               </FormControl>
             </PopoverTrigger>
-            <PopoverContent className='w-[200px] p-0'>
-              <Command>
-                <CommandInput
-                  placeholder='Search Category...'
-                  onValueChange={(value) => setSearchTerm(value)}
-                />
-                <CommandList>
-                  <CommandEmpty>No Category found.</CommandEmpty>
-                  <CommandGroup>
-                    {filteredCategories?.map((category) => (
-                      <CommandItem
-                        value={category?.id}
-                        key={category?.id}
-                        onSelect={() => {
-                          form.setValue("category", category?.id);
-                        }}
-                      >
-                        <Check
-                          className={cn(
-                            "mr-2 h-4 w-4",
-                            category.id === field.value
-                              ? "opacity-100"
-                              : "opacity-0"
-                          )}
-                        />
-                        {category.name}
-                      </CommandItem>
-                    ))}
-                  </CommandGroup>
-                </CommandList>
-              </Command>
-            </PopoverContent>
+            <Portal>
+              <PopoverContent className='w-[200px] p-0 z-[999] border-[1px] border-border dark:border-borderF'>
+                <Command className='bg-topBackground'>
+                  <CommandInput
+                    placeholder='Search Category...'
+                    onValueChange={(value) => setSearchTerm(value)}
+                  />
+                  <CommandList>
+                    <CommandEmpty>No Category found.</CommandEmpty>
+                    <CommandGroup>
+                      {filteredCategories?.map((category) => (
+                        <CommandItem
+                          value={category?.id}
+                          key={category?.id}
+                          className='hover:bg-backgroundF'
+                          onSelect={() => {
+                            form.setValue("category", category?.id);
+                          }}
+                        >
+                          <Check
+                            className={cn(
+                              "mr-2 h-4 w-4",
+                              category.id === field.value
+                                ? "opacity-100"
+                                : "opacity-0"
+                            )}
+                          />
+                          {category.name}
+                        </CommandItem>
+                      ))}
+                    </CommandGroup>
+                  </CommandList>
+                </Command>
+              </PopoverContent>
+            </Portal>
           </Popover>
           <FormDescription>
             This is the category that will be used in the food.

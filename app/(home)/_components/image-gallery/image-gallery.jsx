@@ -58,7 +58,7 @@ function ImageGallery() {
       <div className='container h-full overflow-hidden relative z-10'>
         <div className='h-full w-full flex-col flex justify-around items-center gap-y-10 sm:gap-y-20 py-10 md:py-20'>
           <div className='flex flex-col items-center text-center'>
-            <h1 className='text-xl sm:text-3xl xl:text-5xl 3xl:text-6xl font-robotoSlab uppercase text-accent'>
+            <h1 className='text-xl sm:text-3xl xl:text-5xl 3xl:text-6xl font-robotoSlab uppercase text-white'>
               View the dishes
             </h1>
             <p className='text-muted-foreground font-medium font-robotoSlab text-sm pt-1 sm:pt-2'>

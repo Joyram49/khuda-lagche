@@ -1,7 +1,7 @@
 "use client";
 import { resetToEmptyCart } from "@/app/actions/cartItems";
 import { useCartItemCount } from "@/app/hooks/useCartItemCount";
-import { Button } from "@/components/ui/button";
+import RippleButton from "@/components/ripple-effect";
 import { DialogTitle } from "@/components/ui/dialog";
 import { generateUUID } from "@/lib/generateUUID";
 import { useSession } from "next-auth/react";
@@ -66,11 +66,11 @@ function RestaurantCart({ small, delivery_time }) {
     <div className='w-full h-[calc(100vh-200px)] flex flex-col  justify-between items-center gap-y-6 my-4  relative p-4 lg:p-0'>
       <div className='w-full  md:pr-2'>
         {small ? (
-          <DialogTitle className='w-full flex justify-center items-center py-2 rounded-md drop-shadow-sm bg-gradient-to-r from-customYellow to-hoverYellow font-robotoSlab text-background'>
+          <DialogTitle className='w-full flex justify-center items-center py-2 rounded-md drop-shadow-sm bg-gradient-to-r from-customYellow to-hoverYellow font-robotoSlab text-pText'>
             Delivery ({delivery_time})
           </DialogTitle>
         ) : (
-          <div className='w-full flex justify-center items-center py-4 rounded-md drop-shadow-sm bg-gradient-to-r from-customYellow to-hoverYellow font-robotoSlab text-background'>
+          <div className='w-full flex justify-center items-center py-4 rounded-md drop-shadow-sm bg-gradient-to-r from-customYellow to-hoverYellow font-robotoSlab text-pText'>
             Delivery ({delivery_time})
           </div>
         )}
@@ -89,9 +89,12 @@ function RestaurantCart({ small, delivery_time }) {
 
       {cartData?.items?.length > 0 && (
         <Link href={"/checkout"} className='w-full  md:pr-2'>
-          <Button className='w-full flex justify-center items-center py-2 rounded-md drop-shadow-sm bg-gradient-to-r from-customYellow to-hoverYellow font-robotoSlab text-background'>
+          <RippleButton
+            typ='button'
+            className='w-full flex justify-center items-center py-2 rounded-md drop-shadow-sm bg-gradient-to-r from-customYellow to-hoverYellow font-robotoSlab text-pText'
+          >
             Proceed Checkout
-          </Button>
+          </RippleButton>
         </Link>
       )}
     </div>

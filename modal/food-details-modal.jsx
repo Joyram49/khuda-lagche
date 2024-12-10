@@ -17,18 +17,10 @@ function FoodDetailsModal({ data, onClose }) {
   useLockBody();
 
   return (
-    <div className='fixed inset-0 bg-black bg-opacity-70 flex justify-center items-center z-[999]'>
-      <div className='w-full max-w-xl h-full min-h-[calc(100vh-70px)] ring-[1px] ring-slate-800/10 drop-shadow-sm p-6 bg-background rounded-lg flex flex-col'>
-        {/* Close Button */}
-        <div
-          className='absolute top-4 right-4 w-10 h-10 rounded-full flex justify-center items-center bg-white ring-[1px] ring-slate-900/10 drop-shadow hover:ring-customYellow cursor-pointer group'
-          onClick={onClose}
-        >
-          <X className='text-slate-600 group-hover:text-customYellow' />
-        </div>
-
+    <div className='fixed  inset-0 bg-black bg-opacity-70 flex justify-center items-center z-[999]'>
+      <div className='w-full max-w-lg h-[600px] max-h-[800px] relative  border-[1px] border-border dark:border-borderF drop-shadow-sm p-6 bg-backgroundF overflow-y-auto scrollbar-thin scrollbar-thumb-customYellow scrollbar-track-gray-200 rounded-lg'>
         {/* Card Content */}
-        <Card className='overflow-y-auto scrollbar-thin scrollbar-thumb-customYellow scrollbar-track-gray-200'>
+        <Card className='w-full h-full bg-backgroundF border-none  '>
           <CardHeader className='flex flex-col items-start bg-muted/50 p-4'>
             <div className='grid gap-2'>
               <CardTitle className='flex items-center gap-2 text-2xl font-bold'>
@@ -184,6 +176,14 @@ function FoodDetailsModal({ data, onClose }) {
             </div>
           </CardContent>
         </Card>
+
+        {/* Close Button */}
+        <div
+          className='absolute top-4 right-4 w-10 h-10 rounded-full flex justify-center items-center bg-white ring-[1px] ring-slate-900/10 drop-shadow hover:ring-customYellow cursor-pointer group'
+          onClick={onClose}
+        >
+          <X className='text-slate-600 group-hover:text-customYellow' />
+        </div>
       </div>
     </div>
   );

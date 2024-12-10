@@ -31,7 +31,7 @@ function FoodImageLoader({ data }) {
         />
       )}
 
-      <div className='absolute bottom-2 right-2 px-2 py-1 bg-background rounded-md flex justify-center items-center text-sm font-robotoSlab gap-x-1 drop-shadow-sm'>
+      <div className='absolute bottom-2 right-2 px-2 py-1 bg-backgroundF rounded-md flex justify-center items-center text-sm font-robotoSlab gap-x-1 drop-shadow-sm'>
         <LuClock />
         <span>{data.preparation_time}</span>
       </div>

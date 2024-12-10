@@ -151,15 +151,15 @@ function OrderList({ orders }) {
             <CardTitle>Orders</CardTitle>
             <CardDescription>
               Showing{" "}
-              <span className='font-medium text-[#414549] capitalize'>
+              <span className='font-medium text-pText capitalize'>
                 {query.status}
               </span>{" "}
-              <span className='font-medium text-[#414549]'>
+              <span className='font-medium text-pText'>
                 {filteredOrders?.length}
               </span>{" "}
               order(s) in last{" "}
-              <span className='font-medium text-[#414549]'>{query.range}</span>{" "}
-              from your app
+              <span className='font-medium text-pText'>{query.range}</span> from
+              your app
             </CardDescription>
           </CardHeader>
           <CardContent>

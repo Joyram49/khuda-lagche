@@ -52,7 +52,7 @@ function ImageGallery() {
               25vw'
                 className='absolute inset-0 object-cover object-center rounded-lg group-hover/image:scale-90 transition-transform duration-150 ease-linear'
               />
-              <div className='absolute inset-0 hidden group-hover/image:flex flex-col justify-center items-center text-accent group-hover/image:bg-slate-900/75 transition-all duration-150 ease-linear group/content gap-y-2'>
+              <div className='absolute inset-0 hidden group-hover/image:flex flex-col justify-center items-center text-white group-hover/image:bg-slate-900/75 transition-all duration-150 ease-linear group/content gap-y-2'>
                 <div className='flex gap-x-2'>
                   <div onClick={() => handleImageClick(photo)}>
                     <Search className='cursor-pointer stroke-[3px] opacity-0 stroke-gray-200 -translate-x-[150%] group-hover/content:translate-x-0 group-hover/content:opacity-100 transition-all duration-300 ease-linear hover:stroke-hoverYellow' />
@@ -86,7 +86,7 @@ function ImageGallery() {
               25vw'
                 className='absolute inset-0 object-cover object-center rounded-lg group-hover/image:scale-90 transition-transform duration-150 ease-linear'
               />
-              <div className='absolute inset-0 hidden group-hover/image:flex flex-col justify-center items-center text-accent group-hover/image:bg-slate-900/75 transition-all duration-150 ease-linear group/content gap-y-2'>
+              <div className='absolute inset-0 hidden group-hover/image:flex flex-col justify-center items-center text-white group-hover/image:bg-slate-900/75 transition-all duration-150 ease-linear group/content gap-y-2'>
                 <div className='flex gap-x-2'>
                   <div onClick={() => handleImageClick(photo)}>
                     <Search className='cursor-pointer stroke-[3px] opacity-0 stroke-gray-200 -translate-x-[150%] group-hover/content:translate-x-0 group-hover/content:opacity-100 transition-all duration-300 ease-linear hover:stroke-hoverYellow' />
@@ -120,7 +120,7 @@ function ImageGallery() {
               25vw'
                 className='absolute inset-0 object-cover object-center rounded-lg group-hover/image:scale-90 transition-transform duration-150 ease-linear'
               />
-              <div className='absolute inset-0 hidden group-hover/image:flex flex-col justify-center items-center text-accent group-hover/image:bg-slate-900/75 transition-all duration-150 ease-linear group/content gap-y-2'>
+              <div className='absolute inset-0 hidden group-hover/image:flex flex-col justify-center items-center text-white group-hover/image:bg-slate-900/75 transition-all duration-150 ease-linear group/content gap-y-2'>
                 <div className='flex gap-x-2'>
                   <div onClick={() => handleImageClick(photo)}>
                     <Search className='cursor-pointer stroke-[3px] opacity-0 stroke-gray-200 -translate-x-[150%] group-hover/content:translate-x-0 group-hover/content:opacity-100 transition-all duration-300 ease-linear hover:stroke-hoverYellow' />
@@ -154,7 +154,7 @@ function ImageGallery() {
               25vw'
                 className='absolute inset-0 object-cover object-center rounded-lg group-hover/image:scale-90 transition-transform duration-150 ease-linear'
               />
-              <div className='absolute inset-0 hidden group-hover/image:flex flex-col justify-center items-center text-accent group-hover/image:bg-slate-900/75 transition-all duration-150 ease-linear group/content gap-y-2'>
+              <div className='absolute inset-0 hidden group-hover/image:flex flex-col justify-center items-center text-white group-hover/image:bg-slate-900/75 transition-all duration-150 ease-linear group/content gap-y-2'>
                 <div className='flex gap-x-2'>
                   <div onClick={() => handleImageClick(photo)}>
                     <Search className='cursor-pointer stroke-[3px] opacity-0 stroke-gray-200 -translate-x-[150%] group-hover/content:translate-x-0 group-hover/content:opacity-100 transition-all duration-300 ease-linear hover:stroke-hoverYellow' />

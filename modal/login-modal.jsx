@@ -55,18 +55,18 @@ function LoginModal({ onClose }) {
   const { isSubmitting } = form.formState;
   return (
     <div className='fixed inset-0 bg-black bg-opacity-70 flex justify-center items-center z-[999]'>
-      <div className='w-full max-w-xl  h-full   max-h-[calc(100vh-70px)] ring-[1px] ring-slate-800/10 drop-shadow-sm p-10 bg-background rounded-lg flex justify-center items-center'>
+      <div className='w-full max-w-xl  h-auto   md:max-h-[60vh] drop-shadow-sm p-10 bg-backgroundF rounded-lg flex justify-center items-center border-[1px] border-border dark:border-borderF'>
         <div className='w-full flex flex-col justify-center items-center'>
           <div className='flex flex-col justify-center items-center gap-y-2 mb-5'>
             <FaUserCircle className='fill-initial' size={44} />
-            <h1 className='font-robotoSlab capitalize  text-muted-foreground text-3xl'>
+            <h1 className='font-robotoSlab capitalize  text-pText text-3xl'>
               Sign In
             </h1>
           </div>
           <Form {...form}>
             <form
               onSubmit={form.handleSubmit(onSubmit)}
-              className='mt-6 w-full flex flex-col gap-y-6 font-robotoSlab  border-[1px] border-slate-900/10 drop-shadow-sm rounded-sm p-4'
+              className='mt-6 w-full flex flex-col gap-y-6 font-robotoSlab  border-[1px] border-border dark:border-borderF drop-shadow-sm rounded-sm p-4'
             >
               <FormField
                 control={form.control}
@@ -78,7 +78,7 @@ function LoginModal({ onClose }) {
                       <Input
                         placeholder='Enter your email'
                         type='email'
-                        className='focus-visible:ring-2 focus-visible:ring-hoverYellow focus-visible:ring-offset-0'
+                        className='focus-visible:ring-2 focus-visible:ring-hoverYellow focus-visible:ring-offset-0 bg-topBackground border-[1px] border-border dark:border-borderF'
                         {...field}
                       />
                     </FormControl>
@@ -96,7 +96,7 @@ function LoginModal({ onClose }) {
                       <Input
                         placeholder='type password'
                         type='password'
-                        className='focus-visible:ring-2 focus-visible:ring-hoverYellow focus-visible:ring-offset-0'
+                        className='focus-visible:ring-2 focus-visible:ring-hoverYellow focus-visible:ring-offset-0 bg-topBackground border-[1px] border-border dark:border-borderF'
                         {...field}
                       />
                     </FormControl>
@@ -141,7 +141,7 @@ function LoginModal({ onClose }) {
               )}
             </form>
           </Form>
-          <div className='text-center text-xs text-muted-foreground font-robotoSlab mt-4'>
+          <div className='text-center text-xs text-pText font-robotoSlab mt-4'>
             <p>New Here?</p>
             <div className='flex gap-x-2'>
               <p>Register as </p>{" "}
@@ -222,10 +222,10 @@ function LoginModal({ onClose }) {
           </p>
         )}
         <div
-          className='absolute top-2 right-2.5 w-8 h-8 rounded-full flex justify-center items-center ring-[1px] ring-slate-900/10 drop-shadow-sm hover:ring-customYellow cursor-pointer group'
+          className='absolute top-2 right-2.5 w-8 h-8 rounded-full flex justify-center items-center border-[1px] border-border dark:border-borderF drop-shadow-sm hover:ring-customYellow cursor-pointer group'
           onClick={onClose}
         >
-          <X className='text-slate-600 group-hover:text-customYellow' />
+          <X className='text-pText group-hover:text-customYellow' />
         </div>
       </div>
     </div>

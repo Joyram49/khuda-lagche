@@ -110,7 +110,7 @@ function RestaurantsContent({ restaurants, favRestaurants, loggedInUser }) {
 
   return (
     <div className='w-full flex flex-col items-start gap-y-5'>
-      <div className='w-full flex flex-col gap-2 md:flex-row md:justify-between items-center py-2 pl-1 text-customYellow '>
+      <div className='w-full flex flex-col gap-2 md:flex-row md:justify-between items-center  pl-1 text-customYellow '>
         {initialLoading ? (
           <p>Loading Restaurants</p>
         ) : dynamicRestaurants?.length > 0 ? (
@@ -133,11 +133,11 @@ function RestaurantsContent({ restaurants, favRestaurants, loggedInUser }) {
 
         {paramString && (
           <RippleButton
-            className='flex items-center gap-x-2'
+            className='flex items-center gap-x-2 dark:bg-topBackground dark:text-pText dark:hover:bg-backgroundF border-[1px] border-border dark:border-borderF'
             onClick={handleResetFilter}
           >
             <Settings
-              size={26}
+              size={20}
               className='font-medium stroke-[3px]  stroke-white'
             />
             Clear Filter

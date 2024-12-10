@@ -11,14 +11,14 @@ async function FoodInfo({ foodId }) {
   const rating = generateRating(selectedFood?.reviews);
 
   return (
-    <div className='w-full flex flex-col gap-y-4'>
-      <div className='w-full flex justify-between items-start gap-x-2 border-b-[1px] border-slate-900/10  drop-shadow-sm pb-2'>
+    <div className='w-full flex flex-col gap-y-4 font-robotoSlab text-pText'>
+      <div className='w-full flex justify-between items-start gap-x-2 border-b-[1px] border-border dark:border-borderF drop-shadow-sm pb-2'>
         <div className='flex flex-col justify-start gap-y-2'>
-          <h1 className='text-lg md:text-xl font-medium font-robotoSlab text-[#414549]'>
+          <h1 className='text-lg md:text-xl font-medium '>
             {selectedFood?.name}
           </h1>
           {rating === 0 ? (
-            <div className='text-[13px] font-robotoSlab font-medium text-initial'>
+            <div className='text-[13px] font-medium '>
               Be first to give review
             </div>
           ) : (
@@ -27,7 +27,7 @@ async function FoodInfo({ foodId }) {
               <StarRating rating={rating} />
             </div>
           )}
-          <div className='flex justify-start items-center gap-x-1 font-robotoSlab text-[#414549]  '>
+          <div className='flex justify-start items-center gap-x-1   '>
             <span className='text-lg capitalize'>price: </span>
             <div style={{ width: "24px", height: "24px", marginRight: "-4px" }}>
               <TbCurrencyTaka
@@ -39,27 +39,25 @@ async function FoodInfo({ foodId }) {
               />
             </div>
 
-            <span className=' text-lg'>{selectedFood?.price}</span>
+            <span className='text-lg'>{selectedFood?.price}</span>
           </div>
         </div>
       </div>
-      <div className='flex flex-col gap-y-4 border-b-[1px] border-slate-900/10  drop-shadow-sm pb-2'>
+      <div className='flex flex-col gap-y-4 border-b-[1px] border-border dark:border-borderF  drop-shadow-sm pb-2'>
         <div className='flex justify-start items-center gap-x-2'>
           <MdRestaurantMenu size={22} className='fill-customYellow' />
           <Link
             href={`/restaurants/${selectedFood?.restaurant?.id}`}
             className='hover:underline underline-offset-1'
           >
-            <span className='text-[#414549] font-robotoSlab'>
-              {selectedFood?.restaurant?.name}
-            </span>
+            <span>{selectedFood?.restaurant?.name}</span>
           </Link>
         </div>
-        <p className='text-[#414549] font-robotoSlab'>
+        <p>
           <span className='font-medium mr-2'>Category :</span> [{" "}
           {selectedFood?.category?.name} ]
         </p>
-        <div className='flex gap-x-2 text-[#414549] font-robotoSlab'>
+        <div className='flex gap-x-2'>
           <p className='font-medium whitespace-nowrap'>Tag : </p>
           <div className='flex flex-wrap gap-x-1'>
             {selectedFood?.tags.map((tag, index) => (

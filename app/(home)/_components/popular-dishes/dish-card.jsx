@@ -13,11 +13,11 @@ import ImageLoader from "./image-loader";
 
 function DishCard({ data }) {
   return (
-    <Card className='max-w-[295px] shadow-lg rounded-[16px] justify-self-center'>
+    <Card className='max-w-[295px] shadow-lg rounded-[16px] justify-self-center bg-backgroundF border-[1px] dark:border-borderF'>
       <CardContent className='w-full p-0 '>
         <ImageLoader data={data} />
         <div className='flex flex-col items-center justify-center my-6 gap-y-2'>
-          <div className='flex flex-wrap justify-center bg-deepBackground text-center px-3 rounded-sm drop-shadow-sm'>
+          <div className='flex flex-wrap justify-center bg-backgroundF-opacity60 text-center px-3 rounded-sm drop-shadow-md'>
             {data?.tags?.map((tag, index) => (
               <React.Fragment key={index}>
                 <span className='text-initial font-robotoSlab uppercase text-[12px] font-medium hover:text-hoverYellow mr-2 transition-colors duration-200 ease-linear cursor-default'>
@@ -39,7 +39,7 @@ function DishCard({ data }) {
           </Link>
 
           <StarRating rating={data?.averageRating} />
-          <CardDescription className='font-robotoSlab  text-center '>
+          <CardDescription className='font-robotoSlab  text-center text-pText '>
             {truncateContent(data?.description, 15)}
           </CardDescription>
         </div>

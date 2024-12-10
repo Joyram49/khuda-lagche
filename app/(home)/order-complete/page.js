@@ -178,8 +178,8 @@ async function OrderCompletePage({ searchParams: { session_id } }) {
   }
 
   return (
-    <div className='flex flex-col items-center justify-center min-h-[calc(100vh-112px)] bg-[#f2f4f8]'>
-      <Card className='w-full max-w-lg px-4 py-6  '>
+    <div className='flex flex-col items-center justify-center min-h-[calc(100vh-112px)] bg-backgroundF'>
+      <Card className='w-full max-w-lg px-4 py-6 bg-topBackground border-[1px] border-border dark:border-borderF '>
         <CardHeader>
           <CardTitle className='text-center text-2xl font-bold'>
             {titleText}!!
@@ -188,38 +188,38 @@ async function OrderCompletePage({ searchParams: { session_id } }) {
         <CardContent>
           <div className='flex flex-col items-center gap-4 font-robotoSlab'>
             <CircleCheckIcon className='w-16 h-16 text-green-500 animate-bounce' />
-            <p className='text-[#414549] text-center'>
+            <p className='text-pText text-center'>
               Thank you for your purchase, <strong>{userInfo?.name}</strong>!
               Your order is being processed and will be delivered shortly. Take
               love from <strong>{restaurant?.name}</strong>
             </p>
           </div>
-          <div className='mt-8 font-robotoSlab text-[#414549]'>
+          <div className='mt-8 font-robotoSlab text-pText'>
             <h2 className='font-semibold text-initial'>Order Details</h2>
             <div className='grid gap-4 mt-4'>
               {checkoutSession?.line_items.data.map((item, index) => (
                 <div
                   key={index}
-                  className='w-full text-gray-500 flex items-center justify-between  border p-4 rounded-sm '
+                  className='w-full text-pText flex items-center justify-between  border-[1px] border-border dark:border-borderF p-4 rounded-sm drop-shadow-sm'
                 >
                   <div className='flex items-center'>
                     <p>{item.description}</p>
                     <Badge className='ml-2'>x{item.quantity}</Badge>
                   </div>
-                  <p className='justify-self-end font-medium text-[#414549]'>
+                  <p className='justify-self-end font-medium text-pText'>
                     {item.price.unit_amount / 100} BDT
                   </p>
                 </div>
               ))}
             </div>
           </div>
-          <div className='mt-6 flex items-center gap-x-2 text-[#414549] font-robotoSlab'>
+          <div className='mt-6 flex items-center gap-x-2 text-pText font-robotoSlab'>
             <h2 className='font-semibold text-initial'>Total Amount :</h2>
             <p className='text-xl font-bold '>
               {totalAmount} {currency}
             </p>
           </div>
-          <div className='mt-2 flex items-center gap-x-2 font-robotoSlab text-[#414549]'>
+          <div className='mt-2 flex items-center gap-x-2 font-robotoSlab text-pText'>
             <h2 className=' font-semibold text-initial'>Delivered To:</h2>
             <p className='text-base font-medium'>{address}.</p>
             <Badge>{addressType}</Badge>
@@ -233,7 +233,9 @@ async function OrderCompletePage({ searchParams: { session_id } }) {
                 : "/business-profile/orders"
             }
           >
-            <Button variant='outline'>View Order History</Button>
+            <Button variant='outline' className='dark:border-borderF'>
+              View Order History
+            </Button>
           </Link>
           <Link href='/'>
             <Button>Go to Home</Button>

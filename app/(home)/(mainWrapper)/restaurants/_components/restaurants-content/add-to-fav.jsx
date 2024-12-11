@@ -27,6 +27,7 @@ function AddToFav({ restaurantId, className, isFav, restaurantName }) {
     e.stopPropagation();
     const session = await getSession();
     if (!session || session?.error === "RefreshAccessTokenError") {
+      setIsLoading(false);
       setIsModalOpen(true);
       return;
     }
@@ -39,7 +40,6 @@ function AddToFav({ restaurantId, className, isFav, restaurantName }) {
     try {
       const response = await updateFavRestaurantsByUserId(data);
       if (response?.id) {
-        console.log(response);
         if (isFav) {
           toast.success(`${restaurantName} is removed from your fav list!`);
         } else {
@@ -88,7 +88,10 @@ function AddToFav({ restaurantId, className, isFav, restaurantName }) {
       </TooltipProvider>
       {isModalOpen && (
         <Portal>
-          <LoginModal onClose={() => setIsModalOpen(false)} />
+          <LoginModal
+            onClose={() => setIsModalOpen(false)}
+            fromRestaurant={true}
+          />
         </Portal>
       )}
     </>
